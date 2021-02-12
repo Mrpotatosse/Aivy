@@ -1,0 +1,25 @@
+{
+  "name": "aivycorejs",
+  "version": "1.0.0",
+  "description": "dofus mitm lib",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mrpotatosse/Aivy.git"
+  },
+  "keywords": [
+    "aivy"
+  ],
+  "author": "Mrpotatosse",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mrpotatosse/Aivy/issues"
+  },
+  "homepage": "https://github.com/Mrpotatosse/Aivy#readme",
+  "dependencies": {
+    "frida": "^14.2.12"
+  }
+}
