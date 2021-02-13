@@ -4,7 +4,7 @@ OUEEEEEEEEE MULTI PLATEFORM
 
 # Dependances
 
-- frida
+- frida + fritm script https://github.com/louisabraham/fritm/blob/master/fritm/script.js
 - botofu parser
 
 # Usage
