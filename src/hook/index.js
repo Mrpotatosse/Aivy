@@ -2,14 +2,10 @@ const frida = require('frida');
 const fs = require('fs');
 const util = require('util');
 const path = require('path');
-const axios = require('axios');
 
 const readFile = util.promisify(fs.readFile);
 
 let hook_options = {
-    ip_send_host: 'localhost',
-    ip_send_port: 8000,
-    ip_send_path: '/setipredirect',
     redirection_port: 5555,
 }
 
@@ -33,16 +29,7 @@ const hook = async (target) => {
 }
 
 const script_connect_message = async (message, _) => {
-    if(message.type === 'send'){        
-        try{
-            const post_form = JSON.parse(message.payload);
-            axios
-            .post(`http://${hook_options.ip_send_host}:${hook_options.ip_send_port}${hook_options.ip_send_path}`, post_form)
-            .catch(error => console.error(error));
-        }catch(exception){
-            console.error(exception);
-        }
-    }
+    console.log(message);
 }
 
 const set_hook_options = (options) => {

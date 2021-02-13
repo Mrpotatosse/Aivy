@@ -1,4 +1,12 @@
-const express = require('express');
+/**
+ * THIS WAS ONLY FOR TEST
+ * 
+ * 
+ * 
+ * 
+ */
+
+/*const express = require('express');
 const bodyParser = require('body-parser');
 const { set_ip_information, get_ip_information } = require('./ipredirect');
 
@@ -44,4 +52,4 @@ const run = () => {
 module.exports = {
     set_http_options: set_http_options,
     run: run
-}
+}*/

@@ -50,7 +50,7 @@ Interceptor.attach(connect_p, {
         var buf_recv = Memory.alloc(512);
         var recv_return = socket_recv(this.sockfd.toInt32(), buf_recv, 512, 0);
 
-        // idk why 'louisabraham' put this here but it this loops is not needed anymore 
+        // idk why 'louisabraham' put this here but it this loops is not needed anymore
         
         // This loops is needed on Windows
         // for unknown reasons

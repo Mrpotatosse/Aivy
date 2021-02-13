@@ -1,7 +1,8 @@
 const net = require('net');
 
-// dataHandler = data:Buffer * from_client:Boolean -> new_data:Buffer
-const createMITMServer = (dataHandler) => {
+// connectionHandler = socket:Socket -> () # called when the socket is successfully linked
+// dataHandler = socket:Socket * data:Buffer * from_client:Boolean -> new_data:Buffer # called when data is received
+const createMITMServer = (connectionHandler, dataHandler) => {
     const server = new net.Server();
 
     server.on('listening', () => {console.log('mitm started')});
@@ -18,19 +19,19 @@ const createMITMServer = (dataHandler) => {
             if(data_str.startsWith('ORIGINAL')){
                 const remote_ip = parse_data_str(data_str);
                 
-                socket.remote.on('data', data => {
-                    socket.write(dataHandler(data, false));
-                });
+                socket.remote.on('connect', () => connectionHandler(socket));
+                socket.remote.on('data', data => socket.write(dataHandler(socket, data, false)));
                 socket.remote.on('close', () => remote_closed(socket));
                 socket.remote.on('error', error => remote_error(error, socket));
 
                 console.log(remote_ip);
+                socket.process_id = remote_ip.pid;
                 socket.remote.connect({
                     host: remote_ip.host,
                     port: remote_ip.port
-                });
+                }); // connection handler on mitm is successfuly
             }else{
-                socket.remote.write(dataHandler(data, true));
+                socket.remote.write(dataHandler(socket, data, true));
             }
         });
         socket.on('close', () => local_closed(socket));
