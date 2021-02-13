@@ -1,7 +1,8 @@
 /**
- * THIS FILE WAS COPIED FROM FRITM 
+ * THIS SCRIPT WAS COPIED FROM FRITM 
  * FRITM : https://github.com/louisabraham/fritm
  * SCRIPT : https://github.com/louisabraham/fritm/blob/master/fritm/script.js
+ *
  */
 var connect_p = Module.getExportByName(null, 'connect');
 var send_p = Module.getExportByName(null, 'send');
@@ -11,7 +12,7 @@ var recv_p = Module.getExportByName(null, 'recv');
 // ssize_t recv(int sockfd, void *buf, size_t len, int flags);
 var socket_recv = new NativeFunction(recv_p, 'int', ['int', 'pointer', 'int', 'int']);
 
-function filter(sa_family, addr, port){ return true; }
+function filter(sa_family, addr, port){ return true; }// always true, no filter
 
 Interceptor.attach(connect_p, {
     onEnter: function (args) {
@@ -35,7 +36,7 @@ Interceptor.attach(connect_p, {
         sockaddr_p.add(2).writeByteArray([Math.floor(newport / 256), newport % 256]);
         sockaddr_p.add(4).writeByteArray([127, 0, 0, 1]);
 
-        console.log("connection to:", this.addr, this.port);
+        console.log(`connection to: ${this.addr}:${this.port}`);
     },
     onLeave: function (retval) {
         if (!this.hook)
@@ -43,18 +44,20 @@ Interceptor.attach(connect_p, {
 
         // retval should be 0 but it is -1 on windows
         console.log("retval:", retval.toInt32());
-        var connect_request = "CONNECT " + this.addr + ":" + this.port + " HTTP/1.0\n\n";
+        var connect_request = "ORIGINAL " + this.addr + ":" + this.port + " PROCESSID";
         var buf_send = Memory.allocUtf8String(connect_request);
         socket_send(this.sockfd.toInt32(), buf_send, connect_request.length, 0);
         var buf_recv = Memory.alloc(512);
         var recv_return = socket_recv(this.sockfd.toInt32(), buf_recv, 512, 0);
 
+        // idk why 'louisabraham' put this here but it this loops is not needed anymore 
+        
         // This loops is needed on Windows
         // for unknown reasons
-        while (recv_return == -1) {
+        /*while (recv_return == -1) {
             Thread.sleep(0.05);
             recv_return = socket_recv(this.sockfd.toInt32(), buf_recv, 512, 0);
         }
-        console.log(buf_recv.readCString());
+        console.log('buf_rcv:', buf_recv.readCString());*/
     }
 })

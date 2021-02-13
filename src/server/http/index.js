@@ -1,52 +1,47 @@
-const http = require('http');
-const url = require('url');
+const express = require('express');
+const bodyParser = require('body-parser');
+const { set_ip_information, get_ip_information } = require('./ipredirect');
 
 let http_options = {
-    host: '',
-    port: 0
+    host: 'localhost',
+    port: 8000
 }
 
-let server;
-
-const setOptions = (options) => {
+const set_http_options = (options) => {
     http_options = {
         ...http_options,
         ...options
     };
 }
 
+const server = express();
+server.use(bodyParser.urlencoded({ extended: true }));
+server.use(bodyParser.json());
+server.use(bodyParser.raw());
+
+server.post('/setipredirect', (request, response) => {
+    const ip_information = {
+        ip: request.body.ip,
+        port: request.body.port,
+        pid: request.body.pid
+    }
+
+    set_ip_information(ip_information);
+    response.end();
+});
+
+server.post('/getipredirect', (request, response) => {
+    const ip = get_ip_information();
+    response.end(JSON.stringify(ip));
+});
+
 const run = () => {
-    server = http.createServer(request_listener).listen(http_options.port, http_options.host, () => {
+    server.listen(http_options.port, () => {
         console.log(`http: http://${http_options.host}:${http_options.port}`)
     });
 };
 
-const request_listener = (request, result) => {
-    switch(request.method){
-        case 'GET': 
-            const url_result = url.parse(request.url, true);
-            const queries = url_result.query;
-            switch(url_result.pathname){
-                case '/ipredirect': 
-                    console.log(`ip=${queries.ip} port=${queries.port} pid=${queries.pid}`);
-                    
-                    result.writeHead(200);
-                    result.end();
-                    break;
-                default: 
-                    result.writeHead(500);
-                    result.end('Page not found');
-                    break;
-            }
-        break;
-        /*case 'POST': 
-            result.writeHead(500);
-            result.end('Page not found');
-            break;*/
-    }
-};
-
 module.exports = {
-    setOptions: setOptions,
+    set_http_options: set_http_options,
     run: run
 }

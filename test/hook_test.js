@@ -1,7 +1,2 @@
-const {spawn_and_hook, setOptions} = require('../src/hook/index');
-
-setOptions({
-    port: 5556
-});
-
+const {spawn_and_hook} = require('../src/hook/index');
 spawn_and_hook('D:\\ANKAMA_DOFUS\\Dofus.exe');
