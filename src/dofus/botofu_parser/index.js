@@ -1,6 +1,7 @@
 const os = require('os');
 const path = require('path');
-const {execFileSync} = require('child_process');
+const {execFile} = require('child_process');
+const {json_protocol_name} = require('../../../aivy_config.json');
 
 const platform = os.platform();
 let parser_path = '';
@@ -15,8 +16,8 @@ switch(platform){
         parser_path = path.join(__dirname, 'botofu_protocol_parser_linux');break;
 }
 
-const parser = (dofus_invoker_path, output_json_path) => {
-    execFileSync(parser_path, ['--indent', '1', dofus_invoker_path, output_json_path],
+const parser = (dofus_invoker_path) => {
+    execFile(parser_path, ['--indent', '1', dofus_invoker_path, path.join(__dirname, `../../../${json_protocol_name}`)],
     {
         maxBuffer: 1024 * 32 // max 32 MB
     }, (err, stdout, stderr) => {

@@ -1,2 +1,2 @@
-const {run} = require('../src/server/http/index');
-run();
+const {run_http} = require('../src/server/http/index');
+run_http();

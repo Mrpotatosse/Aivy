@@ -1,5 +1,7 @@
 const handler_manager = {
-    all: []
+    all: [],
+    client: [],
+    server: []
 }
 
 const add_handler = (message_name, handler_class) => {
@@ -12,12 +14,16 @@ const add_handler = (message_name, handler_class) => {
     }
 
     handler_manager[message_name] = [...handler_manager[message_name], handler_class];
+    console.log('message', message_name, 'handlers count', handler_manager[message_name].length);
 };
 
-const remove_handler = (message_name, handler_class) => {
+/**
+ * use classname_check if you add_handler from a script outside the project
+ */
+const remove_handler = (message_name, handler_class, classname_check=false) => {
     if(handler_manager[message_name]){
         handler_manager[message_name] = handler_manager[message_name].filter(handler_c => {
-            return handler_class !== handler_c;
+            return classname_check ? handler_class.constructor.name !== handler_c.constructor.name : handler_class !== handler_c;
         });
     }
 };
@@ -42,8 +48,9 @@ class d2handler_class {
     constructor(message_informations, socket){
         this.message_informations = message_informations;
         this.socket = socket;
+
         this.forward_original_message = true;
-        this.new_packet = undefined;
+        this.new_packet = undefined;        
     }
 
     newPacket(){
@@ -103,13 +110,30 @@ class show_full_log extends d2handler_class{
     endHandle(){}
 }
 
+const handle_msg = (handler_array, msg, socket) => {
+    let forward_original = true;
+    handler_array.forEach(handler => {
+        const instance_handler = new handler(msg, socket);
+        try{
+            instance_handler.handle();  
+            instance_handler.endHandle();          
+            
+            forward_original = forward_original && instance_handler.forwardOriginal();
+            // all handler cannot modified packet data due to obvious reason
+        }
+        catch(exception){
+            instance_handler.error(exception);
+        }
+    });
+    return forward_original;
+}
+
 const dofus_message_handler = (msgs_rcvd, socket) => {
     let new_data = [];
-
     msgs_rcvd.forEach(msg => {
         const msg_name = msg.message_metadata.name;
         let forward_original = true;
-        let msg_data = [...msg.header_data_blob, ...msg.message_data_blob];
+        let msg_data = [...msg.new_header_data_blob, ...msg.message_data_blob];
 
         if(handler_manager[msg_name]){
             handler_manager[msg_name].forEach(handler => {
@@ -127,8 +151,9 @@ const dofus_message_handler = (msgs_rcvd, socket) => {
                 }
             });
         }
-    
-        handler_manager.all.forEach(handler => {
+        
+        forward_original = forward_original && handle_msg(handler_manager.all, msg, socket);
+        /*handler_manager.all.forEach(handler => {
             const instance_handler = new handler(msg, socket);
             try{
                 instance_handler.handle();  
@@ -140,7 +165,9 @@ const dofus_message_handler = (msgs_rcvd, socket) => {
             catch(exception){
                 instance_handler.error(exception);
             }
-        });
+        });*/
+
+        forward_original = forward_original && handle_msg(msg.from_client ? handler_manager.client : handler_manager.server, msg, socket);
 
         if(forward_original){
             new_data = [...new_data, ...msg_data];

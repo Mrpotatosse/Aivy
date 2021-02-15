@@ -2,14 +2,15 @@ const net = require('net');
 
 // connectionHandler = socket:Socket -> () # called when the socket is successfully linked
 // dataHandler = socket:Socket * data:Buffer * from_client:Boolean -> new_data:Buffer # called when data is received
-const createMITMServer = (connectionHandler, dataHandler) => {
+const create_MITM_server = (connectionHandler, dataHandler) => {
     const server = new net.Server();
+    server.clients = [];
 
     server.on('listening', () => {console.log('mitm started')});
     server.on('close', () => {console.log('mitm closed')});
     server.on('error', (error) => {console.error(error)});
     server.on('connection', (socket) => {
-        console.log('client connected to MITM');
+        console.log('client connected to MITM');  
 
         socket.remote = new net.Socket();
         
@@ -19,17 +20,31 @@ const createMITMServer = (connectionHandler, dataHandler) => {
             if(data_str.startsWith('ORIGINAL')){
                 const remote_ip = parse_data_str(data_str);
                 
-                socket.remote.on('connect', () => connectionHandler(socket));
-                socket.remote.on('data', data => socket.write(dataHandler(socket, data, false)));
-                socket.remote.on('close', () => remote_closed(socket));
+                const remote_connect_handler = () => {
+                    connectionHandler(socket);
+                    server.clients.push(socket);
+                }
+
+                const remote_close_handler = () => {
+                    remote_closed(socket);
+                    server.clients = server.clients.filter(s => s !== socket);
+                }
+
+                socket.remote.on('connect', () => remote_connect_handler(socket));
+                socket.remote.on('data', async data => socket.write(dataHandler(socket, data, false)));
+                socket.remote.on('close', () => remote_close_handler(socket));
                 socket.remote.on('error', error => remote_error(error, socket));
 
                 console.log(remote_ip);
                 socket.process_id = remote_ip.pid;
+                socket.is_game = false;
                 socket.remote.connect({
                     host: remote_ip.host,
                     port: remote_ip.port
                 }); // connection handler on mitm is successfuly
+                        
+                server.clients.push(socket);
+                console.log('CLIENT ON MITM COUNT:', server.clients.length);
             }else{
                 socket.remote.write(dataHandler(socket, data, true));
             }
@@ -59,5 +74,5 @@ const parse_data_str = data_str => { // [0]:ORIGINAL [1]:xxx.xxx.xxx.xxx(IP):xxx
 };
 
 module.exports = {
-    createMITMServer: createMITMServer
+    create_MITM_server: create_MITM_server
 }
