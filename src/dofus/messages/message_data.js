@@ -13,7 +13,9 @@
 const {bbw_get_flag, bbw_set_flag} = require('../io/custom_stream_buffer');
 const dofus_writer = require('../io/dofus_writer');
 const {json_protocol_name} = require('../../../aivy_config.json');
-const json_protocol = require(`../../../${json_protocol_name}`);
+const path = require('path');
+const protocol_location = path.join(__dirname, `../../../${json_protocol_name}`);
+const json_protocol = require(`${protocol_location}`);
 
 const dofus_messages = json_protocol.messages;
 const dofus_types = json_protocol.types;

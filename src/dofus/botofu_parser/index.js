@@ -1,7 +1,6 @@
 const os = require('os');
 const path = require('path');
 const {execFile} = require('child_process');
-const {json_protocol_name} = require('../../../aivy_config.json');
 
 const platform = os.platform();
 let parser_path = '';
