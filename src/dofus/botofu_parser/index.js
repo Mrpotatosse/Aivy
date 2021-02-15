@@ -16,8 +16,8 @@ switch(platform){
         parser_path = path.join(__dirname, 'botofu_protocol_parser_linux');break;
 }
 
-const parser = (dofus_invoker_path) => {
-    execFile(parser_path, ['--indent', '1', dofus_invoker_path, path.join(__dirname, `../../../${json_protocol_name}`)],
+const parser = (dofus_invoker_path, location) => {
+    execFile(parser_path, ['--indent', '1', dofus_invoker_path, path.join(__dirname, location)],
     {
         maxBuffer: 1024 * 32 // max 32 MB
     }, (err, stdout, stderr) => {

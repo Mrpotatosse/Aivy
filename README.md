@@ -22,7 +22,7 @@ MITM pour sniffer les données. ( Avec possibilité de modification )
 - botofu parser (https://gitlab.com/botofu/protocol_parser)
 - express (https://expressjs.com)
 - ws (https://github.com/websockets/ws)
-- node.js (https://nodejs.org/)
+- node.js (https://nodejs.org/) UTILISEZ LA VERSION LTS
 
 # Usage
 
