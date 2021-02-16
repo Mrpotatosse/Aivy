@@ -7,7 +7,6 @@ const dofus_data_buffer_handler = (socket, data, from_client) => {
         const result = from_client ? socket.message_buffer.parse_data(data) : socket.remote.message_buffer.parse_data(data);
         return result ? dofus_message_handler(result, socket) : data;
     }
-    return data;
 }
 
 const dofus_new_client_handler = (socket) => {
