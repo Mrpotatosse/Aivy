@@ -28,20 +28,19 @@ const create_MITM_server = (connectionHandler, dataHandler) => {
                     remote_closed(socket);
                 }
                 
-                socket.remote.on('data', data => socket.write(dataHandler(socket, data, false)));
+                socket.remote.on('data', data => {
+                    socket.write(dataHandler(socket, data, false));
+                });
                 socket.remote.on('close', () => remote_close_handler(socket));
                 socket.remote.on('error', error => remote_error(error, socket));
 
                 console.log(remote_ip);
                 socket.process_id = remote_ip.pid;
-                socket.is_game = false;
+                socket.is_connected = true;
                 socket.remote.connect({
                     host: remote_ip.host,
                     port: remote_ip.port
-                }); // connection handler on mitm is successfuly
-                        
-                server.clients.push(socket);
-                console.log('CLIENT ON MITM COUNT:', server.clients.length);
+                }); 
             }else{
                 socket.remote.write(dataHandler(socket, data, true));
             }
@@ -53,8 +52,14 @@ const create_MITM_server = (connectionHandler, dataHandler) => {
     return server;
 }
 
-const local_closed = (socket) => {console.log('local closed'); socket.remote.destroy();};
-const remote_closed = (socket) => {console.log('remote closed'); socket.destroy();};
+const local_closed = (socket) => {
+    console.log('local closed');
+    socket.remote.destroy();
+};
+const remote_closed = (socket) => {
+    console.log('remote closed'); 
+    socket.destroy();
+};
 
 const local_error = (error, socket) => {console.error('local error:', error); socket.remote.destroy();};
 const remote_error = (error, socket) => {console.error('remote error:', error); socket.destroy();};

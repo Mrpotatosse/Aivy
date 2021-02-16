@@ -62,20 +62,17 @@ class message_buffer {
         let start_pos = 0;
 
         while(this.reader.currentPosition() < this.reader.length()){
-            const new_header_writer = new dofus_writer([]);
             start_pos = this.reader.currentPosition();
             if(this.reader.remnant() < 2) break;
 
             const header = this.reader.readUnsignedShort();
-            new_header_writer.writeUnsignedShort(header);
 
             const static_header = header & 3;
             const id = header >> 2;
 
-            let instance_id = -1;
+            let instance_id = undefined;
             if(this.from_client){
                 instance_id = this.reader.readUnsignedInt();
-                new_header_writer.writeUnsignedInt(instance_id + fake_message_created);
             }
 
             if(this.reader.length() - this.reader.currentPosition() < static_header) {
@@ -83,17 +80,10 @@ class message_buffer {
                 break;                
             }
 
-            if(this.reader.remnant() < static_header) {
-                this.reader.setPosition(start_pos);
-                break;
-            }
-
             let length = 0;
             for (let i = static_header - 1; i >= 0; i--)
             {
-                const b = this.reader.readByte();
-                length = length | (b << (i * 8));
-                new_header_writer.writeByte(b);
+                length = length | (this.reader.readByte() << (i * 8));
             }
 
             if(length <= this.reader.remnant()){
@@ -102,6 +92,20 @@ class message_buffer {
                 if(message_metadata){
                     const message_data_blob = this.reader.readBytes(length);
                     const message_data_parsed = decode(message_metadata, new dofus_reader(message_data_blob));
+                    const header_data_blob_base = this.reader.data().slice(start_pos, this.reader.currentPosition() - length);
+
+                    const header_data_blob_writer = new dofus_writer([]);
+                    header_data_blob_writer.writeUnsignedShort(header);
+                    if(this.from_client){
+                        server_message_count_since_last = 0;
+                        last_message_instance_id = instance_id;
+                        header_data_blob_writer.writeUnsignedInt(fake_message_instance_id());// rewrite instance_id
+                    }else{
+                        server_message_count_since_last++;
+                    }
+                    const slice_start = 2 + (this.from_client ? 4 : 0);
+                    header_data_blob_writer.writeBytes(header_data_blob_base.slice(slice_start, slice_start + static_header)); // rewrite length
+
                     result.push({
                         from_client: this.from_client,
                         header: header,
@@ -109,23 +113,14 @@ class message_buffer {
                         id: id,
                         instance_id: instance_id,
                         data_length: length,
-                        header_data_blob: this.reader.data().slice(start_pos, this.reader.currentPosition() - length),
-                        new_header_data_blob: new_header_writer.data(),
+                        header_data_blob_base: header_data_blob_base,
+                        new_header_data_blob: header_data_blob_writer.data(),
                         message_data_blob: message_data_blob,
                         message_data_parsed: message_data_parsed,
                         message_metadata: message_metadata
-                    });
-
-                    last_message_instance_id = instance_id;
-                    if(this.from_client){
-                        server_message_count_since_last = 0;
-                    }else{
-                        server_message_count_since_last++;
-                    }
+                    });                    
                 }else{            
-                    result = undefined;
                     this.reader.skip(length);
-                    break;
                 }
 
                 const last_pos = this.reader.currentPosition();

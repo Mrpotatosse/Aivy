@@ -3,10 +3,8 @@ const {dofus_message_handler, show_name_log, show_content_log, show_full_log, ad
 const {message_log_type, message_log_filter} = require('../../../aivy_config.json');
 
 const dofus_data_buffer_handler = (socket, data, from_client) => {
-    if(socket.message_buffer) {
-        const result = from_client ? socket.message_buffer.parse_data(data) : socket.remote.message_buffer.parse_data(data);
-        return result ? dofus_message_handler(result, socket) : data;
-    }
+    const result = from_client ? socket.message_buffer.parse_data(data) : socket.remote.message_buffer.parse_data(data);
+    return result ? dofus_message_handler(result, socket) : data;
 }
 
 const dofus_new_client_handler = (socket) => {
