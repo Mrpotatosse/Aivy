@@ -97,9 +97,9 @@ class message_buffer {
             }
 
             if(length <= this.reader.remnant()){
-                const message_metadata = d_messages.filter(m => m.protocolID === (id === 2262 ? 6253 /* RDM thx ankamouille */ : id))[0];
+                const message_metadata = d_messages.filter(m => m.protocolID === (id === 2262 ? 6253 /* RDM thx ankamouille */ : id)).shift();
 
-                if(message_metadata){
+                if(message_metadata && result){
                     const message_data_blob = this.reader.readBytes(length);
                     const message_data_parsed = decode(message_metadata, new dofus_reader(message_data_blob));
                     result.push({
@@ -125,7 +125,6 @@ class message_buffer {
                 }else{            
                     result = undefined;
                     this.reader.skip(length);
-                    return result;
                 }
 
                 const last_pos = this.reader.currentPosition();

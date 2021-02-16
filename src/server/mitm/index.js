@@ -13,27 +13,26 @@ const create_MITM_server = (connectionHandler, dataHandler) => {
         console.log('client connected to MITM');  
 
         socket.remote = new net.Socket();
+        const remote_connect_handler = () => {
+            connectionHandler(socket);
+            server.clients.push(socket);
+        }
+        remote_connect_handler(socket);
         
-        socket.on('data', data => {
+        socket.on('data', async data => {
             const data_str = data.toString();
             
             if(data_str.startsWith('ORIGINAL')){
                 const remote_ip = parse_data_str(data_str);
                 
-                const remote_connect_handler = () => {
-                    connectionHandler(socket);
-                    server.clients.push(socket);
-                }
-
                 const remote_close_handler = () => {
                     remote_closed(socket);
                     server.clients = server.clients.filter(s => s !== socket);
                 }
-
-                socket.remote.on('connect', () => remote_connect_handler(socket));
+                
                 socket.remote.on('data', async data => socket.write(dataHandler(socket, data, false)));
-                socket.remote.on('close', () => remote_close_handler(socket));
-                socket.remote.on('error', error => remote_error(error, socket));
+                socket.remote.on('close', async () => remote_close_handler(socket));
+                socket.remote.on('error', async error => remote_error(error, socket));
 
                 console.log(remote_ip);
                 socket.process_id = remote_ip.pid;
