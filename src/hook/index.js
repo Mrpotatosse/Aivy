@@ -13,6 +13,7 @@ const spawn_and_hook = async (target) => {
     const pid = await frida.spawn(target);
     await hook(pid);
     frida.resume(pid);
+    return pid;
 };
 
 const hook = async (target) => {

@@ -1,5 +1,9 @@
 # AivyCore JS
 
+<p align="center">
+  <img src="https://camo.githubusercontent.com/de3e9648ad06c6d749236ad24df6170fd599071f/68747470733a2f2f7062732e7477696d672e636f6d2f6d656469612f456a5f5a656c65585941492d45514e3f666f726d61743d6a7067266e616d653d6d656469756d"/>
+</p>
+
 <h3 align="center"><strong>Aivy Core</strong></h3>
 
 <p align="center">C'est gratuit ( et ça le restera toujours )</p>
@@ -23,6 +27,8 @@ MITM pour sniffer les données. ( Avec possibilité de modification )
 - express (https://expressjs.com)
 - ws (https://github.com/websockets/ws)
 - node.js (https://nodejs.org/) UTILISEZ LA VERSION LTS
+- ace editor (https://github.com/luvuong-le/code-editor-tutorial/tree/configuring-ace/lib/js/ace-editor/src-min)
+- bootstrap (je suis trop claqué quand il s'agit de design, vous pourrez remarquez avec la déguaine de l'UI)
 
 # Usage
 
@@ -32,6 +38,7 @@ MITM pour sniffer les données. ( Avec possibilité de modification )
 # Informations
 
 - L'UI s'utilise via votre navigateur internet. Il suffit d'utiliser l'addresse renseigner dans la config (addresse http, par défault localhost:8000)
+- L'UI n'est encore qu'un prototype
 - Le projet n'est pas encore totalement fini, mais il est utilisable.
 - Vous aurez plus d'informations un peu plus tard quand j'aurais moins la flemme d'écrire.
 

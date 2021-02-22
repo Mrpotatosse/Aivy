@@ -33,6 +33,7 @@ const {message_buffer} = require('./src/dofus/messages/message_buffer');
 const {encode, decode} = require('./src/dofus/messages/message_data');
 const {dofus_message_handler, d2handler_class, add_handler, remove_handler} = require('./src/dofus/messages/message_handler');
 const {dofus_data_buffer_handler, dofus_new_client_handler} = require('./src/dofus/messages/index');
+const {init_dofus_event} = require('./src/dofus/events/index');
 
 module.exports = {
     hook: {
@@ -76,6 +77,9 @@ module.exports = {
             d2handler_class, 
             add_handler,
             remove_handler            
+        },
+        event: {
+            init_dofus_event
         }
     },
     package_informations: package_json

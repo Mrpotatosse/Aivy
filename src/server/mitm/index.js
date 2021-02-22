@@ -4,19 +4,17 @@ const net = require('net');
 // dataHandler = socket:Socket * data:Buffer * from_client:Boolean -> new_data:Buffer # called when data is received
 const create_MITM_server = (connectionHandler, dataHandler) => {
     const server = new net.Server();
-    server.clients = [];
+    server.clients = new Set();
 
     server.on('listening', () => {console.log('mitm started')});
     server.on('close', () => {console.log('mitm closed')});
     server.on('error', (error) => {console.error(error)});
     server.on('connection', (socket) => {
         console.log('client connected to MITM');  
+        server.clients.add(socket);
 
         socket.remote = new net.Socket();
-        const remote_connect_handler = () => {
-            connectionHandler(socket);
-        }
-        remote_connect_handler(socket);
+        connectionHandler(socket);
         
         socket.on('data', data => {
             const data_str = data.toString();
@@ -45,8 +43,16 @@ const create_MITM_server = (connectionHandler, dataHandler) => {
                 socket.remote.write(dataHandler(socket, data, true));
             }
         });
-        socket.on('close', () => local_closed(socket));
-        socket.on('error', error => local_error(error, socket));
+        
+        socket.on('close', () => {
+            server.clients.delete(socket);
+            local_closed(socket);
+        });
+        socket.on('error', error => 
+        { 
+            server.clients.delete(socket);
+            local_error(error, socket);
+        });
     });
 
     return server;
@@ -61,10 +67,13 @@ const remote_closed = (socket) => {
     socket.destroy();
 };
 
-const local_error = (error, socket) => {console.error('local error:', error); socket.remote.destroy();};
+const local_error = (error, socket) => {
+    console.error('local error:', error);
+    socket.remote.destroy();
+};
 const remote_error = (error, socket) => {console.error('remote error:', error); socket.destroy();};
 
-const parse_data_str = data_str => { // [0]:ORIGINAL [1]:xxx.xxx.xxx.xxx(IP):xxxx(PORT) [2]xxxx(PID)
+const parse_data_str = data_str => { // [0]:ORIGINAL [1]:xxx.xxx.xxx.xxx(IP):xxxx(PORT) [2]:xxxx(PID)
     const splitted = data_str.split(' ');
     const ip_splitted = splitted[1].split(':');
 

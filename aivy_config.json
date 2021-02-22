@@ -1,6 +1,6 @@
 {
     "json_protocol_name": "protocol_parsed_json.json",
-    "message_log_type": "full",
+    "message_log_type": "",
     "message_log_filter": "all",
     "hook_redirection_port": 5555,
     "http_server_host": "127.0.0.1",

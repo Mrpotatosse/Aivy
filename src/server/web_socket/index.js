@@ -22,7 +22,7 @@ const create_web_socket_server = (web_socket_handler) => {
             const message_request = JSON.parse(message);
             web_socket_handler(socket, message_request);
         });
-
+        
         socket.on('close', _ => {
             console.log('ws client leaved');
         });

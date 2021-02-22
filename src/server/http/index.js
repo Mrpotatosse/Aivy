@@ -46,7 +46,7 @@ server.get('/index', (_, response) => {
 });
 
 server.get('*', (request, response) => {
-    let extension = request.url.split('.')[1];
+    let extension = request.url.split('.').pop();
     switch(extension){
         case 'js': extension = 'javascript'; break;
     }

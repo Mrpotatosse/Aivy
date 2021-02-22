@@ -6,22 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/index.css"> <!-- index css -->
     <link rel="stylesheet" href="./css/editor.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <title>Aivy - UI</title>   
     <!-- ace -->
     <script src="./js/ace/ace.js"></script>
     <script src="./js/ace/mode-javascript.js"></script>
     <script src="./js/ace/theme-terminal.js"></script>
     <script src="./js/ace/ext-language_tools.js"></script>
-    <!-- vanilla -->
-    <script src="./js/grid_creator.js"></script> <!-- grid creator js-->
-    <script src="./js/editor.js"></script>
+    <script src="./js/container-elements.js"></script>
 </head>
-<body>
-    <div id="root"></div>
-    <script>
-        construct_grid(selected,{
-            [editor_parent_id]: editor
-        });
-    </script>
+<body>    
+    <div class="h-100 container">
+        <ul class="nav nav-fill">
+            <li class="nav-item">
+              <div class="nav-link active btn btn-dark m-1" onclick="loader.aivy()">Aivy</div>
+            </li>
+            <li class="nav-item">
+              <div class="nav-link active btn btn-dark m-1" onclick="loader.bot()">Bot</div>
+            </li>
+            <li class="nav-item">
+              <div class="nav-link active btn btn-dark m-1" onclick="loader.script()">Script</div>
+            </li>
+        </ul>
+        <div id="waiting-div" class="d-flex justify-content-center overflow-auto">
+            <div id="spinner" class="spinner-border text-dark d-none" role="status">
+              <span class="visually-hidden">Loading...</span>
+            </div>
+        </div>
+        <script>
+            const selected = localStorage.getItem('selected');
+            loader[selected ? selected : 'aivy']();
+        </script>
+    </div>
 </body>
 </html>

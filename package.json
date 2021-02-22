@@ -11,7 +11,11 @@
     "url": "git+https://github.com/Mrpotatosse/Aivy.git"
   },
   "keywords": [
-    "aivy", "packet-sniffer", "packet-modifier", "MITM", "dofus"
+    "aivy",
+    "packet-sniffer",
+    "packet-modifier",
+    "MITM",
+    "dofus"
   ],
   "author": "Mrpotatosse",
   "license": "ISC",
@@ -20,7 +24,6 @@
   },
   "homepage": "https://github.com/Mrpotatosse/Aivy#readme",
   "dependencies": {
-    "axios": "^0.21.1",
     "express": "^4.17.1",
     "frida": "^14.2.12",
     "ws": "^7.4.3"
