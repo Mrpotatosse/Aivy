@@ -1,0 +1,24 @@
+{
+	"fields": [
+		{
+			"name": "content",
+			"position": 0,
+			"type": "String",
+			"write_method": "writeUTF"
+		},
+		{
+			"default_value": "false",
+			"name": "notifyMembers",
+			"position": 1,
+			"type": "Boolean",
+			"write_method": "writeBoolean"
+		}
+	],
+	"name": "GuildBulletinSetRequestMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.guild",
+	"protocolID": 9047,
+	"super": "SocialNoticeSetRequestMessage",
+	"super_serialize": true,
+	"supernamespace": "com.ankamagames.dofus.network.messages.game.social",
+	"use_hash_function": false
+}

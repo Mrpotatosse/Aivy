@@ -1,0 +1,20 @@
+{
+	"fields": [
+		{
+			"is_vector": true,
+			"name": "geopositions",
+			"position": 0,
+			"self_serialize_method": "serializeAs_PartyMemberGeoPosition",
+			"type": "PartyMemberGeoPosition",
+			"type_namespace": "com.ankamagames.dofus.network.types.game.context.roleplay.party",
+			"write_length_method": "writeShort"
+		}
+	],
+	"name": "PartyLocateMembersMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.context.roleplay.party",
+	"protocolID": 4043,
+	"super": "AbstractPartyMessage",
+	"super_serialize": true,
+	"supernamespace": "com.ankamagames.dofus.network.messages.game.context.roleplay.party",
+	"use_hash_function": false
+}

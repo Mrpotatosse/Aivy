@@ -1,0 +1,27 @@
+{
+	"fields": [
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"default_value": "0",
+			"name": "allianceId",
+			"position": 0,
+			"type": "uint",
+			"write_method": "writeVarInt"
+		},
+		{
+			"name": "allianceTag",
+			"position": 1,
+			"type": "String",
+			"write_method": "writeUTF"
+		}
+	],
+	"name": "BasicAllianceInformations",
+	"namespace": "com.ankamagames.dofus.network.types.game.context.roleplay",
+	"protocolID": 1115,
+	"super": "AbstractSocialGroupInfos",
+	"super_serialize": true,
+	"supernamespace": "com.ankamagames.dofus.network.types.game.social",
+	"use_hash_function": false
+}

@@ -1,0 +1,21 @@
+{
+	"fields": [
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"default_value": "0",
+			"name": "objectGID",
+			"position": 0,
+			"type": "uint",
+			"write_method": "writeVarShort"
+		}
+	],
+	"name": "GameRolePlayDelayedObjectUseMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.context.roleplay.delay",
+	"protocolID": 7437,
+	"super": "GameRolePlayDelayedActionMessage",
+	"super_serialize": true,
+	"supernamespace": "com.ankamagames.dofus.network.messages.game.context.roleplay.delay",
+	"use_hash_function": false
+}

@@ -1,0 +1,18 @@
+{
+	"fields": [
+		{
+			"name": "look",
+			"position": 0,
+			"self_serialize_method": "serializeAs_EntityLook",
+			"type": "EntityLook",
+			"type_namespace": "com.ankamagames.dofus.network.types.game.look"
+		}
+	],
+	"name": "GameContextActorInformations",
+	"namespace": "com.ankamagames.dofus.network.types.game.context",
+	"protocolID": 6228,
+	"super": "GameContextActorPositionInformations",
+	"super_serialize": true,
+	"supernamespace": "com.ankamagames.dofus.network.types.game.context",
+	"use_hash_function": false
+}

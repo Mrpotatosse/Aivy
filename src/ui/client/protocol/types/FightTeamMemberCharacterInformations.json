@@ -1,0 +1,27 @@
+{
+	"fields": [
+		{
+			"name": "name",
+			"position": 0,
+			"type": "String",
+			"write_method": "writeUTF"
+		},
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"default_value": "0",
+			"name": "level",
+			"position": 1,
+			"type": "uint",
+			"write_method": "writeVarShort"
+		}
+	],
+	"name": "FightTeamMemberCharacterInformations",
+	"namespace": "com.ankamagames.dofus.network.types.game.context.fight",
+	"protocolID": 4605,
+	"super": "FightTeamMemberInformations",
+	"super_serialize": true,
+	"supernamespace": "com.ankamagames.dofus.network.types.game.context.fight",
+	"use_hash_function": false
+}

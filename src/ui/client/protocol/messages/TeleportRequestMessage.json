@@ -1,0 +1,36 @@
+{
+	"fields": [
+		{
+			"bounds": {
+				"low": "0",
+				"up": "9007199254740992.000000"
+			},
+			"default_value": "0",
+			"name": "mapId",
+			"position": 2,
+			"type": "Number",
+			"write_method": "writeDouble"
+		},
+		{
+			"default_value": "0",
+			"name": "sourceType",
+			"position": 0,
+			"type": "uint",
+			"write_method": "writeByte"
+		},
+		{
+			"default_value": "0",
+			"name": "destinationType",
+			"position": 1,
+			"type": "uint",
+			"write_method": "writeByte"
+		}
+	],
+	"name": "TeleportRequestMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.interactive.zaap",
+	"protocolID": 8875,
+	"super": "NetworkMessage",
+	"super_serialize": false,
+	"supernamespace": "com.ankamagames.jerakine.network",
+	"use_hash_function": false
+}

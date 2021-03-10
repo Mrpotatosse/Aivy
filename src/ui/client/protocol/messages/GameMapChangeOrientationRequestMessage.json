@@ -1,0 +1,18 @@
+{
+	"fields": [
+		{
+			"default_value": "1",
+			"name": "direction",
+			"position": 0,
+			"type": "uint",
+			"write_method": "writeByte"
+		}
+	],
+	"name": "GameMapChangeOrientationRequestMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.context",
+	"protocolID": 2851,
+	"super": "NetworkMessage",
+	"super_serialize": false,
+	"supernamespace": "com.ankamagames.jerakine.network",
+	"use_hash_function": false
+}

@@ -1,0 +1,10 @@
+{
+	"fields": [],
+	"name": "TreasureHuntStep",
+	"namespace": "com.ankamagames.dofus.network.types.game.context.roleplay.treasureHunt",
+	"protocolID": 2376,
+	"super": "",
+	"super_serialize": false,
+	"supernamespace": "",
+	"use_hash_function": false
+}

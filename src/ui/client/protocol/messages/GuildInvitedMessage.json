@@ -1,0 +1,35 @@
+{
+	"fields": [
+		{
+			"name": "guildInfo",
+			"position": 2,
+			"self_serialize_method": "serializeAs_BasicGuildInformations",
+			"type": "BasicGuildInformations",
+			"type_namespace": "com.ankamagames.dofus.network.types.game.context.roleplay"
+		},
+		{
+			"name": "recruterName",
+			"position": 1,
+			"type": "String",
+			"write_method": "writeUTF"
+		},
+		{
+			"bounds": {
+				"low": "0",
+				"up": "9007199254740992.000000"
+			},
+			"default_value": "0",
+			"name": "recruterId",
+			"position": 0,
+			"type": "Number",
+			"write_method": "writeVarLong"
+		}
+	],
+	"name": "GuildInvitedMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.guild",
+	"protocolID": 3569,
+	"super": "NetworkMessage",
+	"super_serialize": false,
+	"supernamespace": "com.ankamagames.jerakine.network",
+	"use_hash_function": false
+}

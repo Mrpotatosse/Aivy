@@ -1,0 +1,18 @@
+{
+	"fields": [
+		{
+			"default_value": "false",
+			"name": "yesYouCan",
+			"position": 0,
+			"type": "Boolean",
+			"write_method": "writeBoolean"
+		}
+	],
+	"name": "CharacterCanBeCreatedResultMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.character.creation",
+	"protocolID": 7776,
+	"super": "NetworkMessage",
+	"super_serialize": false,
+	"supernamespace": "com.ankamagames.jerakine.network",
+	"use_hash_function": false
+}

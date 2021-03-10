@@ -1,0 +1,41 @@
+{
+	"fields": [
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"default_value": "0",
+			"name": "accountId",
+			"position": 0,
+			"type": "uint",
+			"write_method": "writeInt"
+		},
+		{
+			"bounds": {
+				"low": "0",
+				"up": "9007199254740992.000000"
+			},
+			"default_value": "0",
+			"name": "playerId",
+			"position": 1,
+			"type": "Number",
+			"write_method": "writeVarLong"
+		},
+		{
+			"name": "status",
+			"position": 2,
+			"prefixed_by_type_id": true,
+			"self_serialize_method": "serialize",
+			"type": "PlayerStatus",
+			"type_namespace": "com.ankamagames.dofus.network.types.game.character.status",
+			"write_type_id_method": "writeShort"
+		}
+	],
+	"name": "PlayerStatusUpdateMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.character.status",
+	"protocolID": 6917,
+	"super": "NetworkMessage",
+	"super_serialize": false,
+	"supernamespace": "com.ankamagames.jerakine.network",
+	"use_hash_function": false
+}

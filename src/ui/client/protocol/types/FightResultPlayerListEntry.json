@@ -1,0 +1,32 @@
+{
+	"fields": [
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"default_value": "0",
+			"name": "level",
+			"position": 0,
+			"type": "uint",
+			"write_method": "writeVarShort"
+		},
+		{
+			"is_vector": true,
+			"name": "additional",
+			"position": 1,
+			"prefixed_by_type_id": true,
+			"self_serialize_method": "serialize",
+			"type": "FightResultAdditionalData",
+			"type_namespace": "com.ankamagames.dofus.network.types.game.context.fight",
+			"write_length_method": "writeShort",
+			"write_type_id_method": "writeShort"
+		}
+	],
+	"name": "FightResultPlayerListEntry",
+	"namespace": "com.ankamagames.dofus.network.types.game.context.fight",
+	"protocolID": 1038,
+	"super": "FightResultFighterListEntry",
+	"super_serialize": true,
+	"supernamespace": "com.ankamagames.dofus.network.types.game.context.fight",
+	"use_hash_function": false
+}

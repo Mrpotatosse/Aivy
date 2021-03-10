@@ -1,0 +1,20 @@
+{
+	"fields": [
+		{
+			"is_vector": true,
+			"name": "servers",
+			"position": 0,
+			"self_serialize_method": "serializeAs_GameServerInformations",
+			"type": "GameServerInformations",
+			"type_namespace": "com.ankamagames.dofus.network.types.connection",
+			"write_length_method": "writeShort"
+		}
+	],
+	"name": "SelectedServerDataExtendedMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.connection",
+	"protocolID": 2106,
+	"super": "SelectedServerDataMessage",
+	"super_serialize": true,
+	"supernamespace": "com.ankamagames.dofus.network.messages.connection",
+	"use_hash_function": false
+}

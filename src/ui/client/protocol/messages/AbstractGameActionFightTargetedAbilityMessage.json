@@ -1,0 +1,56 @@
+{
+	"fields": [
+		{
+			"bounds": {
+				"low": "-9007199254740992.000000",
+				"up": "9007199254740992.000000"
+			},
+			"default_value": "0",
+			"name": "targetId",
+			"position": 1,
+			"type": "Number",
+			"write_method": "writeDouble"
+		},
+		{
+			"boolean_byte_wrapper_position": 2,
+			"default_value": "false",
+			"name": "verboseCast",
+			"position": 0,
+			"type": "Boolean",
+			"use_boolean_byte_wrapper": true
+		},
+		{
+			"bounds": {
+				"low": "-1",
+				"up": "559"
+			},
+			"default_value": "0",
+			"name": "destinationCellId",
+			"position": 2,
+			"type": "int",
+			"write_method": "writeShort"
+		},
+		{
+			"default_value": "1",
+			"name": "critical",
+			"position": 3,
+			"type": "uint",
+			"write_method": "writeByte"
+		},
+		{
+			"boolean_byte_wrapper_position": 1,
+			"default_value": "false",
+			"name": "silentCast",
+			"position": 0,
+			"type": "Boolean",
+			"use_boolean_byte_wrapper": true
+		}
+	],
+	"name": "AbstractGameActionFightTargetedAbilityMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.actions.fight",
+	"protocolID": 1401,
+	"super": "AbstractGameActionMessage",
+	"super_serialize": true,
+	"supernamespace": "com.ankamagames.dofus.network.messages.game.actions",
+	"use_hash_function": false
+}

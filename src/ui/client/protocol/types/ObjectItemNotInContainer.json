@@ -1,0 +1,52 @@
+{
+	"fields": [
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"default_value": "0",
+			"name": "objectGID",
+			"position": 0,
+			"type": "uint",
+			"write_method": "writeVarShort"
+		},
+		{
+			"is_vector": true,
+			"name": "effects",
+			"position": 1,
+			"prefixed_by_type_id": true,
+			"self_serialize_method": "serialize",
+			"type": "ObjectEffect",
+			"type_namespace": "com.ankamagames.dofus.network.types.game.data.items.effects",
+			"write_length_method": "writeShort",
+			"write_type_id_method": "writeShort"
+		},
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"default_value": "0",
+			"name": "quantity",
+			"position": 3,
+			"type": "uint",
+			"write_method": "writeVarInt"
+		},
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"default_value": "0",
+			"name": "objectUID",
+			"position": 2,
+			"type": "uint",
+			"write_method": "writeVarInt"
+		}
+	],
+	"name": "ObjectItemNotInContainer",
+	"namespace": "com.ankamagames.dofus.network.types.game.data.items",
+	"protocolID": 4161,
+	"super": "Item",
+	"super_serialize": true,
+	"supernamespace": "com.ankamagames.dofus.network.types.game.data.items",
+	"use_hash_function": false
+}

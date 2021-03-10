@@ -1,0 +1,20 @@
+{
+	"fields": [
+		{
+			"name": "prism",
+			"position": 0,
+			"prefixed_by_type_id": true,
+			"self_serialize_method": "serialize",
+			"type": "PrismInformation",
+			"type_namespace": "com.ankamagames.dofus.network.types.game.prism",
+			"write_type_id_method": "writeShort"
+		}
+	],
+	"name": "GameRolePlayPrismInformations",
+	"namespace": "com.ankamagames.dofus.network.types.game.context.roleplay",
+	"protocolID": 4866,
+	"super": "GameRolePlayActorInformations",
+	"super_serialize": true,
+	"supernamespace": "com.ankamagames.dofus.network.types.game.context.roleplay",
+	"use_hash_function": false
+}

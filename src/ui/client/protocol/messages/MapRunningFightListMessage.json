@@ -1,0 +1,20 @@
+{
+	"fields": [
+		{
+			"is_vector": true,
+			"name": "fights",
+			"position": 0,
+			"self_serialize_method": "serializeAs_FightExternalInformations",
+			"type": "FightExternalInformations",
+			"type_namespace": "com.ankamagames.dofus.network.types.game.context.fight",
+			"write_length_method": "writeShort"
+		}
+	],
+	"name": "MapRunningFightListMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.context.roleplay",
+	"protocolID": 7349,
+	"super": "NetworkMessage",
+	"super_serialize": false,
+	"supernamespace": "com.ankamagames.jerakine.network",
+	"use_hash_function": false
+}

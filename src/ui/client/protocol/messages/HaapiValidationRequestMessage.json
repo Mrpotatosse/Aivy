@@ -1,0 +1,17 @@
+{
+	"fields": [
+		{
+			"name": "transaction",
+			"position": 0,
+			"type": "String",
+			"write_method": "writeUTF"
+		}
+	],
+	"name": "HaapiValidationRequestMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.web.haapi",
+	"protocolID": 9033,
+	"super": "NetworkMessage",
+	"super_serialize": false,
+	"supernamespace": "com.ankamagames.jerakine.network",
+	"use_hash_function": false
+}

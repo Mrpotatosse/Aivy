@@ -1,0 +1,18 @@
+{
+	"fields": [
+		{
+			"default_value": "0",
+			"name": "reason",
+			"position": 0,
+			"type": "uint",
+			"write_method": "writeByte"
+		}
+	],
+	"name": "PartyCannotJoinErrorMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.context.roleplay.party",
+	"protocolID": 232,
+	"super": "AbstractPartyMessage",
+	"super_serialize": true,
+	"supernamespace": "com.ankamagames.dofus.network.messages.game.context.roleplay.party",
+	"use_hash_function": false
+}

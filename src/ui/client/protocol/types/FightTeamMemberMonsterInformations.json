@@ -1,0 +1,28 @@
+{
+	"fields": [
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"default_value": "0",
+			"name": "grade",
+			"position": 1,
+			"type": "uint",
+			"write_method": "writeByte"
+		},
+		{
+			"default_value": "0",
+			"name": "monsterId",
+			"position": 0,
+			"type": "int",
+			"write_method": "writeInt"
+		}
+	],
+	"name": "FightTeamMemberMonsterInformations",
+	"namespace": "com.ankamagames.dofus.network.types.game.context.fight",
+	"protocolID": 8154,
+	"super": "FightTeamMemberInformations",
+	"super_serialize": true,
+	"supernamespace": "com.ankamagames.dofus.network.types.game.context.fight",
+	"use_hash_function": false
+}

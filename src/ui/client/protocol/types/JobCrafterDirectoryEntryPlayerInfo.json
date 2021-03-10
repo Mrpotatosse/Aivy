@@ -1,0 +1,115 @@
+{
+	"fields": [
+		{
+			"default_value": "0",
+			"name": "alignmentSide",
+			"position": 2,
+			"type": "int",
+			"write_method": "writeByte"
+		},
+		{
+			"bounds": {
+				"low": "0",
+				"up": "9007199254740992.000000"
+			},
+			"default_value": "0",
+			"name": "playerId",
+			"position": 0,
+			"type": "Number",
+			"write_method": "writeVarLong"
+		},
+		{
+			"name": "playerName",
+			"position": 1,
+			"type": "String",
+			"write_method": "writeUTF"
+		},
+		{
+			"default_value": "0",
+			"name": "breed",
+			"position": 3,
+			"type": "int",
+			"write_method": "writeByte"
+		},
+		{
+			"bounds": {
+				"low": "-255",
+				"up": "255"
+			},
+			"default_value": "0",
+			"name": "worldX",
+			"position": 6,
+			"type": "int",
+			"write_method": "writeShort"
+		},
+		{
+			"default_value": "false",
+			"name": "isInWorkshop",
+			"position": 5,
+			"type": "Boolean",
+			"write_method": "writeBoolean"
+		},
+		{
+			"default_value": "false",
+			"name": "sex",
+			"position": 4,
+			"type": "Boolean",
+			"write_method": "writeBoolean"
+		},
+		{
+			"bounds": {
+				"low": "-255",
+				"up": "255"
+			},
+			"default_value": "0",
+			"name": "worldY",
+			"position": 7,
+			"type": "int",
+			"write_method": "writeShort"
+		},
+		{
+			"bounds": {
+				"low": "0",
+				"up": "9007199254740992.000000"
+			},
+			"default_value": "0",
+			"name": "mapId",
+			"position": 8,
+			"type": "Number",
+			"write_method": "writeDouble"
+		},
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"default_value": "0",
+			"name": "subAreaId",
+			"position": 9,
+			"type": "uint",
+			"write_method": "writeVarShort"
+		},
+		{
+			"default_value": "false",
+			"name": "canCraftLegendary",
+			"position": 10,
+			"type": "Boolean",
+			"write_method": "writeBoolean"
+		},
+		{
+			"name": "status",
+			"position": 11,
+			"prefixed_by_type_id": true,
+			"self_serialize_method": "serialize",
+			"type": "PlayerStatus",
+			"type_namespace": "com.ankamagames.dofus.network.types.game.character.status",
+			"write_type_id_method": "writeShort"
+		}
+	],
+	"name": "JobCrafterDirectoryEntryPlayerInfo",
+	"namespace": "com.ankamagames.dofus.network.types.game.context.roleplay.job",
+	"protocolID": 640,
+	"super": "",
+	"super_serialize": false,
+	"supernamespace": "",
+	"use_hash_function": false
+}

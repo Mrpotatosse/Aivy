@@ -1,0 +1,52 @@
+.editor {
+    width: 100%;
+    height: 80vh;
+    border-radius: 5px;
+    background-color: #2F3129;
+}
+
+.editor__code {
+    width: 100%;
+    height: 100%;
+    position: sticky;
+}
+
+.editor__wrapper {
+    width: 100%;
+    height: 100%;
+}
+
+.editor__body {
+    width: 100%;
+    height: 100%;
+}
+
+.editor__header{
+    height: 48px;
+    width: 100%;
+    background-color: transparent;
+}
+
+.editor__header__button{
+    width: 90px;
+    height: 30px;
+    margin-left: 10px;
+    color: black;
+    background-color: rgba(256, 256, 256, 0.5);
+    border-radius: 5px;
+    border: none;
+}
+
+.editor__header__button:hover{
+    box-shadow: 0px 0px 5px 0px #ffffff;   
+    border-radius: 5px; 
+    opacity: 1;
+    background-color: rgba(256, 256, 256, 1);
+}
+
+.editor__header__button:active{
+    box-shadow: 0px 0px 10px 1px #ffffff;   
+    border-radius: 5px; 
+    opacity: 1;
+    background-color: rgba(256, 256, 256, 1);
+}

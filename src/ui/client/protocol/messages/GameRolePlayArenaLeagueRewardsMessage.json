@@ -1,0 +1,45 @@
+{
+	"fields": [
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"default_value": "0",
+			"name": "leagueId",
+			"position": 1,
+			"type": "uint",
+			"write_method": "writeVarShort"
+		},
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"default_value": "0",
+			"name": "seasonId",
+			"position": 0,
+			"type": "uint",
+			"write_method": "writeVarShort"
+		},
+		{
+			"default_value": "0",
+			"name": "ladderPosition",
+			"position": 2,
+			"type": "int",
+			"write_method": "writeInt"
+		},
+		{
+			"default_value": "false",
+			"name": "endSeasonReward",
+			"position": 3,
+			"type": "Boolean",
+			"write_method": "writeBoolean"
+		}
+	],
+	"name": "GameRolePlayArenaLeagueRewardsMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.context.roleplay.fight.arena",
+	"protocolID": 9501,
+	"super": "NetworkMessage",
+	"super_serialize": false,
+	"supernamespace": "com.ankamagames.jerakine.network",
+	"use_hash_function": false
+}

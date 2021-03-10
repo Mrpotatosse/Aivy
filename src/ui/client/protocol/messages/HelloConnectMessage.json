@@ -1,0 +1,25 @@
+{
+	"fields": [
+		{
+			"is_vector": true,
+			"name": "key",
+			"position": 1,
+			"type": "int",
+			"write_length_method": "writeVarInt",
+			"write_method": "writeByte"
+		},
+		{
+			"name": "salt",
+			"position": 0,
+			"type": "String",
+			"write_method": "writeUTF"
+		}
+	],
+	"name": "HelloConnectMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.connection",
+	"protocolID": 7981,
+	"super": "NetworkMessage",
+	"super_serialize": false,
+	"supernamespace": "com.ankamagames.jerakine.network",
+	"use_hash_function": false
+}

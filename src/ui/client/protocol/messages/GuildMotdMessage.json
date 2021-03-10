@@ -1,0 +1,10 @@
+{
+	"fields": [],
+	"name": "GuildMotdMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.guild",
+	"protocolID": 7610,
+	"super": "SocialNoticeMessage",
+	"super_serialize": true,
+	"supernamespace": "com.ankamagames.dofus.network.messages.game.social",
+	"use_hash_function": false
+}

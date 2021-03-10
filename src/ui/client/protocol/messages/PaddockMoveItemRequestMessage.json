@@ -1,0 +1,33 @@
+{
+	"fields": [
+		{
+			"bounds": {
+				"low": "0",
+				"up": "559"
+			},
+			"default_value": "0",
+			"name": "newCellId",
+			"position": 1,
+			"type": "uint",
+			"write_method": "writeVarShort"
+		},
+		{
+			"bounds": {
+				"low": "0",
+				"up": "559"
+			},
+			"default_value": "0",
+			"name": "oldCellId",
+			"position": 0,
+			"type": "uint",
+			"write_method": "writeVarShort"
+		}
+	],
+	"name": "PaddockMoveItemRequestMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.context.mount",
+	"protocolID": 4689,
+	"super": "NetworkMessage",
+	"super_serialize": false,
+	"supernamespace": "com.ankamagames.jerakine.network",
+	"use_hash_function": false
+}

@@ -1,0 +1,42 @@
+{
+	"fields": [
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"default_value": "0",
+			"name": "level",
+			"position": 0,
+			"type": "uint",
+			"write_method": "writeVarShort"
+		},
+		{
+			"default_value": "false",
+			"name": "sex",
+			"position": 3,
+			"type": "Boolean",
+			"write_method": "writeBoolean"
+		},
+		{
+			"name": "alignmentInfos",
+			"position": 1,
+			"self_serialize_method": "serializeAs_ActorAlignmentInformations",
+			"type": "ActorAlignmentInformations",
+			"type_namespace": "com.ankamagames.dofus.network.types.game.character.alignment"
+		},
+		{
+			"default_value": "0",
+			"name": "breed",
+			"position": 2,
+			"type": "int",
+			"write_method": "writeByte"
+		}
+	],
+	"name": "GameFightCharacterInformations",
+	"namespace": "com.ankamagames.dofus.network.types.game.context.fight",
+	"protocolID": 201,
+	"super": "GameFightFighterNamedInformations",
+	"super_serialize": true,
+	"supernamespace": "com.ankamagames.dofus.network.types.game.context.fight",
+	"use_hash_function": false
+}

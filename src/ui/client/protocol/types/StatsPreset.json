@@ -1,0 +1,20 @@
+{
+	"fields": [
+		{
+			"is_vector": true,
+			"name": "stats",
+			"position": 0,
+			"self_serialize_method": "serializeAs_SimpleCharacterCharacteristicForPreset",
+			"type": "SimpleCharacterCharacteristicForPreset",
+			"type_namespace": "com.ankamagames.dofus.network.types.game.presets",
+			"write_length_method": "writeShort"
+		}
+	],
+	"name": "StatsPreset",
+	"namespace": "com.ankamagames.dofus.network.types.game.presets",
+	"protocolID": 3738,
+	"super": "Preset",
+	"super_serialize": true,
+	"supernamespace": "com.ankamagames.dofus.network.types.game.presets",
+	"use_hash_function": false
+}

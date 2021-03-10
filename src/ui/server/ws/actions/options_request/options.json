@@ -1,0 +1,11 @@
+[
+	{
+		"splitter": true,
+		"text": "Debug Console"
+	},
+	{
+		"checked": false,
+		"href": "#logs",
+		"text": "logs"
+	}
+]

@@ -1,0 +1,10 @@
+{
+	"fields": [],
+	"name": "ExchangeStartOkRunesTradeMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.inventory.exchanges",
+	"protocolID": 1494,
+	"super": "NetworkMessage",
+	"super_serialize": false,
+	"supernamespace": "com.ankamagames.jerakine.network",
+	"use_hash_function": false
+}

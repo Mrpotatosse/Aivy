@@ -1,0 +1,32 @@
+{
+	"fields": [
+		{
+			"bounds": {
+				"low": "-9007199254740992.000000",
+				"up": "9007199254740992.000000"
+			},
+			"default_value": "0",
+			"name": "actorId",
+			"position": 0,
+			"type": "Number",
+			"write_method": "writeDouble"
+		},
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"default_value": "0",
+			"name": "accountId",
+			"position": 1,
+			"type": "uint",
+			"write_method": "writeInt"
+		}
+	],
+	"name": "EmotePlayMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.context.roleplay.emote",
+	"protocolID": 5928,
+	"super": "EmotePlayAbstractMessage",
+	"super_serialize": true,
+	"supernamespace": "com.ankamagames.dofus.network.messages.game.context.roleplay.emote",
+	"use_hash_function": false
+}

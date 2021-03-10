@@ -1,0 +1,34 @@
+{
+	"fields": [
+		{
+			"default_value": "false",
+			"name": "mountEquipped",
+			"position": 1,
+			"type": "Boolean",
+			"write_method": "writeBoolean"
+		},
+		{
+			"is_vector": true,
+			"name": "items",
+			"position": 0,
+			"self_serialize_method": "serializeAs_ItemForPreset",
+			"type": "ItemForPreset",
+			"type_namespace": "com.ankamagames.dofus.network.types.game.presets",
+			"write_length_method": "writeShort"
+		},
+		{
+			"name": "look",
+			"position": 2,
+			"self_serialize_method": "serializeAs_EntityLook",
+			"type": "EntityLook",
+			"type_namespace": "com.ankamagames.dofus.network.types.game.look"
+		}
+	],
+	"name": "ItemsPreset",
+	"namespace": "com.ankamagames.dofus.network.types.game.presets",
+	"protocolID": 2193,
+	"super": "Preset",
+	"super_serialize": true,
+	"supernamespace": "com.ankamagames.dofus.network.types.game.presets",
+	"use_hash_function": false
+}

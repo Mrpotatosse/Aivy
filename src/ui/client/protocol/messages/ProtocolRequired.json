@@ -1,0 +1,17 @@
+{
+	"fields": [
+		{
+			"name": "version",
+			"position": 0,
+			"type": "String",
+			"write_method": "writeUTF"
+		}
+	],
+	"name": "ProtocolRequired",
+	"namespace": "com.ankamagames.dofus.network.messages.handshake",
+	"protocolID": 6660,
+	"super": "NetworkMessage",
+	"super_serialize": false,
+	"supernamespace": "com.ankamagames.jerakine.network",
+	"use_hash_function": false
+}

@@ -1,0 +1,64 @@
+{
+	"fields": [
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"default_value": "0",
+			"name": "objectUID",
+			"position": 0,
+			"type": "uint",
+			"write_method": "writeVarInt"
+		},
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"default_value": "0",
+			"name": "objectType",
+			"position": 2,
+			"type": "uint",
+			"write_method": "writeInt"
+		},
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"default_value": "0",
+			"name": "objectGID",
+			"position": 1,
+			"type": "uint",
+			"write_method": "writeVarShort"
+		},
+		{
+			"is_vector": true,
+			"name": "effects",
+			"position": 3,
+			"prefixed_by_type_id": true,
+			"self_serialize_method": "serialize",
+			"type": "ObjectEffect",
+			"type_namespace": "com.ankamagames.dofus.network.types.game.data.items.effects",
+			"write_length_method": "writeShort",
+			"write_type_id_method": "writeShort"
+		},
+		{
+			"bounds": {
+				"low": "0",
+				"up": "9007199254740992.000000"
+			},
+			"is_vector": true,
+			"name": "prices",
+			"position": 4,
+			"type": "Number",
+			"write_length_method": "writeShort",
+			"write_method": "writeVarLong"
+		}
+	],
+	"name": "BidExchangerObjectInfo",
+	"namespace": "com.ankamagames.dofus.network.types.game.data.items",
+	"protocolID": 4958,
+	"super": "",
+	"super_serialize": false,
+	"supernamespace": "",
+	"use_hash_function": false
+}

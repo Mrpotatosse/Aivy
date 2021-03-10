@@ -1,0 +1,20 @@
+{
+	"fields": [
+		{
+			"is_vector": true,
+			"name": "candidates",
+			"position": 0,
+			"self_serialize_method": "serializeAs_LeagueFriendInformations",
+			"type": "LeagueFriendInformations",
+			"type_namespace": "com.ankamagames.dofus.network.types.game.context.roleplay.fight.arena",
+			"write_length_method": "writeShort"
+		}
+	],
+	"name": "GameRolePlayArenaInvitationCandidatesAnswerMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.context.roleplay.fight.arena",
+	"protocolID": 2383,
+	"super": "NetworkMessage",
+	"super_serialize": false,
+	"supernamespace": "com.ankamagames.jerakine.network",
+	"use_hash_function": false
+}

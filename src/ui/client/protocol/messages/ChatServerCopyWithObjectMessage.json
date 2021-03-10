@@ -1,0 +1,20 @@
+{
+	"fields": [
+		{
+			"is_vector": true,
+			"name": "objects",
+			"position": 0,
+			"self_serialize_method": "serializeAs_ObjectItem",
+			"type": "ObjectItem",
+			"type_namespace": "com.ankamagames.dofus.network.types.game.data.items",
+			"write_length_method": "writeShort"
+		}
+	],
+	"name": "ChatServerCopyWithObjectMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.chat",
+	"protocolID": 391,
+	"super": "ChatServerCopyMessage",
+	"super_serialize": true,
+	"supernamespace": "com.ankamagames.dofus.network.messages.game.chat",
+	"use_hash_function": false
+}

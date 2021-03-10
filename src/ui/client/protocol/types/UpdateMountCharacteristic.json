@@ -1,0 +1,18 @@
+{
+	"fields": [
+		{
+			"default_value": "0",
+			"name": "type",
+			"position": 0,
+			"type": "uint",
+			"write_method": "writeByte"
+		}
+	],
+	"name": "UpdateMountCharacteristic",
+	"namespace": "com.ankamagames.dofus.network.types.game.mount",
+	"protocolID": 8476,
+	"super": "",
+	"super_serialize": false,
+	"supernamespace": "",
+	"use_hash_function": false
+}

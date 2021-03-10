@@ -1,0 +1,27 @@
+{
+	"fields": [
+		{
+			"default_value": "0",
+			"name": "action",
+			"position": 0,
+			"type": "uint",
+			"write_method": "writeByte"
+		},
+		{
+			"is_vector": true,
+			"name": "spells",
+			"position": 1,
+			"self_serialize_method": "serializeAs_ForgettableSpellItem",
+			"type": "ForgettableSpellItem",
+			"type_namespace": "com.ankamagames.dofus.network.types.game.data.items",
+			"write_length_method": "writeShort"
+		}
+	],
+	"name": "ForgettableSpellListUpdateMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.character.spell.forgettable",
+	"protocolID": 972,
+	"super": "NetworkMessage",
+	"super_serialize": false,
+	"supernamespace": "com.ankamagames.jerakine.network",
+	"use_hash_function": false
+}

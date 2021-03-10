@@ -1,0 +1,22 @@
+{
+	"fields": [
+		{
+			"is_vector": true,
+			"name": "acquaintanceList",
+			"position": 0,
+			"prefixed_by_type_id": true,
+			"self_serialize_method": "serialize",
+			"type": "AcquaintanceInformation",
+			"type_namespace": "com.ankamagames.dofus.network.types.game.friend",
+			"write_length_method": "writeShort",
+			"write_type_id_method": "writeShort"
+		}
+	],
+	"name": "AcquaintancesListMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.friend",
+	"protocolID": 6650,
+	"super": "NetworkMessage",
+	"super_serialize": false,
+	"supernamespace": "com.ankamagames.jerakine.network",
+	"use_hash_function": false
+}

@@ -1,0 +1,18 @@
+{
+	"fields": [
+		{
+			"name": "paddockItemDescription",
+			"position": 0,
+			"self_serialize_method": "serializeAs_PaddockItem",
+			"type": "PaddockItem",
+			"type_namespace": "com.ankamagames.dofus.network.types.game.paddock"
+		}
+	],
+	"name": "GameDataPaddockObjectAddMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.context.mount",
+	"protocolID": 531,
+	"super": "NetworkMessage",
+	"super_serialize": false,
+	"supernamespace": "com.ankamagames.jerakine.network",
+	"use_hash_function": false
+}

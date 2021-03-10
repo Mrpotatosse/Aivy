@@ -1,0 +1,41 @@
+{
+	"fields": [
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"default_value": "0",
+			"name": "days",
+			"position": 0,
+			"type": "uint",
+			"write_method": "writeVarShort"
+		},
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"default_value": "0",
+			"name": "hours",
+			"position": 1,
+			"type": "uint",
+			"write_method": "writeByte"
+		},
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"default_value": "0",
+			"name": "minutes",
+			"position": 2,
+			"type": "uint",
+			"write_method": "writeByte"
+		}
+	],
+	"name": "ObjectEffectDuration",
+	"namespace": "com.ankamagames.dofus.network.types.game.data.items.effects",
+	"protocolID": 3785,
+	"super": "ObjectEffect",
+	"super_serialize": true,
+	"supernamespace": "com.ankamagames.dofus.network.types.game.data.items.effects",
+	"use_hash_function": false
+}

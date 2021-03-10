@@ -1,0 +1,18 @@
+{
+	"fields": [
+		{
+			"name": "fightMap",
+			"position": 0,
+			"self_serialize_method": "serializeAs_MapCoordinatesExtended",
+			"type": "MapCoordinatesExtended",
+			"type_namespace": "com.ankamagames.dofus.network.types.game.context"
+		}
+	],
+	"name": "PartyMemberInStandardFightMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.context.roleplay.party",
+	"protocolID": 8856,
+	"super": "AbstractPartyMemberInFightMessage",
+	"super_serialize": true,
+	"supernamespace": "com.ankamagames.dofus.network.messages.game.context.roleplay.party",
+	"use_hash_function": false
+}

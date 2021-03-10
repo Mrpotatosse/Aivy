@@ -1,0 +1,28 @@
+{
+	"fields": [
+		{
+			"default_value": "false",
+			"name": "available",
+			"position": 1,
+			"type": "Boolean",
+			"write_method": "writeBoolean"
+		},
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"default_value": "0",
+			"name": "dungeonId",
+			"position": 0,
+			"type": "uint",
+			"write_method": "writeVarShort"
+		}
+	],
+	"name": "DungeonKeyRingUpdateMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.context.dungeon",
+	"protocolID": 2543,
+	"super": "NetworkMessage",
+	"super_serialize": false,
+	"supernamespace": "com.ankamagames.jerakine.network",
+	"use_hash_function": false
+}

@@ -1,0 +1,85 @@
+{
+	"fields": [
+		{
+			"boolean_byte_wrapper_position": 1,
+			"default_value": "false",
+			"name": "autoconnect",
+			"position": 0,
+			"type": "Boolean",
+			"use_boolean_byte_wrapper": true
+		},
+		{
+			"default_value": "0",
+			"name": "serverId",
+			"position": 4,
+			"type": "int",
+			"write_method": "writeShort"
+		},
+		{
+			"bounds": {
+				"low": "-9007199254740992.000000",
+				"up": "9007199254740992.000000"
+			},
+			"default_value": "0",
+			"name": "sessionOptionalSalt",
+			"position": 5,
+			"type": "Number",
+			"write_method": "writeVarLong"
+		},
+		{
+			"name": "version",
+			"position": 1,
+			"self_serialize_method": "serializeAs_Version",
+			"type": "Version",
+			"type_namespace": "com.ankamagames.dofus.network.types.version"
+		},
+		{
+			"name": "lang",
+			"position": 2,
+			"type": "String",
+			"write_method": "writeUTF"
+		},
+		{
+			"is_vector": true,
+			"name": "credentials",
+			"position": 3,
+			"type": "int",
+			"write_length_method": "writeVarInt",
+			"write_method": "writeByte"
+		},
+		{
+			"boolean_byte_wrapper_position": 2,
+			"default_value": "false",
+			"name": "useCertificate",
+			"position": 0,
+			"type": "Boolean",
+			"use_boolean_byte_wrapper": true
+		},
+		{
+			"boolean_byte_wrapper_position": 3,
+			"default_value": "false",
+			"name": "useLoginToken",
+			"position": 0,
+			"type": "Boolean",
+			"use_boolean_byte_wrapper": true
+		},
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"is_vector": true,
+			"name": "failedAttempts",
+			"position": 6,
+			"type": "uint",
+			"write_length_method": "writeShort",
+			"write_method": "writeVarShort"
+		}
+	],
+	"name": "IdentificationMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.connection",
+	"protocolID": 5667,
+	"super": "NetworkMessage",
+	"super_serialize": false,
+	"supernamespace": "com.ankamagames.jerakine.network",
+	"use_hash_function": false
+}

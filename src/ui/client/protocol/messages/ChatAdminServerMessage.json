@@ -1,0 +1,10 @@
+{
+	"fields": [],
+	"name": "ChatAdminServerMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.chat",
+	"protocolID": 8686,
+	"super": "ChatServerMessage",
+	"super_serialize": true,
+	"supernamespace": "com.ankamagames.dofus.network.messages.game.chat",
+	"use_hash_function": false
+}

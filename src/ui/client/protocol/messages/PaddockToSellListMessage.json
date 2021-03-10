@@ -1,0 +1,40 @@
+{
+	"fields": [
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"default_value": "0",
+			"name": "pageIndex",
+			"position": 0,
+			"type": "uint",
+			"write_method": "writeVarShort"
+		},
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"default_value": "0",
+			"name": "totalPage",
+			"position": 1,
+			"type": "uint",
+			"write_method": "writeVarShort"
+		},
+		{
+			"is_vector": true,
+			"name": "paddockList",
+			"position": 2,
+			"self_serialize_method": "serializeAs_PaddockInformationsForSell",
+			"type": "PaddockInformationsForSell",
+			"type_namespace": "com.ankamagames.dofus.network.types.game.paddock",
+			"write_length_method": "writeShort"
+		}
+	],
+	"name": "PaddockToSellListMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.context.roleplay.paddock",
+	"protocolID": 3275,
+	"super": "NetworkMessage",
+	"super_serialize": false,
+	"supernamespace": "com.ankamagames.jerakine.network",
+	"use_hash_function": false
+}

@@ -1,0 +1,18 @@
+{
+	"fields": [
+		{
+			"name": "properties",
+			"position": 0,
+			"self_serialize_method": "serializeAs_PaddockInstancesInformations",
+			"type": "PaddockInstancesInformations",
+			"type_namespace": "com.ankamagames.dofus.network.types.game.paddock"
+		}
+	],
+	"name": "PaddockPropertiesMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.context.roleplay.paddock",
+	"protocolID": 3136,
+	"super": "NetworkMessage",
+	"super_serialize": false,
+	"supernamespace": "com.ankamagames.jerakine.network",
+	"use_hash_function": false
+}

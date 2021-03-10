@@ -1,0 +1,40 @@
+{
+	"fields": [
+		{
+			"bounds": {
+				"low": "-9007199254740992.000000",
+				"up": "9007199254740992.000000"
+			},
+			"default_value": "0",
+			"name": "entityId",
+			"position": 0,
+			"type": "Number",
+			"write_method": "writeDouble"
+		},
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"default_value": "0",
+			"name": "textId",
+			"position": 1,
+			"type": "uint",
+			"write_method": "writeVarShort"
+		},
+		{
+			"is_vector": true,
+			"name": "parameters",
+			"position": 2,
+			"type": "String",
+			"write_length_method": "writeShort",
+			"write_method": "writeUTF"
+		}
+	],
+	"name": "EntityTalkMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.context.roleplay.npc",
+	"protocolID": 973,
+	"super": "NetworkMessage",
+	"super_serialize": false,
+	"supernamespace": "com.ankamagames.jerakine.network",
+	"use_hash_function": false
+}

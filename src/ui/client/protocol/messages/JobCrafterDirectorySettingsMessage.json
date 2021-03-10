@@ -1,0 +1,20 @@
+{
+	"fields": [
+		{
+			"is_vector": true,
+			"name": "craftersSettings",
+			"position": 0,
+			"self_serialize_method": "serializeAs_JobCrafterDirectorySettings",
+			"type": "JobCrafterDirectorySettings",
+			"type_namespace": "com.ankamagames.dofus.network.types.game.context.roleplay.job",
+			"write_length_method": "writeShort"
+		}
+	],
+	"name": "JobCrafterDirectorySettingsMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.context.roleplay.job",
+	"protocolID": 5322,
+	"super": "NetworkMessage",
+	"super_serialize": false,
+	"supernamespace": "com.ankamagames.jerakine.network",
+	"use_hash_function": false
+}

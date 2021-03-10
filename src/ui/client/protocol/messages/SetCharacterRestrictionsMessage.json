@@ -1,0 +1,29 @@
+{
+	"fields": [
+		{
+			"bounds": {
+				"low": "-9007199254740992.000000",
+				"up": "9007199254740992.000000"
+			},
+			"default_value": "0",
+			"name": "actorId",
+			"position": 0,
+			"type": "Number",
+			"write_method": "writeDouble"
+		},
+		{
+			"name": "restrictions",
+			"position": 1,
+			"self_serialize_method": "serializeAs_ActorRestrictionsInformations",
+			"type": "ActorRestrictionsInformations",
+			"type_namespace": "com.ankamagames.dofus.network.types.game.character.restriction"
+		}
+	],
+	"name": "SetCharacterRestrictionsMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.initialization",
+	"protocolID": 7393,
+	"super": "NetworkMessage",
+	"super_serialize": false,
+	"supernamespace": "com.ankamagames.jerakine.network",
+	"use_hash_function": false
+}

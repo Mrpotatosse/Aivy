@@ -1,0 +1,10 @@
+{
+	"fields": [],
+	"name": "WrapperObjectErrorMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.inventory.items",
+	"protocolID": 9761,
+	"super": "SymbioticObjectErrorMessage",
+	"super_serialize": true,
+	"supernamespace": "com.ankamagames.dofus.network.messages.game.inventory.items",
+	"use_hash_function": false
+}

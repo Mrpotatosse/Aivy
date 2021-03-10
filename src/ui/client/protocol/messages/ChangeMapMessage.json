@@ -1,0 +1,29 @@
+{
+	"fields": [
+		{
+			"default_value": "false",
+			"name": "autopilot",
+			"position": 1,
+			"type": "Boolean",
+			"write_method": "writeBoolean"
+		},
+		{
+			"bounds": {
+				"low": "0",
+				"up": "9007199254740992.000000"
+			},
+			"default_value": "0",
+			"name": "mapId",
+			"position": 0,
+			"type": "Number",
+			"write_method": "writeDouble"
+		}
+	],
+	"name": "ChangeMapMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.context.roleplay",
+	"protocolID": 2677,
+	"super": "NetworkMessage",
+	"super_serialize": false,
+	"supernamespace": "com.ankamagames.jerakine.network",
+	"use_hash_function": false
+}

@@ -1,0 +1,18 @@
+{
+	"fields": [
+		{
+			"name": "alignmentInfos",
+			"position": 0,
+			"self_serialize_method": "serializeAs_ActorAlignmentInformations",
+			"type": "ActorAlignmentInformations",
+			"type_namespace": "com.ankamagames.dofus.network.types.game.character.alignment"
+		}
+	],
+	"name": "GameFightMonsterWithAlignmentInformations",
+	"namespace": "com.ankamagames.dofus.network.types.game.context.fight",
+	"protocolID": 4758,
+	"super": "GameFightMonsterInformations",
+	"super_serialize": true,
+	"supernamespace": "com.ankamagames.dofus.network.types.game.context.fight",
+	"use_hash_function": false
+}

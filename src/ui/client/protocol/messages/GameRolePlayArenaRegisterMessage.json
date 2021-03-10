@@ -1,0 +1,18 @@
+{
+	"fields": [
+		{
+			"default_value": "3",
+			"name": "battleMode",
+			"position": 0,
+			"type": "uint",
+			"write_method": "writeInt"
+		}
+	],
+	"name": "GameRolePlayArenaRegisterMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.context.roleplay.fight.arena",
+	"protocolID": 532,
+	"super": "NetworkMessage",
+	"super_serialize": false,
+	"supernamespace": "com.ankamagames.jerakine.network",
+	"use_hash_function": false
+}

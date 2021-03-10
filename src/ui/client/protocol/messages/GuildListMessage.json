@@ -1,0 +1,20 @@
+{
+	"fields": [
+		{
+			"is_vector": true,
+			"name": "guilds",
+			"position": 0,
+			"self_serialize_method": "serializeAs_GuildInformations",
+			"type": "GuildInformations",
+			"type_namespace": "com.ankamagames.dofus.network.types.game.context.roleplay",
+			"write_length_method": "writeShort"
+		}
+	],
+	"name": "GuildListMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.guild",
+	"protocolID": 2333,
+	"super": "NetworkMessage",
+	"super_serialize": false,
+	"supernamespace": "com.ankamagames.jerakine.network",
+	"use_hash_function": false
+}

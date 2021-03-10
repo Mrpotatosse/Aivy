@@ -1,0 +1,18 @@
+{
+	"fields": [
+		{
+			"name": "allianceIdentity",
+			"position": 0,
+			"self_serialize_method": "serializeAs_AllianceInformations",
+			"type": "AllianceInformations",
+			"type_namespace": "com.ankamagames.dofus.network.types.game.context.roleplay"
+		}
+	],
+	"name": "TaxCollectorStaticExtendedInformations",
+	"namespace": "com.ankamagames.dofus.network.types.game.context",
+	"protocolID": 5888,
+	"super": "TaxCollectorStaticInformations",
+	"super_serialize": true,
+	"supernamespace": "com.ankamagames.dofus.network.types.game.context",
+	"use_hash_function": false
+}

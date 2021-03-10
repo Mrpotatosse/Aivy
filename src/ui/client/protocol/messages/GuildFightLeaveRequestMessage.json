@@ -1,0 +1,33 @@
+{
+	"fields": [
+		{
+			"bounds": {
+				"low": "0",
+				"up": "9007199254740992.000000"
+			},
+			"default_value": "0",
+			"name": "taxCollectorId",
+			"position": 0,
+			"type": "Number",
+			"write_method": "writeDouble"
+		},
+		{
+			"bounds": {
+				"low": "0",
+				"up": "9007199254740992.000000"
+			},
+			"default_value": "0",
+			"name": "characterId",
+			"position": 1,
+			"type": "Number",
+			"write_method": "writeVarLong"
+		}
+	],
+	"name": "GuildFightLeaveRequestMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.guild.tax",
+	"protocolID": 5559,
+	"super": "NetworkMessage",
+	"super_serialize": false,
+	"supernamespace": "com.ankamagames.jerakine.network",
+	"use_hash_function": false
+}

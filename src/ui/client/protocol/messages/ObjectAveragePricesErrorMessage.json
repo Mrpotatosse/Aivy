@@ -1,0 +1,10 @@
+{
+	"fields": [],
+	"name": "ObjectAveragePricesErrorMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.inventory",
+	"protocolID": 2048,
+	"super": "NetworkMessage",
+	"super_serialize": false,
+	"supernamespace": "com.ankamagames.jerakine.network",
+	"use_hash_function": false
+}

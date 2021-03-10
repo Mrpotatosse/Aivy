@@ -1,0 +1,40 @@
+{
+	"fields": [
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"default_value": "0",
+			"name": "pageIndex",
+			"position": 0,
+			"type": "uint",
+			"write_method": "writeVarShort"
+		},
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"default_value": "0",
+			"name": "totalPage",
+			"position": 1,
+			"type": "uint",
+			"write_method": "writeVarShort"
+		},
+		{
+			"is_vector": true,
+			"name": "houseList",
+			"position": 2,
+			"self_serialize_method": "serializeAs_HouseInformationsForSell",
+			"type": "HouseInformationsForSell",
+			"type_namespace": "com.ankamagames.dofus.network.types.game.house",
+			"write_length_method": "writeShort"
+		}
+	],
+	"name": "HouseToSellListMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.context.roleplay.houses",
+	"protocolID": 6788,
+	"super": "NetworkMessage",
+	"super_serialize": false,
+	"supernamespace": "com.ankamagames.jerakine.network",
+	"use_hash_function": false
+}

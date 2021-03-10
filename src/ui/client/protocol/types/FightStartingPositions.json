@@ -1,0 +1,35 @@
+{
+	"fields": [
+		{
+			"bounds": {
+				"low": "0",
+				"up": "559"
+			},
+			"is_vector": true,
+			"name": "positionsForChallengers",
+			"position": 0,
+			"type": "uint",
+			"write_length_method": "writeShort",
+			"write_method": "writeVarShort"
+		},
+		{
+			"bounds": {
+				"low": "0",
+				"up": "559"
+			},
+			"is_vector": true,
+			"name": "positionsForDefenders",
+			"position": 1,
+			"type": "uint",
+			"write_length_method": "writeShort",
+			"write_method": "writeVarShort"
+		}
+	],
+	"name": "FightStartingPositions",
+	"namespace": "com.ankamagames.dofus.network.types.game.context.fight",
+	"protocolID": 637,
+	"super": "",
+	"super_serialize": false,
+	"supernamespace": "",
+	"use_hash_function": false
+}

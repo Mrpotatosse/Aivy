@@ -1,0 +1,20 @@
+{
+	"fields": [
+		{
+			"constant_length": 2,
+			"is_vector": true,
+			"name": "dispositions",
+			"position": 0,
+			"self_serialize_method": "serializeAs_IdentifiedEntityDispositionInformations",
+			"type": "IdentifiedEntityDispositionInformations",
+			"type_namespace": "com.ankamagames.dofus.network.types.game.context"
+		}
+	],
+	"name": "GameFightPlacementSwapPositionsMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.context.fight",
+	"protocolID": 4578,
+	"super": "NetworkMessage",
+	"super_serialize": false,
+	"supernamespace": "com.ankamagames.jerakine.network",
+	"use_hash_function": false
+}

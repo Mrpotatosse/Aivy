@@ -1,0 +1,10 @@
+{
+	"fields": [],
+	"name": "PrismModuleExchangeRequestMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.prism",
+	"protocolID": 5643,
+	"super": "NetworkMessage",
+	"super_serialize": false,
+	"supernamespace": "com.ankamagames.jerakine.network",
+	"use_hash_function": false
+}

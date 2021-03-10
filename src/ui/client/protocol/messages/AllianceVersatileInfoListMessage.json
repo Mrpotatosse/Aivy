@@ -1,0 +1,20 @@
+{
+	"fields": [
+		{
+			"is_vector": true,
+			"name": "alliances",
+			"position": 0,
+			"self_serialize_method": "serializeAs_AllianceVersatileInformations",
+			"type": "AllianceVersatileInformations",
+			"type_namespace": "com.ankamagames.dofus.network.types.game.social",
+			"write_length_method": "writeShort"
+		}
+	],
+	"name": "AllianceVersatileInfoListMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.alliance",
+	"protocolID": 1735,
+	"super": "NetworkMessage",
+	"super_serialize": false,
+	"supernamespace": "com.ankamagames.jerakine.network",
+	"use_hash_function": false
+}

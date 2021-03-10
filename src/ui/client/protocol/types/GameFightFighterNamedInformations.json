@@ -1,0 +1,45 @@
+{
+	"fields": [
+		{
+			"default_value": "0",
+			"name": "ladderPosition",
+			"position": 3,
+			"type": "int",
+			"write_method": "writeInt"
+		},
+		{
+			"name": "name",
+			"position": 0,
+			"type": "String",
+			"write_method": "writeUTF"
+		},
+		{
+			"name": "status",
+			"position": 1,
+			"self_serialize_method": "serializeAs_PlayerStatus",
+			"type": "PlayerStatus",
+			"type_namespace": "com.ankamagames.dofus.network.types.game.character.status"
+		},
+		{
+			"default_value": "0",
+			"name": "leagueId",
+			"position": 2,
+			"type": "int",
+			"write_method": "writeVarShort"
+		},
+		{
+			"default_value": "false",
+			"name": "hiddenInPrefight",
+			"position": 4,
+			"type": "Boolean",
+			"write_method": "writeBoolean"
+		}
+	],
+	"name": "GameFightFighterNamedInformations",
+	"namespace": "com.ankamagames.dofus.network.types.game.context.fight",
+	"protocolID": 5594,
+	"super": "GameFightFighterInformations",
+	"super_serialize": true,
+	"supernamespace": "com.ankamagames.dofus.network.types.game.context.fight",
+	"use_hash_function": false
+}

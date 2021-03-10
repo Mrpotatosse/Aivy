@@ -1,0 +1,32 @@
+{
+	"fields": [
+		{
+			"is_vector": true,
+			"name": "options",
+			"position": 1,
+			"prefixed_by_type_id": true,
+			"self_serialize_method": "serialize",
+			"type": "HumanOption",
+			"type_namespace": "com.ankamagames.dofus.network.types.game.context.roleplay",
+			"write_length_method": "writeShort",
+			"write_type_id_method": "writeShort"
+		},
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"default_value": "0",
+			"name": "sellType",
+			"position": 0,
+			"type": "uint",
+			"write_method": "writeByte"
+		}
+	],
+	"name": "GameRolePlayMerchantInformations",
+	"namespace": "com.ankamagames.dofus.network.types.game.context.roleplay",
+	"protocolID": 9317,
+	"super": "GameRolePlayNamedActorInformations",
+	"super_serialize": true,
+	"supernamespace": "com.ankamagames.dofus.network.types.game.context.roleplay",
+	"use_hash_function": false
+}

@@ -1,0 +1,25 @@
+{
+	"fields": [
+		{
+			"name": "object",
+			"position": 0,
+			"self_serialize_method": "serializeAs_ObjectItem",
+			"type": "ObjectItem",
+			"type_namespace": "com.ankamagames.dofus.network.types.game.data.items"
+		},
+		{
+			"default_value": "0",
+			"name": "origin",
+			"position": 1,
+			"type": "uint",
+			"write_method": "writeByte"
+		}
+	],
+	"name": "ObjectAddedMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.inventory.items",
+	"protocolID": 9393,
+	"super": "NetworkMessage",
+	"super_serialize": false,
+	"supernamespace": "com.ankamagames.jerakine.network",
+	"use_hash_function": false
+}

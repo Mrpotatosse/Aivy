@@ -1,0 +1,106 @@
+{
+	"fields": [
+		{
+			"boolean_byte_wrapper_position": 1,
+			"default_value": "false",
+			"name": "self",
+			"position": 0,
+			"type": "Boolean",
+			"use_boolean_byte_wrapper": true
+		},
+		{
+			"default_value": "-1",
+			"name": "position",
+			"position": 1,
+			"type": "int",
+			"write_method": "writeByte"
+		},
+		{
+			"name": "accountNickname",
+			"position": 2,
+			"type": "String",
+			"write_method": "writeUTF"
+		},
+		{
+			"default_value": "0",
+			"name": "originServerId",
+			"position": 8,
+			"type": "int",
+			"write_method": "writeShort"
+		},
+		{
+			"default_value": "0",
+			"name": "areaId",
+			"position": 6,
+			"type": "int",
+			"write_method": "writeShort"
+		},
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"default_value": "0",
+			"name": "accountId",
+			"position": 3,
+			"type": "uint",
+			"write_method": "writeInt"
+		},
+		{
+			"name": "playerName",
+			"position": 4,
+			"type": "String",
+			"write_method": "writeUTF"
+		},
+		{
+			"boolean_byte_wrapper_position": 2,
+			"default_value": "false",
+			"name": "verbose",
+			"position": 0,
+			"type": "Boolean",
+			"use_boolean_byte_wrapper": true
+		},
+		{
+			"bounds": {
+				"low": "0",
+				"up": "9007199254740992.000000"
+			},
+			"default_value": "0",
+			"name": "playerId",
+			"position": 5,
+			"type": "Number",
+			"write_method": "writeVarLong"
+		},
+		{
+			"default_value": "0",
+			"name": "serverId",
+			"position": 7,
+			"type": "int",
+			"write_method": "writeShort"
+		},
+		{
+			"is_vector": true,
+			"name": "socialGroups",
+			"position": 9,
+			"prefixed_by_type_id": true,
+			"self_serialize_method": "serialize",
+			"type": "AbstractSocialGroupInfos",
+			"type_namespace": "com.ankamagames.dofus.network.types.game.social",
+			"write_length_method": "writeShort",
+			"write_type_id_method": "writeShort"
+		},
+		{
+			"default_value": "99",
+			"name": "playerState",
+			"position": 10,
+			"type": "uint",
+			"write_method": "writeByte"
+		}
+	],
+	"name": "BasicWhoIsMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.basic",
+	"protocolID": 2658,
+	"super": "NetworkMessage",
+	"super_serialize": false,
+	"supernamespace": "com.ankamagames.jerakine.network",
+	"use_hash_function": false
+}

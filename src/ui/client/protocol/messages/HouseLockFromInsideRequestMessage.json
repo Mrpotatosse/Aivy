@@ -1,0 +1,10 @@
+{
+	"fields": [],
+	"name": "HouseLockFromInsideRequestMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.context.roleplay.houses",
+	"protocolID": 595,
+	"super": "LockableChangeCodeMessage",
+	"super_serialize": true,
+	"supernamespace": "com.ankamagames.dofus.network.messages.game.context.roleplay.lockable",
+	"use_hash_function": false
+}

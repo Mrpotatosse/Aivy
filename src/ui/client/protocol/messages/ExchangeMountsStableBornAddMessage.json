@@ -1,0 +1,10 @@
+{
+	"fields": [],
+	"name": "ExchangeMountsStableBornAddMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.inventory.exchanges",
+	"protocolID": 8371,
+	"super": "ExchangeMountsStableAddMessage",
+	"super_serialize": true,
+	"supernamespace": "com.ankamagames.dofus.network.messages.game.inventory.exchanges",
+	"use_hash_function": false
+}

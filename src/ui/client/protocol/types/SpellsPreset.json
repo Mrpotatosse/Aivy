@@ -1,0 +1,20 @@
+{
+	"fields": [
+		{
+			"is_vector": true,
+			"name": "spells",
+			"position": 0,
+			"self_serialize_method": "serializeAs_SpellForPreset",
+			"type": "SpellForPreset",
+			"type_namespace": "com.ankamagames.dofus.network.types.game.presets",
+			"write_length_method": "writeShort"
+		}
+	],
+	"name": "SpellsPreset",
+	"namespace": "com.ankamagames.dofus.network.types.game.presets",
+	"protocolID": 2124,
+	"super": "Preset",
+	"super_serialize": true,
+	"supernamespace": "com.ankamagames.dofus.network.types.game.presets",
+	"use_hash_function": false
+}

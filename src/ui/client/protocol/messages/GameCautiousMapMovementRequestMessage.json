@@ -1,0 +1,10 @@
+{
+	"fields": [],
+	"name": "GameCautiousMapMovementRequestMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.context",
+	"protocolID": 1767,
+	"super": "GameMapMovementRequestMessage",
+	"super_serialize": true,
+	"supernamespace": "com.ankamagames.dofus.network.messages.game.context",
+	"use_hash_function": true
+}

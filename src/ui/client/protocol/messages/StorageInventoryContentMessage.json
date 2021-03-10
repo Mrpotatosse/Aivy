@@ -1,0 +1,10 @@
+{
+	"fields": [],
+	"name": "StorageInventoryContentMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.inventory.storage",
+	"protocolID": 8412,
+	"super": "InventoryContentMessage",
+	"super_serialize": true,
+	"supernamespace": "com.ankamagames.dofus.network.messages.game.inventory.items",
+	"use_hash_function": false
+}

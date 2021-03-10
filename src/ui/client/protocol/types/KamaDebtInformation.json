@@ -1,0 +1,22 @@
+{
+	"fields": [
+		{
+			"bounds": {
+				"low": "0",
+				"up": "9007199254740992.000000"
+			},
+			"default_value": "0",
+			"name": "kamas",
+			"position": 0,
+			"type": "Number",
+			"write_method": "writeVarLong"
+		}
+	],
+	"name": "KamaDebtInformation",
+	"namespace": "com.ankamagames.dofus.network.types.game.character.debt",
+	"protocolID": 6089,
+	"super": "DebtInformation",
+	"super_serialize": true,
+	"supernamespace": "com.ankamagames.dofus.network.types.game.character.debt",
+	"use_hash_function": false
+}

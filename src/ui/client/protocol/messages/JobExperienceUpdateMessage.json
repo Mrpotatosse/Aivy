@@ -1,0 +1,18 @@
+{
+	"fields": [
+		{
+			"name": "experiencesUpdate",
+			"position": 0,
+			"self_serialize_method": "serializeAs_JobExperience",
+			"type": "JobExperience",
+			"type_namespace": "com.ankamagames.dofus.network.types.game.context.roleplay.job"
+		}
+	],
+	"name": "JobExperienceUpdateMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.context.roleplay.job",
+	"protocolID": 1650,
+	"super": "NetworkMessage",
+	"super_serialize": false,
+	"supernamespace": "com.ankamagames.jerakine.network",
+	"use_hash_function": false
+}

@@ -1,0 +1,39 @@
+{
+	"fields": [
+		{
+			"is_vector": true,
+			"name": "questFlags",
+			"position": 2,
+			"self_serialize_method": "serializeAs_GameRolePlayNpcQuestFlag",
+			"type": "GameRolePlayNpcQuestFlag",
+			"type_namespace": "com.ankamagames.dofus.network.types.game.context.roleplay.quest",
+			"write_length_method": "writeShort"
+		},
+		{
+			"bounds": {
+				"low": "0",
+				"up": "9007199254740992.000000"
+			},
+			"default_value": "0",
+			"name": "mapId",
+			"position": 0,
+			"type": "Number",
+			"write_method": "writeDouble"
+		},
+		{
+			"is_vector": true,
+			"name": "npcsIdsWithQuest",
+			"position": 1,
+			"type": "int",
+			"write_length_method": "writeShort",
+			"write_method": "writeInt"
+		}
+	],
+	"name": "MapNpcQuestInfo",
+	"namespace": "com.ankamagames.dofus.network.types.game.context.roleplay.npc",
+	"protocolID": 3117,
+	"super": "",
+	"super_serialize": false,
+	"supernamespace": "",
+	"use_hash_function": false
+}

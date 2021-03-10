@@ -1,0 +1,27 @@
+{
+	"fields": [
+		{
+			"name": "baseSpellsPreset",
+			"position": 0,
+			"self_serialize_method": "serializeAs_SpellsPreset",
+			"type": "SpellsPreset",
+			"type_namespace": "com.ankamagames.dofus.network.types.game.presets"
+		},
+		{
+			"is_vector": true,
+			"name": "forgettableSpells",
+			"position": 1,
+			"self_serialize_method": "serializeAs_SpellForPreset",
+			"type": "SpellForPreset",
+			"type_namespace": "com.ankamagames.dofus.network.types.game.presets",
+			"write_length_method": "writeShort"
+		}
+	],
+	"name": "ForgettableSpellsPreset",
+	"namespace": "com.ankamagames.dofus.network.types.game.presets",
+	"protocolID": 7595,
+	"super": "Preset",
+	"super_serialize": true,
+	"supernamespace": "com.ankamagames.dofus.network.types.game.presets",
+	"use_hash_function": false
+}

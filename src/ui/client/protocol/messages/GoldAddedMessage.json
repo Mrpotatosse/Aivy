@@ -1,0 +1,18 @@
+{
+	"fields": [
+		{
+			"name": "gold",
+			"position": 0,
+			"self_serialize_method": "serializeAs_GoldItem",
+			"type": "GoldItem",
+			"type_namespace": "com.ankamagames.dofus.network.types.game.data.items"
+		}
+	],
+	"name": "GoldAddedMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.inventory.items",
+	"protocolID": 1168,
+	"super": "NetworkMessage",
+	"super_serialize": false,
+	"supernamespace": "com.ankamagames.jerakine.network",
+	"use_hash_function": false
+}

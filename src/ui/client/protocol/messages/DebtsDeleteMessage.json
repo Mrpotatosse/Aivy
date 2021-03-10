@@ -1,0 +1,30 @@
+{
+	"fields": [
+		{
+			"default_value": "0",
+			"name": "reason",
+			"position": 0,
+			"type": "uint",
+			"write_method": "writeByte"
+		},
+		{
+			"bounds": {
+				"low": "0",
+				"up": "9007199254740992.000000"
+			},
+			"is_vector": true,
+			"name": "debts",
+			"position": 1,
+			"type": "Number",
+			"write_length_method": "writeShort",
+			"write_method": "writeDouble"
+		}
+	],
+	"name": "DebtsDeleteMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.character.debt",
+	"protocolID": 8963,
+	"super": "NetworkMessage",
+	"super_serialize": false,
+	"supernamespace": "com.ankamagames.jerakine.network",
+	"use_hash_function": false
+}

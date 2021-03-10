@@ -1,0 +1,10 @@
+{
+	"fields": [],
+	"name": "HumanOption",
+	"namespace": "com.ankamagames.dofus.network.types.game.context.roleplay",
+	"protocolID": 4884,
+	"super": "",
+	"super_serialize": false,
+	"supernamespace": "",
+	"use_hash_function": false
+}

@@ -1,0 +1,10 @@
+{
+	"fields": [],
+	"name": "MimicryObjectAssociatedMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.inventory.items",
+	"protocolID": 1838,
+	"super": "SymbioticObjectAssociatedMessage",
+	"super_serialize": true,
+	"supernamespace": "com.ankamagames.dofus.network.messages.game.inventory.items",
+	"use_hash_function": false
+}

@@ -1,0 +1,18 @@
+{
+	"fields": [
+		{
+			"default_value": "false",
+			"name": "value",
+			"position": 0,
+			"type": "Boolean",
+			"write_method": "writeBoolean"
+		}
+	],
+	"name": "UpdateMountBooleanCharacteristic",
+	"namespace": "com.ankamagames.dofus.network.types.game.mount",
+	"protocolID": 3931,
+	"super": "UpdateMountCharacteristic",
+	"super_serialize": true,
+	"supernamespace": "com.ankamagames.dofus.network.types.game.mount",
+	"use_hash_function": false
+}

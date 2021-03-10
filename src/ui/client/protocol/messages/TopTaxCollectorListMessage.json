@@ -1,0 +1,18 @@
+{
+	"fields": [
+		{
+			"default_value": "false",
+			"name": "isDungeon",
+			"position": 0,
+			"type": "Boolean",
+			"write_method": "writeBoolean"
+		}
+	],
+	"name": "TopTaxCollectorListMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.guild.tax",
+	"protocolID": 3027,
+	"super": "AbstractTaxCollectorListMessage",
+	"super_serialize": true,
+	"supernamespace": "com.ankamagames.dofus.network.messages.game.guild.tax",
+	"use_hash_function": false
+}

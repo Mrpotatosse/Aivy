@@ -1,0 +1,30 @@
+{
+	"fields": [
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"default_value": "0",
+			"name": "dungeonId",
+			"position": 0,
+			"type": "uint",
+			"write_method": "writeVarShort"
+		},
+		{
+			"is_vector": true,
+			"name": "players",
+			"position": 1,
+			"self_serialize_method": "serializeAs_DungeonPartyFinderPlayer",
+			"type": "DungeonPartyFinderPlayer",
+			"type_namespace": "com.ankamagames.dofus.network.types.game.context.roleplay.party",
+			"write_length_method": "writeShort"
+		}
+	],
+	"name": "DungeonPartyFinderRoomContentMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.context.roleplay.party",
+	"protocolID": 2679,
+	"super": "NetworkMessage",
+	"super_serialize": false,
+	"supernamespace": "com.ankamagames.jerakine.network",
+	"use_hash_function": false
+}

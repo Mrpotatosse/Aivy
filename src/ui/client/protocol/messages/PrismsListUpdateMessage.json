@@ -1,0 +1,10 @@
+{
+	"fields": [],
+	"name": "PrismsListUpdateMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.prism",
+	"protocolID": 3070,
+	"super": "PrismsListMessage",
+	"super_serialize": true,
+	"supernamespace": "com.ankamagames.dofus.network.messages.game.prism",
+	"use_hash_function": false
+}

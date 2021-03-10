@@ -1,0 +1,22 @@
+{
+	"fields": [
+		{
+			"bounds": {
+				"low": "0",
+				"up": "559"
+			},
+			"default_value": "0",
+			"name": "cellId",
+			"position": 0,
+			"type": "uint",
+			"write_method": "writeVarShort"
+		}
+	],
+	"name": "LocalizedChatSmileyMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.chat.smiley",
+	"protocolID": 5488,
+	"super": "ChatSmileyMessage",
+	"super_serialize": true,
+	"supernamespace": "com.ankamagames.dofus.network.messages.game.chat.smiley",
+	"use_hash_function": false
+}

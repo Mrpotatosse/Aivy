@@ -1,0 +1,76 @@
+{
+	"fields": [
+		{
+			"bounds": {
+				"low": "-9007199254740992.000000",
+				"up": "9007199254740992.000000"
+			},
+			"default_value": "0",
+			"name": "targetId",
+			"position": 1,
+			"type": "Number",
+			"write_method": "writeDouble"
+		},
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"default_value": "0",
+			"name": "uid",
+			"position": 0,
+			"type": "uint",
+			"write_method": "writeVarInt"
+		},
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"default_value": "0",
+			"name": "parentBoostUid",
+			"position": 6,
+			"type": "uint",
+			"write_method": "writeVarInt"
+		},
+		{
+			"default_value": "0",
+			"name": "turnDuration",
+			"position": 2,
+			"type": "int",
+			"write_method": "writeShort"
+		},
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"default_value": "0",
+			"name": "spellId",
+			"position": 4,
+			"type": "uint",
+			"write_method": "writeVarShort"
+		},
+		{
+			"default_value": "1",
+			"name": "dispelable",
+			"position": 3,
+			"type": "uint",
+			"write_method": "writeByte"
+		},
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"default_value": "0",
+			"name": "effectId",
+			"position": 5,
+			"type": "uint",
+			"write_method": "writeVarInt"
+		}
+	],
+	"name": "AbstractFightDispellableEffect",
+	"namespace": "com.ankamagames.dofus.network.types.game.actions.fight",
+	"protocolID": 5728,
+	"super": "",
+	"super_serialize": false,
+	"supernamespace": "",
+	"use_hash_function": false
+}

@@ -1,0 +1,30 @@
+{
+	"fields": [
+		{
+			"name": "humanoidInfo",
+			"position": 0,
+			"prefixed_by_type_id": true,
+			"self_serialize_method": "serialize",
+			"type": "HumanInformations",
+			"type_namespace": "com.ankamagames.dofus.network.types.game.context.roleplay",
+			"write_type_id_method": "writeShort"
+		},
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"default_value": "0",
+			"name": "accountId",
+			"position": 1,
+			"type": "uint",
+			"write_method": "writeInt"
+		}
+	],
+	"name": "GameRolePlayHumanoidInformations",
+	"namespace": "com.ankamagames.dofus.network.types.game.context.roleplay",
+	"protocolID": 1689,
+	"super": "GameRolePlayNamedActorInformations",
+	"super_serialize": true,
+	"supernamespace": "com.ankamagames.dofus.network.types.game.context.roleplay",
+	"use_hash_function": false
+}

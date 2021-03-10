@@ -1,0 +1,39 @@
+{
+	"fields": [
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"default_value": "0",
+			"name": "jobId",
+			"position": 0,
+			"type": "uint",
+			"write_method": "writeByte"
+		},
+		{
+			"bounds": {
+				"low": "0",
+				"up": "255"
+			},
+			"default_value": "0",
+			"name": "minLevel",
+			"position": 1,
+			"type": "uint",
+			"write_method": "writeByte"
+		},
+		{
+			"default_value": "false",
+			"name": "free",
+			"position": 2,
+			"type": "Boolean",
+			"write_method": "writeBoolean"
+		}
+	],
+	"name": "JobCrafterDirectorySettings",
+	"namespace": "com.ankamagames.dofus.network.types.game.context.roleplay.job",
+	"protocolID": 3479,
+	"super": "",
+	"super_serialize": false,
+	"supernamespace": "",
+	"use_hash_function": false
+}

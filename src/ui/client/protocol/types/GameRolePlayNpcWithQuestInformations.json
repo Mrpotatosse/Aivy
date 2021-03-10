@@ -1,0 +1,18 @@
+{
+	"fields": [
+		{
+			"name": "questFlag",
+			"position": 0,
+			"self_serialize_method": "serializeAs_GameRolePlayNpcQuestFlag",
+			"type": "GameRolePlayNpcQuestFlag",
+			"type_namespace": "com.ankamagames.dofus.network.types.game.context.roleplay.quest"
+		}
+	],
+	"name": "GameRolePlayNpcWithQuestInformations",
+	"namespace": "com.ankamagames.dofus.network.types.game.context.roleplay",
+	"protocolID": 3740,
+	"super": "GameRolePlayNpcInformations",
+	"super_serialize": true,
+	"supernamespace": "com.ankamagames.dofus.network.types.game.context.roleplay",
+	"use_hash_function": false
+}

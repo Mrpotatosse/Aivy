@@ -1,0 +1,18 @@
+{
+	"fields": [
+		{
+			"default_value": "0",
+			"name": "relation",
+			"position": 0,
+			"type": "uint",
+			"write_method": "writeByte"
+		}
+	],
+	"name": "FightAllianceTeamInformations",
+	"namespace": "com.ankamagames.dofus.network.types.game.context.fight",
+	"protocolID": 2266,
+	"super": "FightTeamInformations",
+	"super_serialize": true,
+	"supernamespace": "com.ankamagames.dofus.network.types.game.context.fight",
+	"use_hash_function": false
+}

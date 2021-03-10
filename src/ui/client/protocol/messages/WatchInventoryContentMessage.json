@@ -1,0 +1,10 @@
+{
+	"fields": [],
+	"name": "WatchInventoryContentMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.inventory.items",
+	"protocolID": 4970,
+	"super": "InventoryContentMessage",
+	"super_serialize": true,
+	"supernamespace": "com.ankamagames.dofus.network.messages.game.inventory.items",
+	"use_hash_function": false
+}

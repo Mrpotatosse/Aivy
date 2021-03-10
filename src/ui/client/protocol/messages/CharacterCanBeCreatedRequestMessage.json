@@ -1,0 +1,10 @@
+{
+	"fields": [],
+	"name": "CharacterCanBeCreatedRequestMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.character.creation",
+	"protocolID": 2476,
+	"super": "NetworkMessage",
+	"super_serialize": false,
+	"supernamespace": "com.ankamagames.jerakine.network",
+	"use_hash_function": false
+}

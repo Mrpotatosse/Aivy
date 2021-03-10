@@ -1,0 +1,27 @@
+{
+	"fields": [
+		{
+			"name": "mainCreatureLightInfos",
+			"position": 0,
+			"self_serialize_method": "serializeAs_MonsterInGroupLightInformations",
+			"type": "MonsterInGroupLightInformations",
+			"type_namespace": "com.ankamagames.dofus.network.types.game.context.roleplay"
+		},
+		{
+			"is_vector": true,
+			"name": "underlings",
+			"position": 1,
+			"self_serialize_method": "serializeAs_MonsterInGroupInformations",
+			"type": "MonsterInGroupInformations",
+			"type_namespace": "com.ankamagames.dofus.network.types.game.context.roleplay",
+			"write_length_method": "writeShort"
+		}
+	],
+	"name": "GroupMonsterStaticInformations",
+	"namespace": "com.ankamagames.dofus.network.types.game.context.roleplay",
+	"protocolID": 5768,
+	"super": "",
+	"super_serialize": false,
+	"supernamespace": "",
+	"use_hash_function": false
+}

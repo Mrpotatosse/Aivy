@@ -1,0 +1,41 @@
+.character-grid{
+    display: grid;
+    width: 95%;
+    min-height: 200px;
+    height: 100%;
+    grid-template-areas: 
+      "character-image character-infos"
+      "character-actions character-actions";
+    grid-template-columns: 50% auto;
+    grid-template-rows: 500px 250px;
+    gap: 10px;
+}
+
+.character-grid > * {
+    border-radius: 5px;
+    box-shadow: 0px 0px 2px 0px #ffffff;   
+    background-color: #111c22;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+.character-image{
+    grid-area: character-image;
+}
+
+.character-infos{
+    grid-area: character-infos;
+}
+
+.character-actions{
+    grid-area: character-actions;
+}
+
+.information-element{
+    margin: 2%;
+}
+
+.auto-overflow{
+    overflow: auto;
+}

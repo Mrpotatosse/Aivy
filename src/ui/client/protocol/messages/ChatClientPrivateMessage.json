@@ -1,0 +1,17 @@
+{
+	"fields": [
+		{
+			"name": "receiver",
+			"position": 0,
+			"type": "String",
+			"write_method": "writeUTF"
+		}
+	],
+	"name": "ChatClientPrivateMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.chat",
+	"protocolID": 7158,
+	"super": "ChatAbstractClientMessage",
+	"super_serialize": true,
+	"supernamespace": "com.ankamagames.dofus.network.messages.game.chat",
+	"use_hash_function": true
+}

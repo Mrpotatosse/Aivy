@@ -1,0 +1,89 @@
+{
+	"fields": [
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"default_value": "0",
+			"name": "charactersCount",
+			"position": 5,
+			"type": "uint",
+			"write_method": "writeByte"
+		},
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"default_value": "0",
+			"name": "id",
+			"position": 1,
+			"type": "uint",
+			"write_method": "writeVarShort"
+		},
+		{
+			"boolean_byte_wrapper_position": 2,
+			"default_value": "false",
+			"name": "isSelectable",
+			"position": 0,
+			"type": "Boolean",
+			"use_boolean_byte_wrapper": true
+		},
+		{
+			"boolean_byte_wrapper_position": 1,
+			"default_value": "false",
+			"name": "isMonoAccount",
+			"position": 0,
+			"type": "Boolean",
+			"use_boolean_byte_wrapper": true
+		},
+		{
+			"default_value": "-1",
+			"name": "type",
+			"position": 2,
+			"type": "int",
+			"write_method": "writeByte"
+		},
+		{
+			"default_value": "0",
+			"name": "completion",
+			"position": 4,
+			"type": "uint",
+			"write_method": "writeByte"
+		},
+		{
+			"default_value": "1",
+			"name": "status",
+			"position": 3,
+			"type": "uint",
+			"write_method": "writeByte"
+		},
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"default_value": "0",
+			"name": "charactersSlots",
+			"position": 6,
+			"type": "uint",
+			"write_method": "writeByte"
+		},
+		{
+			"bounds": {
+				"low": "-9007199254740992.000000",
+				"up": "9007199254740992.000000"
+			},
+			"default_value": "0",
+			"name": "date",
+			"position": 7,
+			"type": "Number",
+			"write_method": "writeDouble"
+		}
+	],
+	"name": "GameServerInformations",
+	"namespace": "com.ankamagames.dofus.network.types.connection",
+	"protocolID": 3198,
+	"super": "",
+	"super_serialize": false,
+	"supernamespace": "",
+	"use_hash_function": false
+}

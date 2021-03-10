@@ -1,0 +1,18 @@
+{
+	"fields": [
+		{
+			"default_value": "0",
+			"name": "type",
+			"position": 0,
+			"type": "uint",
+			"write_method": "writeInt"
+		}
+	],
+	"name": "PortalDialogCreationMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.context.roleplay.npc",
+	"protocolID": 1645,
+	"super": "NpcDialogCreationMessage",
+	"super_serialize": true,
+	"supernamespace": "com.ankamagames.dofus.network.messages.game.context.roleplay.npc",
+	"use_hash_function": false
+}

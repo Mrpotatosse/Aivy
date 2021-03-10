@@ -1,0 +1,57 @@
+{
+	"fields": [
+		{
+			"name": "infos",
+			"position": 0,
+			"prefixed_by_type_id": true,
+			"self_serialize_method": "serialize",
+			"type": "AllianceFactSheetInformations",
+			"type_namespace": "com.ankamagames.dofus.network.types.game.social",
+			"write_type_id_method": "writeShort"
+		},
+		{
+			"is_vector": true,
+			"name": "guilds",
+			"position": 1,
+			"self_serialize_method": "serializeAs_GuildInAllianceInformations",
+			"type": "GuildInAllianceInformations",
+			"type_namespace": "com.ankamagames.dofus.network.types.game.context.roleplay",
+			"write_length_method": "writeShort"
+		},
+		{
+			"name": "leaderCharacterName",
+			"position": 4,
+			"type": "String",
+			"write_method": "writeUTF"
+		},
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"is_vector": true,
+			"name": "controlledSubareaIds",
+			"position": 2,
+			"type": "uint",
+			"write_length_method": "writeShort",
+			"write_method": "writeVarShort"
+		},
+		{
+			"bounds": {
+				"low": "0",
+				"up": "9007199254740992.000000"
+			},
+			"default_value": "0",
+			"name": "leaderCharacterId",
+			"position": 3,
+			"type": "Number",
+			"write_method": "writeVarLong"
+		}
+	],
+	"name": "AllianceFactsMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.alliance",
+	"protocolID": 5367,
+	"super": "NetworkMessage",
+	"super_serialize": false,
+	"supernamespace": "com.ankamagames.jerakine.network",
+	"use_hash_function": false
+}

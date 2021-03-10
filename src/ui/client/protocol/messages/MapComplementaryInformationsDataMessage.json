@@ -1,0 +1,106 @@
+{
+	"fields": [
+		{
+			"bounds": {
+				"low": "0",
+				"up": "9007199254740992.000000"
+			},
+			"default_value": "0",
+			"name": "mapId",
+			"position": 1,
+			"type": "Number",
+			"write_method": "writeDouble"
+		},
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"default_value": "0",
+			"name": "subAreaId",
+			"position": 0,
+			"type": "uint",
+			"write_method": "writeVarShort"
+		},
+		{
+			"is_vector": true,
+			"name": "houses",
+			"position": 2,
+			"prefixed_by_type_id": true,
+			"self_serialize_method": "serialize",
+			"type": "HouseInformations",
+			"type_namespace": "com.ankamagames.dofus.network.types.game.house",
+			"write_length_method": "writeShort",
+			"write_type_id_method": "writeShort"
+		},
+		{
+			"is_vector": true,
+			"name": "actors",
+			"position": 3,
+			"prefixed_by_type_id": true,
+			"self_serialize_method": "serialize",
+			"type": "GameRolePlayActorInformations",
+			"type_namespace": "com.ankamagames.dofus.network.types.game.context.roleplay",
+			"write_length_method": "writeShort",
+			"write_type_id_method": "writeShort"
+		},
+		{
+			"is_vector": true,
+			"name": "interactiveElements",
+			"position": 4,
+			"prefixed_by_type_id": true,
+			"self_serialize_method": "serialize",
+			"type": "InteractiveElement",
+			"type_namespace": "com.ankamagames.dofus.network.types.game.interactive",
+			"write_length_method": "writeShort",
+			"write_type_id_method": "writeShort"
+		},
+		{
+			"is_vector": true,
+			"name": "statedElements",
+			"position": 5,
+			"self_serialize_method": "serializeAs_StatedElement",
+			"type": "StatedElement",
+			"type_namespace": "com.ankamagames.dofus.network.types.game.interactive",
+			"write_length_method": "writeShort"
+		},
+		{
+			"is_vector": true,
+			"name": "obstacles",
+			"position": 6,
+			"self_serialize_method": "serializeAs_MapObstacle",
+			"type": "MapObstacle",
+			"type_namespace": "com.ankamagames.dofus.network.types.game.interactive",
+			"write_length_method": "writeShort"
+		},
+		{
+			"is_vector": true,
+			"name": "fights",
+			"position": 7,
+			"self_serialize_method": "serializeAs_FightCommonInformations",
+			"type": "FightCommonInformations",
+			"type_namespace": "com.ankamagames.dofus.network.types.game.context.fight",
+			"write_length_method": "writeShort"
+		},
+		{
+			"default_value": "false",
+			"name": "hasAggressiveMonsters",
+			"position": 8,
+			"type": "Boolean",
+			"write_method": "writeBoolean"
+		},
+		{
+			"name": "fightStartPositions",
+			"position": 9,
+			"self_serialize_method": "serializeAs_FightStartingPositions",
+			"type": "FightStartingPositions",
+			"type_namespace": "com.ankamagames.dofus.network.types.game.context.fight"
+		}
+	],
+	"name": "MapComplementaryInformationsDataMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.context.roleplay",
+	"protocolID": 2291,
+	"super": "NetworkMessage",
+	"super_serialize": false,
+	"supernamespace": "com.ankamagames.jerakine.network",
+	"use_hash_function": false
+}

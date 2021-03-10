@@ -1,0 +1,34 @@
+{
+	"fields": [
+		{
+			"name": "author",
+			"position": 1,
+			"type": "String",
+			"write_method": "writeUTF"
+		},
+		{
+			"bounds": {
+				"low": "0",
+				"up": "255"
+			},
+			"default_value": "0",
+			"name": "lockDuration",
+			"position": 0,
+			"type": "uint",
+			"write_method": "writeByte"
+		},
+		{
+			"name": "content",
+			"position": 2,
+			"type": "String",
+			"write_method": "writeUTF"
+		}
+	],
+	"name": "PopupWarningMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.moderation",
+	"protocolID": 2107,
+	"super": "NetworkMessage",
+	"super_serialize": false,
+	"supernamespace": "com.ankamagames.jerakine.network",
+	"use_hash_function": false
+}

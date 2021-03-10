@@ -1,0 +1,58 @@
+{
+	"fields": [
+		{
+			"boolean_byte_wrapper_position": 2,
+			"default_value": "false",
+			"name": "bought",
+			"position": 0,
+			"type": "Boolean",
+			"use_boolean_byte_wrapper": true
+		},
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"default_value": "0",
+			"name": "houseId",
+			"position": 1,
+			"type": "uint",
+			"write_method": "writeVarInt"
+		},
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"default_value": "0",
+			"name": "instanceId",
+			"position": 2,
+			"type": "uint",
+			"write_method": "writeInt"
+		},
+		{
+			"boolean_byte_wrapper_position": 1,
+			"default_value": "false",
+			"name": "secondHand",
+			"position": 0,
+			"type": "Boolean",
+			"use_boolean_byte_wrapper": true
+		},
+		{
+			"bounds": {
+				"low": "0",
+				"up": "9007199254740992.000000"
+			},
+			"default_value": "0",
+			"name": "realPrice",
+			"position": 3,
+			"type": "Number",
+			"write_method": "writeVarLong"
+		}
+	],
+	"name": "HouseBuyResultMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.context.roleplay.houses",
+	"protocolID": 2541,
+	"super": "NetworkMessage",
+	"super_serialize": false,
+	"supernamespace": "com.ankamagames.jerakine.network",
+	"use_hash_function": false
+}

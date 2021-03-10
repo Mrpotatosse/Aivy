@@ -1,0 +1,49 @@
+{
+	"fields": [
+		{
+			"default_value": "0",
+			"name": "alignmentSide",
+			"position": 0,
+			"type": "int",
+			"write_method": "writeByte"
+		},
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"default_value": "0",
+			"name": "alignmentValue",
+			"position": 1,
+			"type": "uint",
+			"write_method": "writeByte"
+		},
+		{
+			"bounds": {
+				"low": "-9007199254740992.000000",
+				"up": "9007199254740992.000000"
+			},
+			"default_value": "0",
+			"name": "characterPower",
+			"position": 3,
+			"type": "Number",
+			"write_method": "writeDouble"
+		},
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"default_value": "0",
+			"name": "alignmentGrade",
+			"position": 2,
+			"type": "uint",
+			"write_method": "writeByte"
+		}
+	],
+	"name": "ActorAlignmentInformations",
+	"namespace": "com.ankamagames.dofus.network.types.game.character.alignment",
+	"protocolID": 3998,
+	"super": "",
+	"super_serialize": false,
+	"supernamespace": "",
+	"use_hash_function": false
+}

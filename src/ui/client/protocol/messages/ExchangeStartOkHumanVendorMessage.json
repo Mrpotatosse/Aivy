@@ -1,0 +1,31 @@
+{
+	"fields": [
+		{
+			"is_vector": true,
+			"name": "objectsInfos",
+			"position": 1,
+			"self_serialize_method": "serializeAs_ObjectItemToSellInHumanVendorShop",
+			"type": "ObjectItemToSellInHumanVendorShop",
+			"type_namespace": "com.ankamagames.dofus.network.types.game.data.items",
+			"write_length_method": "writeShort"
+		},
+		{
+			"bounds": {
+				"low": "-9007199254740992.000000",
+				"up": "9007199254740992.000000"
+			},
+			"default_value": "0",
+			"name": "sellerId",
+			"position": 0,
+			"type": "Number",
+			"write_method": "writeDouble"
+		}
+	],
+	"name": "ExchangeStartOkHumanVendorMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.inventory.exchanges",
+	"protocolID": 9026,
+	"super": "NetworkMessage",
+	"super_serialize": false,
+	"supernamespace": "com.ankamagames.jerakine.network",
+	"use_hash_function": false
+}

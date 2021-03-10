@@ -1,0 +1,41 @@
+{
+	"fields": [
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"default_value": "0",
+			"name": "diceNum",
+			"position": 0,
+			"type": "uint",
+			"write_method": "writeVarInt"
+		},
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"default_value": "0",
+			"name": "diceConst",
+			"position": 2,
+			"type": "uint",
+			"write_method": "writeVarInt"
+		},
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"default_value": "0",
+			"name": "diceSide",
+			"position": 1,
+			"type": "uint",
+			"write_method": "writeVarInt"
+		}
+	],
+	"name": "ObjectEffectDice",
+	"namespace": "com.ankamagames.dofus.network.types.game.data.items.effects",
+	"protocolID": 1846,
+	"super": "ObjectEffect",
+	"super_serialize": true,
+	"supernamespace": "com.ankamagames.dofus.network.types.game.data.items.effects",
+	"use_hash_function": false
+}

@@ -1,0 +1,36 @@
+{
+	"fields": [
+		{
+			"name": "address",
+			"position": 0,
+			"type": "String",
+			"write_method": "writeUTF"
+		},
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"is_vector": true,
+			"name": "ports",
+			"position": 1,
+			"type": "uint",
+			"write_length_method": "writeShort",
+			"write_method": "writeVarShort"
+		},
+		{
+			"is_vector": true,
+			"name": "ticket",
+			"position": 2,
+			"type": "int",
+			"write_length_method": "writeVarInt",
+			"write_method": "writeByte"
+		}
+	],
+	"name": "GameRolePlayArenaSwitchToFightServerMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.context.roleplay.fight.arena",
+	"protocolID": 8721,
+	"super": "NetworkMessage",
+	"super_serialize": false,
+	"supernamespace": "com.ankamagames.jerakine.network",
+	"use_hash_function": true
+}

@@ -1,0 +1,17 @@
+{
+	"fields": [
+		{
+			"name": "value",
+			"position": 0,
+			"type": "String",
+			"write_method": "writeUTF"
+		}
+	],
+	"name": "ObjectEffectString",
+	"namespace": "com.ankamagames.dofus.network.types.game.data.items.effects",
+	"protocolID": 7628,
+	"super": "ObjectEffect",
+	"super_serialize": true,
+	"supernamespace": "com.ankamagames.dofus.network.types.game.data.items.effects",
+	"use_hash_function": false
+}

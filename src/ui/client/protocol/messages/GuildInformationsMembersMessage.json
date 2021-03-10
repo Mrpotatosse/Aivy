@@ -1,0 +1,20 @@
+{
+	"fields": [
+		{
+			"is_vector": true,
+			"name": "members",
+			"position": 0,
+			"self_serialize_method": "serializeAs_GuildMember",
+			"type": "GuildMember",
+			"type_namespace": "com.ankamagames.dofus.network.types.game.guild",
+			"write_length_method": "writeShort"
+		}
+	],
+	"name": "GuildInformationsMembersMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.guild",
+	"protocolID": 7846,
+	"super": "NetworkMessage",
+	"super_serialize": false,
+	"supernamespace": "com.ankamagames.jerakine.network",
+	"use_hash_function": false
+}

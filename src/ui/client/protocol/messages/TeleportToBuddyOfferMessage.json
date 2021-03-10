@@ -1,0 +1,42 @@
+{
+	"fields": [
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"default_value": "0",
+			"name": "dungeonId",
+			"position": 0,
+			"type": "uint",
+			"write_method": "writeVarShort"
+		},
+		{
+			"bounds": {
+				"low": "0",
+				"up": "9007199254740992.000000"
+			},
+			"default_value": "0",
+			"name": "buddyId",
+			"position": 1,
+			"type": "Number",
+			"write_method": "writeVarLong"
+		},
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"default_value": "0",
+			"name": "timeLeft",
+			"position": 2,
+			"type": "uint",
+			"write_method": "writeVarInt"
+		}
+	],
+	"name": "TeleportToBuddyOfferMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.interactive.meeting",
+	"protocolID": 7023,
+	"super": "NetworkMessage",
+	"super_serialize": false,
+	"supernamespace": "com.ankamagames.jerakine.network",
+	"use_hash_function": false
+}

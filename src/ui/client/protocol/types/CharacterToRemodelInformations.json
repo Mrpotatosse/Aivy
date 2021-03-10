@@ -1,0 +1,31 @@
+{
+	"fields": [
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"default_value": "0",
+			"name": "possibleChangeMask",
+			"position": 0,
+			"type": "uint",
+			"write_method": "writeByte"
+		},
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"default_value": "0",
+			"name": "mandatoryChangeMask",
+			"position": 1,
+			"type": "uint",
+			"write_method": "writeByte"
+		}
+	],
+	"name": "CharacterToRemodelInformations",
+	"namespace": "com.ankamagames.dofus.network.types.game.character.choice",
+	"protocolID": 2827,
+	"super": "CharacterRemodelingInformation",
+	"super_serialize": true,
+	"supernamespace": "com.ankamagames.dofus.network.types.game.character.choice",
+	"use_hash_function": false
+}

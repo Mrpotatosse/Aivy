@@ -1,0 +1,10 @@
+{
+	"fields": [],
+	"name": "NicknameAcceptedMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.connection.register",
+	"protocolID": 2323,
+	"super": "NetworkMessage",
+	"super_serialize": false,
+	"supernamespace": "com.ankamagames.jerakine.network",
+	"use_hash_function": false
+}

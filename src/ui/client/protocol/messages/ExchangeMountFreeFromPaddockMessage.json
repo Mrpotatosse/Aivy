@@ -1,0 +1,45 @@
+{
+	"fields": [
+		{
+			"bounds": {
+				"low": "-255",
+				"up": "255"
+			},
+			"default_value": "0",
+			"name": "worldY",
+			"position": 2,
+			"type": "int",
+			"write_method": "writeShort"
+		},
+		{
+			"name": "name",
+			"position": 0,
+			"type": "String",
+			"write_method": "writeUTF"
+		},
+		{
+			"bounds": {
+				"low": "-255",
+				"up": "255"
+			},
+			"default_value": "0",
+			"name": "worldX",
+			"position": 1,
+			"type": "int",
+			"write_method": "writeShort"
+		},
+		{
+			"name": "liberator",
+			"position": 3,
+			"type": "String",
+			"write_method": "writeUTF"
+		}
+	],
+	"name": "ExchangeMountFreeFromPaddockMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.inventory.exchanges",
+	"protocolID": 2811,
+	"super": "NetworkMessage",
+	"super_serialize": false,
+	"supernamespace": "com.ankamagames.jerakine.network",
+	"use_hash_function": false
+}

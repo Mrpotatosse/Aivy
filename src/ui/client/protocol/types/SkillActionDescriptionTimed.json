@@ -1,0 +1,22 @@
+{
+	"fields": [
+		{
+			"bounds": {
+				"low": "0",
+				"up": "255"
+			},
+			"default_value": "0",
+			"name": "time",
+			"position": 0,
+			"type": "uint",
+			"write_method": "writeByte"
+		}
+	],
+	"name": "SkillActionDescriptionTimed",
+	"namespace": "com.ankamagames.dofus.network.types.game.interactive.skill",
+	"protocolID": 7758,
+	"super": "SkillActionDescription",
+	"super_serialize": true,
+	"supernamespace": "com.ankamagames.dofus.network.types.game.interactive.skill",
+	"use_hash_function": false
+}

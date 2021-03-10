@@ -1,0 +1,106 @@
+{
+	"fields": [
+		{
+			"bounds": {
+				"low": "0",
+				"up": "9007199254740992.000000"
+			},
+			"default_value": "0",
+			"name": "uniqueId",
+			"position": 0,
+			"type": "Number",
+			"write_method": "writeDouble"
+		},
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"default_value": "0",
+			"name": "firtNameId",
+			"position": 1,
+			"type": "uint",
+			"write_method": "writeVarShort"
+		},
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"default_value": "0",
+			"name": "lastNameId",
+			"position": 2,
+			"type": "uint",
+			"write_method": "writeVarShort"
+		},
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"default_value": "0",
+			"name": "subAreaId",
+			"position": 6,
+			"type": "uint",
+			"write_method": "writeVarShort"
+		},
+		{
+			"bounds": {
+				"low": "-255",
+				"up": "255"
+			},
+			"default_value": "0",
+			"name": "worldX",
+			"position": 4,
+			"type": "int",
+			"write_method": "writeShort"
+		},
+		{
+			"name": "additionalInfos",
+			"position": 3,
+			"self_serialize_method": "serializeAs_AdditionalTaxCollectorInformations",
+			"type": "AdditionalTaxCollectorInformations",
+			"type_namespace": "com.ankamagames.dofus.network.types.game.guild.tax"
+		},
+		{
+			"default_value": "0",
+			"name": "state",
+			"position": 7,
+			"type": "uint",
+			"write_method": "writeByte"
+		},
+		{
+			"bounds": {
+				"low": "-255",
+				"up": "255"
+			},
+			"default_value": "0",
+			"name": "worldY",
+			"position": 5,
+			"type": "int",
+			"write_method": "writeShort"
+		},
+		{
+			"name": "look",
+			"position": 8,
+			"self_serialize_method": "serializeAs_EntityLook",
+			"type": "EntityLook",
+			"type_namespace": "com.ankamagames.dofus.network.types.game.look"
+		},
+		{
+			"is_vector": true,
+			"name": "complements",
+			"position": 9,
+			"prefixed_by_type_id": true,
+			"self_serialize_method": "serialize",
+			"type": "TaxCollectorComplementaryInformations",
+			"type_namespace": "com.ankamagames.dofus.network.types.game.guild.tax",
+			"write_length_method": "writeShort",
+			"write_type_id_method": "writeShort"
+		}
+	],
+	"name": "TaxCollectorInformations",
+	"namespace": "com.ankamagames.dofus.network.types.game.guild.tax",
+	"protocolID": 5143,
+	"super": "",
+	"super_serialize": false,
+	"supernamespace": "",
+	"use_hash_function": false
+}

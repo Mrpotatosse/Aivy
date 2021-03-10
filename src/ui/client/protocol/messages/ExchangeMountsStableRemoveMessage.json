@@ -1,0 +1,19 @@
+{
+	"fields": [
+		{
+			"is_vector": true,
+			"name": "mountsId",
+			"position": 0,
+			"type": "int",
+			"write_length_method": "writeShort",
+			"write_method": "writeVarInt"
+		}
+	],
+	"name": "ExchangeMountsStableRemoveMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.inventory.exchanges",
+	"protocolID": 1299,
+	"super": "NetworkMessage",
+	"super_serialize": false,
+	"supernamespace": "com.ankamagames.jerakine.network",
+	"use_hash_function": false
+}

@@ -1,0 +1,49 @@
+{
+	"fields": [
+		{
+			"name": "stats",
+			"position": 2,
+			"prefixed_by_type_id": true,
+			"self_serialize_method": "serialize",
+			"type": "GameFightMinimalStats",
+			"type_namespace": "com.ankamagames.dofus.network.types.game.context.fight",
+			"write_type_id_method": "writeShort"
+		},
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"default_value": "0",
+			"name": "wave",
+			"position": 1,
+			"type": "uint",
+			"write_method": "writeByte"
+		},
+		{
+			"name": "spawnInfo",
+			"position": 0,
+			"self_serialize_method": "serializeAs_GameContextBasicSpawnInformation",
+			"type": "GameContextBasicSpawnInformation",
+			"type_namespace": "com.ankamagames.dofus.network.types.game.context.fight"
+		},
+		{
+			"bounds": {
+				"low": "0",
+				"up": "559"
+			},
+			"is_vector": true,
+			"name": "previousPositions",
+			"position": 3,
+			"type": "uint",
+			"write_length_method": "writeShort",
+			"write_method": "writeVarShort"
+		}
+	],
+	"name": "GameFightFighterInformations",
+	"namespace": "com.ankamagames.dofus.network.types.game.context.fight",
+	"protocolID": 6298,
+	"super": "GameContextActorInformations",
+	"super_serialize": true,
+	"supernamespace": "com.ankamagames.dofus.network.types.game.context",
+	"use_hash_function": false
+}

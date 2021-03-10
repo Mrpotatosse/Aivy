@@ -1,0 +1,24 @@
+{
+	"fields": [
+		{
+			"default_value": "0",
+			"name": "type",
+			"position": 0,
+			"type": "uint",
+			"write_method": "writeByte"
+		},
+		{
+			"name": "content",
+			"position": 1,
+			"type": "String",
+			"write_method": "writeUTF"
+		}
+	],
+	"name": "ConsoleMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.authorized",
+	"protocolID": 6538,
+	"super": "NetworkMessage",
+	"super_serialize": false,
+	"supernamespace": "com.ankamagames.jerakine.network",
+	"use_hash_function": false
+}

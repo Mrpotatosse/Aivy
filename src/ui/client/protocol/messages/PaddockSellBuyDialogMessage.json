@@ -1,0 +1,39 @@
+{
+	"fields": [
+		{
+			"default_value": "false",
+			"name": "bsell",
+			"position": 0,
+			"type": "Boolean",
+			"write_method": "writeBoolean"
+		},
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"default_value": "0",
+			"name": "ownerId",
+			"position": 1,
+			"type": "uint",
+			"write_method": "writeVarInt"
+		},
+		{
+			"bounds": {
+				"low": "0",
+				"up": "9007199254740992.000000"
+			},
+			"default_value": "0",
+			"name": "price",
+			"position": 2,
+			"type": "Number",
+			"write_method": "writeVarLong"
+		}
+	],
+	"name": "PaddockSellBuyDialogMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.context.roleplay.paddock",
+	"protocolID": 9687,
+	"super": "NetworkMessage",
+	"super_serialize": false,
+	"supernamespace": "com.ankamagames.jerakine.network",
+	"use_hash_function": false
+}

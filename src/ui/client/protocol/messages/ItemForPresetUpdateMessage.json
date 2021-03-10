@@ -1,0 +1,25 @@
+{
+	"fields": [
+		{
+			"default_value": "0",
+			"name": "presetId",
+			"position": 0,
+			"type": "int",
+			"write_method": "writeShort"
+		},
+		{
+			"name": "presetItem",
+			"position": 1,
+			"self_serialize_method": "serializeAs_ItemForPreset",
+			"type": "ItemForPreset",
+			"type_namespace": "com.ankamagames.dofus.network.types.game.presets"
+		}
+	],
+	"name": "ItemForPresetUpdateMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.presets",
+	"protocolID": 3915,
+	"super": "NetworkMessage",
+	"super_serialize": false,
+	"supernamespace": "com.ankamagames.jerakine.network",
+	"use_hash_function": false
+}

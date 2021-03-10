@@ -1,0 +1,17 @@
+{
+	"fields": [
+		{
+			"name": "nickname",
+			"position": 0,
+			"type": "String",
+			"write_method": "writeUTF"
+		}
+	],
+	"name": "NicknameChoiceRequestMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.connection.register",
+	"protocolID": 7249,
+	"super": "NetworkMessage",
+	"super_serialize": false,
+	"supernamespace": "com.ankamagames.jerakine.network",
+	"use_hash_function": false
+}

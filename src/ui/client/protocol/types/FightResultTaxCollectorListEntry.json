@@ -1,0 +1,36 @@
+{
+	"fields": [
+		{
+			"bounds": {
+				"low": "1",
+				"up": "200"
+			},
+			"default_value": "0",
+			"name": "level",
+			"position": 0,
+			"type": "uint",
+			"write_method": "writeByte"
+		},
+		{
+			"name": "guildInfo",
+			"position": 1,
+			"self_serialize_method": "serializeAs_BasicGuildInformations",
+			"type": "BasicGuildInformations",
+			"type_namespace": "com.ankamagames.dofus.network.types.game.context.roleplay"
+		},
+		{
+			"default_value": "0",
+			"name": "experienceForGuild",
+			"position": 2,
+			"type": "int",
+			"write_method": "writeInt"
+		}
+	],
+	"name": "FightResultTaxCollectorListEntry",
+	"namespace": "com.ankamagames.dofus.network.types.game.context.fight",
+	"protocolID": 2949,
+	"super": "FightResultFighterListEntry",
+	"super_serialize": true,
+	"supernamespace": "com.ankamagames.dofus.network.types.game.context.fight",
+	"use_hash_function": false
+}

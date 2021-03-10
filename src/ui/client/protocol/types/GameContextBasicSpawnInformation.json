@@ -1,0 +1,34 @@
+{
+	"fields": [
+		{
+			"default_value": "2",
+			"name": "teamId",
+			"position": 0,
+			"type": "uint",
+			"write_method": "writeByte"
+		},
+		{
+			"default_value": "false",
+			"name": "alive",
+			"position": 1,
+			"type": "Boolean",
+			"write_method": "writeBoolean"
+		},
+		{
+			"name": "informations",
+			"position": 2,
+			"prefixed_by_type_id": true,
+			"self_serialize_method": "serialize",
+			"type": "GameContextActorPositionInformations",
+			"type_namespace": "com.ankamagames.dofus.network.types.game.context",
+			"write_type_id_method": "writeShort"
+		}
+	],
+	"name": "GameContextBasicSpawnInformation",
+	"namespace": "com.ankamagames.dofus.network.types.game.context.fight",
+	"protocolID": 2478,
+	"super": "",
+	"super_serialize": false,
+	"supernamespace": "",
+	"use_hash_function": false
+}

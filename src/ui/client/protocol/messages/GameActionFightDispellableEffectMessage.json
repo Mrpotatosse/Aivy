@@ -1,0 +1,20 @@
+{
+	"fields": [
+		{
+			"name": "effect",
+			"position": 0,
+			"prefixed_by_type_id": true,
+			"self_serialize_method": "serialize",
+			"type": "AbstractFightDispellableEffect",
+			"type_namespace": "com.ankamagames.dofus.network.types.game.actions.fight",
+			"write_type_id_method": "writeShort"
+		}
+	],
+	"name": "GameActionFightDispellableEffectMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.actions.fight",
+	"protocolID": 4766,
+	"super": "AbstractGameActionMessage",
+	"super_serialize": true,
+	"supernamespace": "com.ankamagames.dofus.network.messages.game.actions",
+	"use_hash_function": false
+}

@@ -1,0 +1,21 @@
+{
+	"fields": [
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"default_value": "0",
+			"name": "lastNotifiedTimestamp",
+			"position": 0,
+			"type": "uint",
+			"write_method": "writeInt"
+		}
+	],
+	"name": "BulletinMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.social",
+	"protocolID": 6576,
+	"super": "SocialNoticeMessage",
+	"super_serialize": true,
+	"supernamespace": "com.ankamagames.dofus.network.messages.game.social",
+	"use_hash_function": false
+}

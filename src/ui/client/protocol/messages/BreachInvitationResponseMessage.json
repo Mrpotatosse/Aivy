@@ -1,0 +1,25 @@
+{
+	"fields": [
+		{
+			"name": "guest",
+			"position": 0,
+			"self_serialize_method": "serializeAs_CharacterMinimalInformations",
+			"type": "CharacterMinimalInformations",
+			"type_namespace": "com.ankamagames.dofus.network.types.game.character"
+		},
+		{
+			"default_value": "false",
+			"name": "accept",
+			"position": 1,
+			"type": "Boolean",
+			"write_method": "writeBoolean"
+		}
+	],
+	"name": "BreachInvitationResponseMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.context.roleplay.breach.meeting",
+	"protocolID": 8162,
+	"super": "NetworkMessage",
+	"super_serialize": false,
+	"supernamespace": "com.ankamagames.jerakine.network",
+	"use_hash_function": false
+}

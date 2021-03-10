@@ -1,0 +1,57 @@
+{
+	"fields": [
+		{
+			"default_value": "0",
+			"name": "elementTypeId",
+			"position": 1,
+			"type": "int",
+			"write_method": "writeInt"
+		},
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"default_value": "0",
+			"name": "elementId",
+			"position": 0,
+			"type": "uint",
+			"write_method": "writeInt"
+		},
+		{
+			"is_vector": true,
+			"name": "enabledSkills",
+			"position": 2,
+			"prefixed_by_type_id": true,
+			"self_serialize_method": "serialize",
+			"type": "InteractiveElementSkill",
+			"type_namespace": "com.ankamagames.dofus.network.types.game.interactive",
+			"write_length_method": "writeShort",
+			"write_type_id_method": "writeShort"
+		},
+		{
+			"is_vector": true,
+			"name": "disabledSkills",
+			"position": 3,
+			"prefixed_by_type_id": true,
+			"self_serialize_method": "serialize",
+			"type": "InteractiveElementSkill",
+			"type_namespace": "com.ankamagames.dofus.network.types.game.interactive",
+			"write_length_method": "writeShort",
+			"write_type_id_method": "writeShort"
+		},
+		{
+			"default_value": "false",
+			"name": "onCurrentMap",
+			"position": 4,
+			"type": "Boolean",
+			"write_method": "writeBoolean"
+		}
+	],
+	"name": "InteractiveElement",
+	"namespace": "com.ankamagames.dofus.network.types.game.interactive",
+	"protocolID": 4976,
+	"super": "",
+	"super_serialize": false,
+	"supernamespace": "",
+	"use_hash_function": false
+}

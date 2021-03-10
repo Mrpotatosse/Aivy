@@ -1,0 +1,53 @@
+{
+	"fields": [
+		{
+			"default_value": "false",
+			"name": "canCreateNewCharacter",
+			"position": 3,
+			"type": "Boolean",
+			"write_method": "writeBoolean"
+		},
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"is_vector": true,
+			"name": "ports",
+			"position": 2,
+			"type": "uint",
+			"write_length_method": "writeShort",
+			"write_method": "writeVarShort"
+		},
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"default_value": "0",
+			"name": "serverId",
+			"position": 0,
+			"type": "uint",
+			"write_method": "writeVarShort"
+		},
+		{
+			"name": "address",
+			"position": 1,
+			"type": "String",
+			"write_method": "writeUTF"
+		},
+		{
+			"is_vector": true,
+			"name": "ticket",
+			"position": 4,
+			"type": "int",
+			"write_length_method": "writeVarInt",
+			"write_method": "writeByte"
+		}
+	],
+	"name": "SelectedServerDataMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.connection",
+	"protocolID": 7693,
+	"super": "NetworkMessage",
+	"super_serialize": false,
+	"supernamespace": "com.ankamagames.jerakine.network",
+	"use_hash_function": false
+}

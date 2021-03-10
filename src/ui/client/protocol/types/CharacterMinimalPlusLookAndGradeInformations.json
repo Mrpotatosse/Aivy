@@ -1,0 +1,21 @@
+{
+	"fields": [
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"default_value": "0",
+			"name": "grade",
+			"position": 0,
+			"type": "uint",
+			"write_method": "writeVarInt"
+		}
+	],
+	"name": "CharacterMinimalPlusLookAndGradeInformations",
+	"namespace": "com.ankamagames.dofus.network.types.game.character",
+	"protocolID": 9668,
+	"super": "CharacterMinimalPlusLookInformations",
+	"super_serialize": true,
+	"supernamespace": "com.ankamagames.dofus.network.types.game.character",
+	"use_hash_function": false
+}

@@ -1,0 +1,22 @@
+{
+	"fields": [
+		{
+			"is_vector": true,
+			"name": "datas",
+			"position": 0,
+			"prefixed_by_type_id": true,
+			"self_serialize_method": "serialize",
+			"type": "StatisticData",
+			"type_namespace": "com.ankamagames.dofus.network.types.common.basic",
+			"write_length_method": "writeShort",
+			"write_type_id_method": "writeShort"
+		}
+	],
+	"name": "BasicStatWithDataMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.common.basic",
+	"protocolID": 3174,
+	"super": "BasicStatMessage",
+	"super_serialize": true,
+	"supernamespace": "com.ankamagames.dofus.network.messages.common.basic",
+	"use_hash_function": false
+}

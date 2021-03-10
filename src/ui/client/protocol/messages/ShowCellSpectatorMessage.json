@@ -1,0 +1,17 @@
+{
+	"fields": [
+		{
+			"name": "playerName",
+			"position": 0,
+			"type": "String",
+			"write_method": "writeUTF"
+		}
+	],
+	"name": "ShowCellSpectatorMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.context",
+	"protocolID": 7427,
+	"super": "ShowCellMessage",
+	"super_serialize": true,
+	"supernamespace": "com.ankamagames.dofus.network.messages.game.context",
+	"use_hash_function": false
+}

@@ -1,0 +1,86 @@
+{
+	"fields": [
+		{
+			"default_value": "0",
+			"name": "questType",
+			"position": 0,
+			"type": "uint",
+			"write_method": "writeByte"
+		},
+		{
+			"bounds": {
+				"low": "0",
+				"up": "9007199254740992.000000"
+			},
+			"default_value": "0",
+			"name": "startMapId",
+			"position": 1,
+			"type": "Number",
+			"write_method": "writeDouble"
+		},
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"default_value": "0",
+			"name": "checkPointTotal",
+			"position": 5,
+			"type": "uint",
+			"write_method": "writeVarInt"
+		},
+		{
+			"is_vector": true,
+			"name": "knownStepsList",
+			"position": 2,
+			"prefixed_by_type_id": true,
+			"self_serialize_method": "serialize",
+			"type": "TreasureHuntStep",
+			"type_namespace": "com.ankamagames.dofus.network.types.game.context.roleplay.treasureHunt",
+			"write_length_method": "writeShort",
+			"write_type_id_method": "writeShort"
+		},
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"default_value": "0",
+			"name": "totalStepCount",
+			"position": 3,
+			"type": "uint",
+			"write_method": "writeByte"
+		},
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"default_value": "0",
+			"name": "checkPointCurrent",
+			"position": 4,
+			"type": "uint",
+			"write_method": "writeVarInt"
+		},
+		{
+			"default_value": "0",
+			"name": "availableRetryCount",
+			"position": 6,
+			"type": "int",
+			"write_method": "writeInt"
+		},
+		{
+			"is_vector": true,
+			"name": "flags",
+			"position": 7,
+			"self_serialize_method": "serializeAs_TreasureHuntFlag",
+			"type": "TreasureHuntFlag",
+			"type_namespace": "com.ankamagames.dofus.network.types.game.context.roleplay.treasureHunt",
+			"write_length_method": "writeShort"
+		}
+	],
+	"name": "TreasureHuntMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.context.roleplay.treasureHunt",
+	"protocolID": 5745,
+	"super": "NetworkMessage",
+	"super_serialize": false,
+	"supernamespace": "com.ankamagames.jerakine.network",
+	"use_hash_function": false
+}

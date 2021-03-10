@@ -1,0 +1,42 @@
+{
+	"fields": [
+		{
+			"default_value": "0",
+			"name": "movementType",
+			"position": 0,
+			"type": "uint",
+			"write_method": "writeByte"
+		},
+		{
+			"name": "basicInfos",
+			"position": 1,
+			"self_serialize_method": "serializeAs_TaxCollectorBasicInformations",
+			"type": "TaxCollectorBasicInformations",
+			"type_namespace": "com.ankamagames.dofus.network.types.game.guild.tax"
+		},
+		{
+			"bounds": {
+				"low": "0",
+				"up": "9007199254740992.000000"
+			},
+			"default_value": "0",
+			"name": "playerId",
+			"position": 2,
+			"type": "Number",
+			"write_method": "writeVarLong"
+		},
+		{
+			"name": "playerName",
+			"position": 3,
+			"type": "String",
+			"write_method": "writeUTF"
+		}
+	],
+	"name": "TaxCollectorMovement",
+	"namespace": "com.ankamagames.dofus.network.types.game.guild.tax",
+	"protocolID": 1360,
+	"super": "",
+	"super_serialize": false,
+	"supernamespace": "",
+	"use_hash_function": false
+}

@@ -1,0 +1,10 @@
+{
+	"fields": [],
+	"name": "AlliancePrismDialogQuestionMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.context.roleplay.npc",
+	"protocolID": 3007,
+	"super": "NetworkMessage",
+	"super_serialize": false,
+	"supernamespace": "com.ankamagames.jerakine.network",
+	"use_hash_function": false
+}

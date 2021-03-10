@@ -1,0 +1,27 @@
+{
+	"fields": [
+		{
+			"is_vector": true,
+			"name": "channels",
+			"position": 0,
+			"type": "uint",
+			"write_length_method": "writeShort",
+			"write_method": "writeByte"
+		},
+		{
+			"is_vector": true,
+			"name": "disallowed",
+			"position": 1,
+			"type": "uint",
+			"write_length_method": "writeShort",
+			"write_method": "writeByte"
+		}
+	],
+	"name": "EnabledChannelsMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.chat.channel",
+	"protocolID": 535,
+	"super": "NetworkMessage",
+	"super_serialize": false,
+	"supernamespace": "com.ankamagames.jerakine.network",
+	"use_hash_function": false
+}

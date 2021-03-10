@@ -1,0 +1,25 @@
+{
+	"fields": [
+		{
+			"default_value": "false",
+			"name": "deserted",
+			"position": 0,
+			"type": "Boolean",
+			"write_method": "writeBoolean"
+		},
+		{
+			"name": "guildInfo",
+			"position": 1,
+			"self_serialize_method": "serializeAs_GuildInformations",
+			"type": "GuildInformations",
+			"type_namespace": "com.ankamagames.dofus.network.types.game.context.roleplay"
+		}
+	],
+	"name": "PaddockGuildedInformations",
+	"namespace": "com.ankamagames.dofus.network.types.game.paddock",
+	"protocolID": 355,
+	"super": "PaddockBuyableInformations",
+	"super_serialize": true,
+	"supernamespace": "com.ankamagames.dofus.network.types.game.paddock",
+	"use_hash_function": false
+}

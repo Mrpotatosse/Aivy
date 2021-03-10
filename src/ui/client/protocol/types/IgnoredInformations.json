@@ -1,0 +1,10 @@
+{
+	"fields": [],
+	"name": "IgnoredInformations",
+	"namespace": "com.ankamagames.dofus.network.types.game.friend",
+	"protocolID": 2408,
+	"super": "AbstractContactInformations",
+	"super_serialize": true,
+	"supernamespace": "com.ankamagames.dofus.network.types.game.friend",
+	"use_hash_function": false
+}

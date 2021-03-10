@@ -1,0 +1,10 @@
+{
+	"fields": [],
+	"name": "HouseSellFromInsideRequestMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.context.roleplay.houses",
+	"protocolID": 6264,
+	"super": "HouseSellRequestMessage",
+	"super_serialize": true,
+	"supernamespace": "com.ankamagames.dofus.network.messages.game.context.roleplay.houses",
+	"use_hash_function": false
+}

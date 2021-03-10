@@ -1,0 +1,27 @@
+{
+	"fields": [
+		{
+			"boolean_byte_wrapper_position": 1,
+			"default_value": "false",
+			"name": "trusted",
+			"position": 0,
+			"type": "Boolean",
+			"use_boolean_byte_wrapper": true
+		},
+		{
+			"boolean_byte_wrapper_position": 2,
+			"default_value": "false",
+			"name": "certified",
+			"position": 0,
+			"type": "Boolean",
+			"use_boolean_byte_wrapper": true
+		}
+	],
+	"name": "TrustStatusMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.secure",
+	"protocolID": 4536,
+	"super": "NetworkMessage",
+	"super_serialize": false,
+	"supernamespace": "com.ankamagames.jerakine.network",
+	"use_hash_function": false
+}

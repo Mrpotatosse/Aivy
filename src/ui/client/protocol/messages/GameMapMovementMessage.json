@@ -1,0 +1,40 @@
+{
+	"fields": [
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"is_vector": true,
+			"name": "keyMovements",
+			"position": 0,
+			"type": "uint",
+			"write_length_method": "writeShort",
+			"write_method": "writeShort"
+		},
+		{
+			"default_value": "0",
+			"name": "forcedDirection",
+			"position": 1,
+			"type": "int",
+			"write_method": "writeShort"
+		},
+		{
+			"bounds": {
+				"low": "-9007199254740992.000000",
+				"up": "9007199254740992.000000"
+			},
+			"default_value": "0",
+			"name": "actorId",
+			"position": 2,
+			"type": "Number",
+			"write_method": "writeDouble"
+		}
+	],
+	"name": "GameMapMovementMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.context",
+	"protocolID": 9211,
+	"super": "NetworkMessage",
+	"super_serialize": false,
+	"supernamespace": "com.ankamagames.jerakine.network",
+	"use_hash_function": false
+}

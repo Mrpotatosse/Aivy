@@ -1,0 +1,37 @@
+{
+	"fields": [
+		{
+			"is_vector": true,
+			"name": "fightersInformations",
+			"position": 1,
+			"self_serialize_method": "serializeAs_TaxCollectorFightersInformation",
+			"type": "TaxCollectorFightersInformation",
+			"type_namespace": "com.ankamagames.dofus.network.types.game.guild.tax",
+			"write_length_method": "writeShort"
+		},
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"default_value": "0",
+			"name": "nbcollectorMax",
+			"position": 0,
+			"type": "uint",
+			"write_method": "writeByte"
+		},
+		{
+			"default_value": "0",
+			"name": "infoType",
+			"position": 2,
+			"type": "uint",
+			"write_method": "writeByte"
+		}
+	],
+	"name": "TaxCollectorListMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.guild.tax",
+	"protocolID": 1516,
+	"super": "AbstractTaxCollectorListMessage",
+	"super_serialize": true,
+	"supernamespace": "com.ankamagames.dofus.network.messages.game.guild.tax",
+	"use_hash_function": false
+}

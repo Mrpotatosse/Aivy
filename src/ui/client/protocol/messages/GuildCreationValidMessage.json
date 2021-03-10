@@ -1,0 +1,24 @@
+{
+	"fields": [
+		{
+			"name": "guildName",
+			"position": 0,
+			"type": "String",
+			"write_method": "writeUTF"
+		},
+		{
+			"name": "guildEmblem",
+			"position": 1,
+			"self_serialize_method": "serializeAs_GuildEmblem",
+			"type": "GuildEmblem",
+			"type_namespace": "com.ankamagames.dofus.network.types.game.guild"
+		}
+	],
+	"name": "GuildCreationValidMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.guild",
+	"protocolID": 5729,
+	"super": "NetworkMessage",
+	"super_serialize": false,
+	"supernamespace": "com.ankamagames.jerakine.network",
+	"use_hash_function": false
+}

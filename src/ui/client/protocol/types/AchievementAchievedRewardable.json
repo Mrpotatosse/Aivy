@@ -1,0 +1,22 @@
+{
+	"fields": [
+		{
+			"bounds": {
+				"low": "0",
+				"up": "200"
+			},
+			"default_value": "0",
+			"name": "finishedlevel",
+			"position": 0,
+			"type": "uint",
+			"write_method": "writeVarShort"
+		}
+	],
+	"name": "AchievementAchievedRewardable",
+	"namespace": "com.ankamagames.dofus.network.types.game.achievement",
+	"protocolID": 5008,
+	"super": "AchievementAchieved",
+	"super_serialize": true,
+	"supernamespace": "com.ankamagames.dofus.network.types.game.achievement",
+	"use_hash_function": false
+}
