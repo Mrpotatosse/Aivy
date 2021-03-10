@@ -34,9 +34,8 @@ MITM PacketSniffer pour
 
 # Lancement
     Pour l'instant le lancement se fait via le fichier test (https://github.com/Mrpotatosse/Aivy/blob/main/test/all.js) mais il vous est possible avec quelque connaissance de modifié cela
-    ``` 
+     
     node test/all
-    ```
 
     Pour lancer Aivy il vous faudra lancer le serveur http, ws, (et mitm pas obligatoire , vous pouvez créer un script depuis l'UI pour le lancer). Des exemples se trouvent dans le dossier test (http.js, dofus_mitm.js, webserver.js)
 
@@ -54,9 +53,9 @@ MITM PacketSniffer pour
 
 # Exemples
 
-    - Handler : 
+Handler : 
 ```javascript
-// Si vous créer le script depuis le navigateur 
+// Si vous créer le script depuis l'UI 
 const {d2_handler_class, add_handler, remove_handler} = require(`${__SRC}/dofus/messages/handlers/index`);
 
 // Si vous créer le script depuis le projet importer en fonction de la location du fichier
