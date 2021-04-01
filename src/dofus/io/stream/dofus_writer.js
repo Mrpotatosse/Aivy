@@ -47,25 +47,29 @@ class dofus_writer extends custom_writer{
     }
 
     writeVarLong(value){
-        if(value >> 32 === 0){
-            this.writeVarInt(value);
-        }else{
-            let low = value & 0xFFFFFFFF;
-            let high = value >> 32;
-            for(let i = 0; i < 4;i++){
-                this.writeByte(low & MASK_01111111 | MASK_10000000);
-                low = low >> 7;
+        const writeInt32 = (value) => {
+            while(value >= 128){
+                this.writeByte(value & 127 | 128);
+                value = value >>> 7;
             }
-            if((high & 0xFFFFFFF8) === 0){
+            this.writeByte(value);
+        }
+
+        let low = value;
+        let high = parseInt(Math.floor(value / 4294967296));
+        let size = 0;
+        if(high === 0){
+            writeInt32(low);
+        }else{
+            for(size = 0;size < 4; size++){
+                this.writeByte(low & 127 | 128);
+                low = low >>> 7;
+            }
+            if((high & 268435455 << 3) === 0){
                 this.writeByte(high << 4 | low);
             }else{
-                this.writeByte((high << 4 | low) & MASK_01111111 | MASK_10000000);
-                high = high >> 3;
-                while(high >= MASK_10000000){
-                    this.writeByte(high & MASK_01111111 | MASK_10000000);
-                    high = high >> 7;
-                }
-                this.writeByte(high);
+                this.writeByte((high << 4 | low) & 127 | 128);
+                writeInt32(high >>> 3); 
             }
         }
     }
