@@ -28,13 +28,12 @@ MITM PacketSniffer pour
 # Dependances
     - frida (https://frida.re) + fritm script https://github.com/louisabraham/fritm/blob/master/fritm/script.js 
     - botofu parser (https://gitlab.com/botofu/botofu/-/tree/dev/src/botofu/protocol/parser)
-    - express (https://expressjs.com)
     - ws (https://github.com/websockets/ws)
-    - ace editor (https://github.com/luvuong-le/code-editor-tutorial/tree/configuring-ace/lib/js/ace-editor/src-min)
-
+    - react-ace (https://www.npmjs.com/package/react-ace)
+  
 # Lancement 
    ``yarn`` pour importer tout les modules node ( j'crois mdr )
-   
+
    ``npm start`` pour lancer
 
 # Usage
