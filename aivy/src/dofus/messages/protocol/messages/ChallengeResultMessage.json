@@ -1,0 +1,28 @@
+{
+	"fields": [
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"default_value": "0",
+			"name": "challengeId",
+			"position": 0,
+			"type": "uint",
+			"write_method": "writeVarShort"
+		},
+		{
+			"default_value": "false",
+			"name": "success",
+			"position": 1,
+			"type": "Boolean",
+			"write_method": "writeBoolean"
+		}
+	],
+	"name": "ChallengeResultMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.context.fight.challenge",
+	"protocolID": 4942,
+	"super": "NetworkMessage",
+	"super_serialize": false,
+	"supernamespace": "com.ankamagames.jerakine.network",
+	"use_hash_function": false
+}

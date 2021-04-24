@@ -1,0 +1,10 @@
+{
+	"fields": [],
+	"name": "WrapperObjectAssociatedMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.inventory.items",
+	"protocolID": 8094,
+	"super": "SymbioticObjectAssociatedMessage",
+	"super_serialize": true,
+	"supernamespace": "com.ankamagames.dofus.network.messages.game.inventory.items",
+	"use_hash_function": false
+}

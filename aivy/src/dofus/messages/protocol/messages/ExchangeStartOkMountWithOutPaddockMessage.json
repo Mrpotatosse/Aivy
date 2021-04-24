@@ -1,0 +1,20 @@
+{
+	"fields": [
+		{
+			"is_vector": true,
+			"name": "stabledMountsDescription",
+			"position": 0,
+			"self_serialize_method": "serializeAs_MountClientData",
+			"type": "MountClientData",
+			"type_namespace": "com.ankamagames.dofus.network.types.game.mount",
+			"write_length_method": "writeShort"
+		}
+	],
+	"name": "ExchangeStartOkMountWithOutPaddockMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.inventory.exchanges",
+	"protocolID": 185,
+	"super": "NetworkMessage",
+	"super_serialize": false,
+	"supernamespace": "com.ankamagames.jerakine.network",
+	"use_hash_function": false
+}

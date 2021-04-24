@@ -1,0 +1,25 @@
+{
+	"fields": [
+		{
+			"default_value": "0",
+			"name": "code",
+			"position": 1,
+			"type": "uint",
+			"write_method": "writeByte"
+		},
+		{
+			"default_value": "0",
+			"name": "action",
+			"position": 0,
+			"type": "uint",
+			"write_method": "writeByte"
+		}
+	],
+	"name": "HaapiValidationMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.web.haapi",
+	"protocolID": 5641,
+	"super": "NetworkMessage",
+	"super_serialize": false,
+	"supernamespace": "com.ankamagames.jerakine.network",
+	"use_hash_function": false
+}

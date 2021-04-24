@@ -1,0 +1,21 @@
+{
+	"fields": [
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"default_value": "0",
+			"name": "elementEventId",
+			"position": 0,
+			"type": "uint",
+			"write_method": "writeByte"
+		}
+	],
+	"name": "GameContextRemoveElementWithEventMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.context",
+	"protocolID": 362,
+	"super": "GameContextRemoveElementMessage",
+	"super_serialize": true,
+	"supernamespace": "com.ankamagames.dofus.network.messages.game.context",
+	"use_hash_function": false
+}

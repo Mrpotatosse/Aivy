@@ -1,0 +1,58 @@
+{
+	"fields": [
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"default_value": "0",
+			"name": "typeId",
+			"position": 0,
+			"type": "uint",
+			"write_method": "writeByte"
+		},
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"default_value": "0",
+			"name": "rewardTokenCount",
+			"position": 4,
+			"type": "uint",
+			"write_method": "writeVarInt"
+		},
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"default_value": "0",
+			"name": "nextVulnerabilityDate",
+			"position": 2,
+			"type": "uint",
+			"write_method": "writeInt"
+		},
+		{
+			"default_value": "1",
+			"name": "state",
+			"position": 1,
+			"type": "uint",
+			"write_method": "writeByte"
+		},
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"default_value": "0",
+			"name": "placementDate",
+			"position": 3,
+			"type": "uint",
+			"write_method": "writeInt"
+		}
+	],
+	"name": "PrismInformation",
+	"namespace": "com.ankamagames.dofus.network.types.game.prism",
+	"protocolID": 8474,
+	"super": "",
+	"super_serialize": false,
+	"supernamespace": "",
+	"use_hash_function": false
+}

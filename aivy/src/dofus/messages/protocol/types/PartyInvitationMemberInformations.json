@@ -1,0 +1,63 @@
+{
+	"fields": [
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"default_value": "0",
+			"name": "subAreaId",
+			"position": 3,
+			"type": "uint",
+			"write_method": "writeVarShort"
+		},
+		{
+			"bounds": {
+				"low": "-255",
+				"up": "255"
+			},
+			"default_value": "0",
+			"name": "worldX",
+			"position": 0,
+			"type": "int",
+			"write_method": "writeShort"
+		},
+		{
+			"bounds": {
+				"low": "-255",
+				"up": "255"
+			},
+			"default_value": "0",
+			"name": "worldY",
+			"position": 1,
+			"type": "int",
+			"write_method": "writeShort"
+		},
+		{
+			"bounds": {
+				"low": "0",
+				"up": "9007199254740992.000000"
+			},
+			"default_value": "0",
+			"name": "mapId",
+			"position": 2,
+			"type": "Number",
+			"write_method": "writeDouble"
+		},
+		{
+			"is_vector": true,
+			"name": "entities",
+			"position": 4,
+			"self_serialize_method": "serializeAs_PartyEntityBaseInformation",
+			"type": "PartyEntityBaseInformation",
+			"type_namespace": "com.ankamagames.dofus.network.types.game.context.roleplay.party.entity",
+			"write_length_method": "writeShort"
+		}
+	],
+	"name": "PartyInvitationMemberInformations",
+	"namespace": "com.ankamagames.dofus.network.types.game.context.roleplay.party",
+	"protocolID": 6090,
+	"super": "CharacterBaseInformations",
+	"super_serialize": true,
+	"supernamespace": "com.ankamagames.dofus.network.types.game.character.choice",
+	"use_hash_function": false
+}

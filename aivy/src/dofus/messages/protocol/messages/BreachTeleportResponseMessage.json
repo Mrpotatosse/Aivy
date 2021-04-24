@@ -1,0 +1,18 @@
+{
+	"fields": [
+		{
+			"default_value": "false",
+			"name": "teleported",
+			"position": 0,
+			"type": "Boolean",
+			"write_method": "writeBoolean"
+		}
+	],
+	"name": "BreachTeleportResponseMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.context.roleplay.breach",
+	"protocolID": 2939,
+	"super": "NetworkMessage",
+	"super_serialize": false,
+	"supernamespace": "com.ankamagames.jerakine.network",
+	"use_hash_function": false
+}

@@ -1,0 +1,54 @@
+{
+	"fields": [
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"default_value": "0",
+			"name": "uid",
+			"position": 0,
+			"type": "uint",
+			"write_method": "writeInt"
+		},
+		{
+			"name": "descUrl",
+			"position": 3,
+			"type": "String",
+			"write_method": "writeUTF"
+		},
+		{
+			"name": "title",
+			"position": 1,
+			"type": "String",
+			"write_method": "writeUTF"
+		},
+		{
+			"name": "text",
+			"position": 2,
+			"type": "String",
+			"write_method": "writeUTF"
+		},
+		{
+			"name": "pictureUrl",
+			"position": 4,
+			"type": "String",
+			"write_method": "writeUTF"
+		},
+		{
+			"is_vector": true,
+			"name": "items",
+			"position": 5,
+			"self_serialize_method": "serializeAs_ObjectItemInformationWithQuantity",
+			"type": "ObjectItemInformationWithQuantity",
+			"type_namespace": "com.ankamagames.dofus.network.types.game.data.items",
+			"write_length_method": "writeShort"
+		}
+	],
+	"name": "StartupActionAddObject",
+	"namespace": "com.ankamagames.dofus.network.types.game.startup",
+	"protocolID": 1506,
+	"super": "",
+	"super_serialize": false,
+	"supernamespace": "",
+	"use_hash_function": false
+}

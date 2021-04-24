@@ -1,0 +1,95 @@
+{
+	"fields": [
+		{
+			"name": "ownerName",
+			"position": 2,
+			"type": "String",
+			"write_method": "writeUTF"
+		},
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"default_value": "0",
+			"name": "instanceId",
+			"position": 0,
+			"type": "uint",
+			"write_method": "writeInt"
+		},
+		{
+			"default_value": "false",
+			"name": "secondHand",
+			"position": 1,
+			"type": "Boolean",
+			"write_method": "writeBoolean"
+		},
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"default_value": "0",
+			"name": "subAreaId",
+			"position": 6,
+			"type": "uint",
+			"write_method": "writeVarShort"
+		},
+		{
+			"bounds": {
+				"low": "-255",
+				"up": "255"
+			},
+			"default_value": "0",
+			"name": "worldX",
+			"position": 3,
+			"type": "int",
+			"write_method": "writeShort"
+		},
+		{
+			"bounds": {
+				"low": "-255",
+				"up": "255"
+			},
+			"default_value": "0",
+			"name": "worldY",
+			"position": 4,
+			"type": "int",
+			"write_method": "writeShort"
+		},
+		{
+			"is_vector": true,
+			"name": "skillListIds",
+			"position": 7,
+			"type": "int",
+			"write_length_method": "writeShort",
+			"write_method": "writeInt"
+		},
+		{
+			"bounds": {
+				"low": "0",
+				"up": "9007199254740992.000000"
+			},
+			"default_value": "0",
+			"name": "mapId",
+			"position": 5,
+			"type": "Number",
+			"write_method": "writeDouble"
+		},
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"default_value": "0",
+			"name": "guildshareParams",
+			"position": 8,
+			"type": "uint",
+			"write_method": "writeVarInt"
+		}
+	],
+	"name": "HouseInformationsForGuild",
+	"namespace": "com.ankamagames.dofus.network.types.game.house",
+	"protocolID": 1969,
+	"super": "HouseInformations",
+	"super_serialize": true,
+	"supernamespace": "com.ankamagames.dofus.network.types.game.house",
+	"use_hash_function": false
+}

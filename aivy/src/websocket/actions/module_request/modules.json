@@ -1,0 +1,36 @@
+[
+	{
+		"id": 2,
+		"name": "",
+		"icon": "http://aivy.ml/assets/dofus-icon-128.png",
+		"action": "const {spawn_and_hook} = require(`${__SRC}/hook`);\nspawn_and_hook(`${global.DOFUS_FOLDER}Dofus.exe`, global.DOFUS_HOOK_PORT);"
+	},
+	{
+		"id": 4,
+		"name": "parser",
+		"icon": "",
+		"action": "const {parser, toFiles} = require(`${__SRC}/botofu`);\nconst path = require('path');\n\nconst output_path = path.join(__SRC, '/dofus/messages/protocol');\n\nparser(`${global.DOFUS_FOLDER}DofusInvoker.swf`, output_path, 'dofus_protocol.json', _ => {\n    toFiles(path.join(output_path, 'dofus_protocol.json'), output_path);\n    \n    global.websocket_server.broadcastClients({\n        result_type: 'alert_show',\n        value: 'Protocol parsed successfully'\n    });\n});"
+	},
+	{
+		"id": 3,
+		"name": "global",
+		"autoinit": true,
+		"icon": "",
+		"action": "global.DOFUS_FOLDER = 'D:/ANKAMA_DOFUS/';\nglobal.DOFUS_HOOK_PORT = 7778;\n\nconsole.log('[GLOBAL VAR] initied');"
+	},
+	{
+		"id": 5,
+		"name": "data sender",
+		"autoinit": true,
+		"icon": "",
+		"action": "const buffer_writer = require(`${__SRC}/dofus/messages/buffer/writer`);\nconst {dofus_writer} = require(`${__SRC}/dofus/io`);\nconst {encode} = require(`${__SRC}/dofus/messages/data`);\nconst {add_handler, remove_handler, d2_handler_class} = require(`${__SRC}/dofus/messages/handler`);\n\nconst send_data = (socket, from_client, message, increment_fake_msg=true) => {\n    const sender = from_client ? socket.remote : socket;\n    \n    if(from_client){\n        message.__instance_id = socket.get_current_instance_id() + 1;\n    }\n    const {id, data} = encode(message, new dofus_writer([]));\n    const packet_data_blob = new buffer_writer(from_client).parse_message({\n        message_id: id,\n        instance_id: message.__instance_id,\n        data: data\n    });\n    \n    if(increment_fake_msg){\n        socket.fake_message_created++;\n    }\n    \n    sender.write(packet_data_blob);\n}\n\nglobal.send_dofus_data = send_data;\n\nconsole.log('[DATA SENDER] initied');"
+	},
+	{
+		"id": 1,
+		"name": "",
+		"icon": "http://aivy.ml/assets/gear-icon.png",
+		"autoinit": true,
+		"link": "/option",
+		"action": "const {add_handler, remove_handler, d2_handler_class} = require(`${__SRC}/dofus/messages/handler`);\n\nclass _option_log_show_handler_class extends d2_handler_class {\n    async handle(){\n        const current_option = global.AIVY_OPTION;\n        \n        const value_show = global.AIVY_OPTION['Log show'];\n        const value_type = global.AIVY_OPTION['Log show type'].find(lv => lv.startsWith(':')).replace(':', '');\n        const value_level = global.AIVY_OPTION['Log level'].find(lv => lv.startsWith(':')).replace(':', '');\n        \n        if(!value_show) return;\n        if(value_level === 'none') return;\n        if(value_level === 'client' && !this.message_informations.from_client) return;\n        if(value_level === 'server' && this.message_informations.from_client) return;\n        \n        let value = undefined;\n        switch(value_type){\n            case 'minimum': value = `${this.message_informations.from_client ? '[CLIENT]' : '[SERVER]'} ${this.message_informations.message_data_parsed.__name} (${this.message_informations.message_id})`; break;\n            case 'data': value = {\n                __sender: this.message_informations.from_client ? '[CLIENT]' : '[SERVER]',\n                ...this.message_informations.message_data_parsed\n            }; break;\n            case 'full': value = this.message_informations; break;\n        }\n        \n        global.websocket_server.broadcastClients({\n            result_type: 'console_show',\n            value: value\n        });\n    }\n}\n\nremove_handler('all', _option_log_show_handler_class, true);\nadd_handler('all', _option_log_show_handler_class);\n\nconsole.log('[OPTION] initied');"
+	}
+]

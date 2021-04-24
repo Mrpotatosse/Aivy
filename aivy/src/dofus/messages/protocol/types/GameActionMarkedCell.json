@@ -1,0 +1,43 @@
+{
+	"fields": [
+		{
+			"default_value": "0",
+			"name": "cellColor",
+			"position": 2,
+			"type": "int",
+			"write_method": "writeInt"
+		},
+		{
+			"bounds": {
+				"low": "0",
+				"up": "559"
+			},
+			"default_value": "0",
+			"name": "cellId",
+			"position": 0,
+			"type": "uint",
+			"write_method": "writeVarShort"
+		},
+		{
+			"default_value": "0",
+			"name": "zoneSize",
+			"position": 1,
+			"type": "int",
+			"write_method": "writeByte"
+		},
+		{
+			"default_value": "0",
+			"name": "cellsType",
+			"position": 3,
+			"type": "int",
+			"write_method": "writeByte"
+		}
+	],
+	"name": "GameActionMarkedCell",
+	"namespace": "com.ankamagames.dofus.network.types.game.actions.fight",
+	"protocolID": 9507,
+	"super": "",
+	"super_serialize": false,
+	"supernamespace": "",
+	"use_hash_function": false
+}

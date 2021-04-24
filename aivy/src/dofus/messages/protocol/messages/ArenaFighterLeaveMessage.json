@@ -1,0 +1,18 @@
+{
+	"fields": [
+		{
+			"name": "leaver",
+			"position": 0,
+			"self_serialize_method": "serializeAs_CharacterBasicMinimalInformations",
+			"type": "CharacterBasicMinimalInformations",
+			"type_namespace": "com.ankamagames.dofus.network.types.game.character"
+		}
+	],
+	"name": "ArenaFighterLeaveMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.context.fight.arena",
+	"protocolID": 9286,
+	"super": "NetworkMessage",
+	"super_serialize": false,
+	"supernamespace": "com.ankamagames.jerakine.network",
+	"use_hash_function": false
+}

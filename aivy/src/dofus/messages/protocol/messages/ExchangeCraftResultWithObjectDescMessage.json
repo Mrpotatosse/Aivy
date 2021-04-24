@@ -1,0 +1,18 @@
+{
+	"fields": [
+		{
+			"name": "objectInfo",
+			"position": 0,
+			"self_serialize_method": "serializeAs_ObjectItemNotInContainer",
+			"type": "ObjectItemNotInContainer",
+			"type_namespace": "com.ankamagames.dofus.network.types.game.data.items"
+		}
+	],
+	"name": "ExchangeCraftResultWithObjectDescMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.inventory.exchanges",
+	"protocolID": 3365,
+	"super": "ExchangeCraftResultMessage",
+	"super_serialize": true,
+	"supernamespace": "com.ankamagames.dofus.network.messages.game.inventory.exchanges",
+	"use_hash_function": false
+}

@@ -1,0 +1,10 @@
+.App-home-lnews {
+    display: grid;
+    min-height: 50px;
+    grid-template-areas: 
+        "left gap right";     
+    grid-template-columns: 49.5% 1% 49.5%;
+    grid-template-rows: auto;
+    border: none;    
+    margin-top: 10px;
+}

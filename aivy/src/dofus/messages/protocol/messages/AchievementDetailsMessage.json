@@ -1,0 +1,18 @@
+{
+	"fields": [
+		{
+			"name": "achievement",
+			"position": 0,
+			"self_serialize_method": "serializeAs_Achievement",
+			"type": "Achievement",
+			"type_namespace": "com.ankamagames.dofus.network.types.game.achievement"
+		}
+	],
+	"name": "AchievementDetailsMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.achievement",
+	"protocolID": 167,
+	"super": "NetworkMessage",
+	"super_serialize": false,
+	"supernamespace": "com.ankamagames.jerakine.network",
+	"use_hash_function": false
+}

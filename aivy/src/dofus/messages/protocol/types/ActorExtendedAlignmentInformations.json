@@ -1,0 +1,51 @@
+{
+	"fields": [
+		{
+			"bounds": {
+				"low": "0",
+				"up": "20000"
+			},
+			"default_value": "0",
+			"name": "honor",
+			"position": 0,
+			"type": "uint",
+			"write_method": "writeVarShort"
+		},
+		{
+			"bounds": {
+				"low": "0",
+				"up": "20000"
+			},
+			"default_value": "0",
+			"name": "honorGradeFloor",
+			"position": 1,
+			"type": "uint",
+			"write_method": "writeVarShort"
+		},
+		{
+			"bounds": {
+				"low": "0",
+				"up": "20000"
+			},
+			"default_value": "0",
+			"name": "honorNextGradeFloor",
+			"position": 2,
+			"type": "uint",
+			"write_method": "writeVarShort"
+		},
+		{
+			"default_value": "0",
+			"name": "aggressable",
+			"position": 3,
+			"type": "uint",
+			"write_method": "writeByte"
+		}
+	],
+	"name": "ActorExtendedAlignmentInformations",
+	"namespace": "com.ankamagames.dofus.network.types.game.character.alignment",
+	"protocolID": 186,
+	"super": "ActorAlignmentInformations",
+	"super_serialize": true,
+	"supernamespace": "com.ankamagames.dofus.network.types.game.character.alignment",
+	"use_hash_function": false
+}

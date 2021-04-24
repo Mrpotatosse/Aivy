@@ -1,0 +1,27 @@
+[
+    {
+        "name": "",
+        "icon": "http://www.aivy.ml/favicon.ico",
+        "link": "/home"
+    },
+    {
+        "name": "editor",
+        "icon": "",
+        "link": "/editor"
+    },
+    {
+        "name": "cubor",
+        "icon": "",
+        "link": "/cubor"
+    },
+    {
+        "name": "modules",
+        "icon": "",
+        "link": "/modules"
+    },
+    {
+        "name": "protocol",
+        "icon": "",
+        "link": "/protocol"
+    }
+]

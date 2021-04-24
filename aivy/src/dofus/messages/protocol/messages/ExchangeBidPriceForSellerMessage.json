@@ -1,0 +1,30 @@
+{
+	"fields": [
+		{
+			"default_value": "false",
+			"name": "allIdentical",
+			"position": 0,
+			"type": "Boolean",
+			"write_method": "writeBoolean"
+		},
+		{
+			"bounds": {
+				"low": "0",
+				"up": "9007199254740992.000000"
+			},
+			"is_vector": true,
+			"name": "minimalPrices",
+			"position": 1,
+			"type": "Number",
+			"write_length_method": "writeShort",
+			"write_method": "writeVarLong"
+		}
+	],
+	"name": "ExchangeBidPriceForSellerMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.inventory.exchanges",
+	"protocolID": 4848,
+	"super": "ExchangeBidPriceMessage",
+	"super_serialize": true,
+	"supernamespace": "com.ankamagames.dofus.network.messages.game.inventory.exchanges",
+	"use_hash_function": false
+}

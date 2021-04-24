@@ -1,0 +1,38 @@
+{
+	"fields": [
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"default_value": "0",
+			"name": "houseId",
+			"position": 0,
+			"type": "uint",
+			"write_method": "writeVarInt"
+		},
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"default_value": "0",
+			"name": "instanceId",
+			"position": 1,
+			"type": "uint",
+			"write_method": "writeInt"
+		},
+		{
+			"default_value": "false",
+			"name": "secondHand",
+			"position": 2,
+			"type": "Boolean",
+			"write_method": "writeBoolean"
+		}
+	],
+	"name": "LockableStateUpdateHouseDoorMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.context.roleplay.lockable",
+	"protocolID": 201,
+	"super": "LockableStateUpdateAbstractMessage",
+	"super_serialize": true,
+	"supernamespace": "com.ankamagames.dofus.network.messages.game.context.roleplay.lockable",
+	"use_hash_function": false
+}

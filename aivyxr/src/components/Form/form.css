@@ -1,0 +1,19 @@
+.App-form-element {
+    padding: 5px;
+    display: flex;
+    height: 8%;
+}
+
+.App-form-text {
+    width: 25%;
+    font-size: calc(1vh + 1vmin);
+
+    display: flex;
+    align-items: center;
+    margin-right: 5px;
+}
+
+.App-form-input {
+    width: 75%;
+    font-size: calc(1vh + 1vmin);
+}

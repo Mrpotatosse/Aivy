@@ -1,0 +1,31 @@
+{
+	"fields": [
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"default_value": "0",
+			"name": "lifePoints",
+			"position": 0,
+			"type": "uint",
+			"write_method": "writeVarInt"
+		},
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"default_value": "0",
+			"name": "maxLifePoints",
+			"position": 1,
+			"type": "uint",
+			"write_method": "writeVarInt"
+		}
+	],
+	"name": "UpdateLifePointsMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.character.stats",
+	"protocolID": 8392,
+	"super": "NetworkMessage",
+	"super_serialize": false,
+	"supernamespace": "com.ankamagames.jerakine.network",
+	"use_hash_function": false
+}

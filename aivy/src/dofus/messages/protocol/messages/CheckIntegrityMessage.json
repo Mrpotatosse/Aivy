@@ -1,0 +1,19 @@
+{
+	"fields": [
+		{
+			"is_vector": true,
+			"name": "data",
+			"position": 0,
+			"type": "int",
+			"write_length_method": "writeVarInt",
+			"write_method": "writeByte"
+		}
+	],
+	"name": "CheckIntegrityMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.security",
+	"protocolID": 4098,
+	"super": "NetworkMessage",
+	"super_serialize": false,
+	"supernamespace": "com.ankamagames.jerakine.network",
+	"use_hash_function": false
+}

@@ -1,0 +1,31 @@
+{
+	"fields": [
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"is_vector": true,
+			"name": "doorsOnMap",
+			"position": 0,
+			"type": "uint",
+			"write_length_method": "writeShort",
+			"write_method": "writeInt"
+		},
+		{
+			"is_vector": true,
+			"name": "houseInstances",
+			"position": 1,
+			"self_serialize_method": "serializeAs_HouseInstanceInformations",
+			"type": "HouseInstanceInformations",
+			"type_namespace": "com.ankamagames.dofus.network.types.game.house",
+			"write_length_method": "writeShort"
+		}
+	],
+	"name": "HouseOnMapInformations",
+	"namespace": "com.ankamagames.dofus.network.types.game.house",
+	"protocolID": 96,
+	"super": "HouseInformations",
+	"super_serialize": true,
+	"supernamespace": "com.ankamagames.dofus.network.types.game.house",
+	"use_hash_function": false
+}

@@ -1,0 +1,27 @@
+{
+	"fields": [
+		{
+			"default_value": "0",
+			"name": "type",
+			"position": 0,
+			"type": "uint",
+			"write_method": "writeByte"
+		},
+		{
+			"name": "coords",
+			"position": 1,
+			"prefixed_by_type_id": true,
+			"self_serialize_method": "serialize",
+			"type": "MapCoordinates",
+			"type_namespace": "com.ankamagames.dofus.network.types.game.context",
+			"write_type_id_method": "writeShort"
+		}
+	],
+	"name": "CompassUpdateMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.atlas.compass",
+	"protocolID": 1000,
+	"super": "NetworkMessage",
+	"super_serialize": false,
+	"supernamespace": "com.ankamagames.jerakine.network",
+	"use_hash_function": false
+}

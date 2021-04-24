@@ -1,0 +1,33 @@
+{
+	"fields": [
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"is_vector": true,
+			"name": "objects",
+			"position": 0,
+			"type": "uint",
+			"write_length_method": "writeShort",
+			"write_method": "writeVarInt"
+		},
+		{
+			"bounds": {
+				"low": "0",
+				"up": "9007199254740992.000000"
+			},
+			"default_value": "0",
+			"name": "kamas",
+			"position": 1,
+			"type": "Number",
+			"write_method": "writeVarLong"
+		}
+	],
+	"name": "FightLoot",
+	"namespace": "com.ankamagames.dofus.network.types.game.context.fight",
+	"protocolID": 5630,
+	"super": "",
+	"super_serialize": false,
+	"supernamespace": "",
+	"use_hash_function": false
+}

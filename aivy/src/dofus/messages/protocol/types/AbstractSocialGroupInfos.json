@@ -1,0 +1,10 @@
+{
+	"fields": [],
+	"name": "AbstractSocialGroupInfos",
+	"namespace": "com.ankamagames.dofus.network.types.game.social",
+	"protocolID": 709,
+	"super": "",
+	"super_serialize": false,
+	"supernamespace": "",
+	"use_hash_function": false
+}

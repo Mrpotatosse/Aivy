@@ -1,0 +1,21 @@
+{
+	"fields": [
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"default_value": "0",
+			"name": "creationDate",
+			"position": 0,
+			"type": "uint",
+			"write_method": "writeInt"
+		}
+	],
+	"name": "AllianceFactSheetInformations",
+	"namespace": "com.ankamagames.dofus.network.types.game.social",
+	"protocolID": 6448,
+	"super": "AllianceInformations",
+	"super_serialize": true,
+	"supernamespace": "com.ankamagames.dofus.network.types.game.context.roleplay",
+	"use_hash_function": false
+}

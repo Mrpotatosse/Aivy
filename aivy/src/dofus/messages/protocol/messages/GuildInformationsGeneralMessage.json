@@ -1,0 +1,92 @@
+{
+	"fields": [
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"default_value": "0",
+			"name": "nbTotalMembers",
+			"position": 6,
+			"type": "uint",
+			"write_method": "writeVarShort"
+		},
+		{
+			"bounds": {
+				"low": "0",
+				"up": "9007199254740992.000000"
+			},
+			"default_value": "0",
+			"name": "expNextLevelFloor",
+			"position": 4,
+			"type": "Number",
+			"write_method": "writeVarLong"
+		},
+		{
+			"bounds": {
+				"low": "0",
+				"up": "9007199254740992.000000"
+			},
+			"default_value": "0",
+			"name": "experience",
+			"position": 3,
+			"type": "Number",
+			"write_method": "writeVarLong"
+		},
+		{
+			"default_value": "false",
+			"name": "abandonnedPaddock",
+			"position": 0,
+			"type": "Boolean",
+			"write_method": "writeBoolean"
+		},
+		{
+			"bounds": {
+				"low": "0",
+				"up": "255"
+			},
+			"default_value": "0",
+			"name": "level",
+			"position": 1,
+			"type": "uint",
+			"write_method": "writeByte"
+		},
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"default_value": "0",
+			"name": "creationDate",
+			"position": 5,
+			"type": "uint",
+			"write_method": "writeInt"
+		},
+		{
+			"bounds": {
+				"low": "0",
+				"up": "9007199254740992.000000"
+			},
+			"default_value": "0",
+			"name": "expLevelFloor",
+			"position": 2,
+			"type": "Number",
+			"write_method": "writeVarLong"
+		},
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"default_value": "0",
+			"name": "nbConnectedMembers",
+			"position": 7,
+			"type": "uint",
+			"write_method": "writeVarShort"
+		}
+	],
+	"name": "GuildInformationsGeneralMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.guild",
+	"protocolID": 7098,
+	"super": "NetworkMessage",
+	"super_serialize": false,
+	"supernamespace": "com.ankamagames.jerakine.network",
+	"use_hash_function": false
+}

@@ -1,0 +1,10 @@
+{
+	"fields": [],
+	"name": "ClientYouAreDrunkMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.wtf",
+	"protocolID": 2922,
+	"super": "DebugInClientMessage",
+	"super_serialize": true,
+	"supernamespace": "com.ankamagames.dofus.network.messages.debug",
+	"use_hash_function": false
+}

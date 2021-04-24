@@ -1,0 +1,21 @@
+.App-modules-server-dashboard {    
+    display: grid;
+    grid-template-areas:
+        "dashboard-controls dashboard-infos"
+        "dashboard-controls dashboard-stats";     
+    grid-template-columns: 50% auto;
+    grid-template-rows: 50% auto;
+    gap: 10px;
+}
+
+.dashboard-controls {
+    grid-area: dashboard-controls;
+}
+
+.dashboard-infos {
+    grid-area: dashboard-infos;
+}
+
+.dashboard-stats {
+    grid-area: dashboard-stats;
+}

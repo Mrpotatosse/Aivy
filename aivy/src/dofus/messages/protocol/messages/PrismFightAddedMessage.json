@@ -1,0 +1,18 @@
+{
+	"fields": [
+		{
+			"name": "fight",
+			"position": 0,
+			"self_serialize_method": "serializeAs_PrismFightersInformation",
+			"type": "PrismFightersInformation",
+			"type_namespace": "com.ankamagames.dofus.network.types.game.prism"
+		}
+	],
+	"name": "PrismFightAddedMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.prism",
+	"protocolID": 8615,
+	"super": "NetworkMessage",
+	"super_serialize": false,
+	"supernamespace": "com.ankamagames.jerakine.network",
+	"use_hash_function": false
+}

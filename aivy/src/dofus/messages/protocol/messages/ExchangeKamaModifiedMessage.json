@@ -1,0 +1,22 @@
+{
+	"fields": [
+		{
+			"bounds": {
+				"low": "0",
+				"up": "9007199254740992.000000"
+			},
+			"default_value": "0",
+			"name": "quantity",
+			"position": 0,
+			"type": "Number",
+			"write_method": "writeVarLong"
+		}
+	],
+	"name": "ExchangeKamaModifiedMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.inventory.items",
+	"protocolID": 3515,
+	"super": "ExchangeObjectMessage",
+	"super_serialize": true,
+	"supernamespace": "com.ankamagames.dofus.network.messages.game.inventory.exchanges",
+	"use_hash_function": false
+}

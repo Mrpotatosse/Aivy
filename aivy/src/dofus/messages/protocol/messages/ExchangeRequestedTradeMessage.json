@@ -1,0 +1,33 @@
+{
+	"fields": [
+		{
+			"bounds": {
+				"low": "0",
+				"up": "9007199254740992.000000"
+			},
+			"default_value": "0",
+			"name": "target",
+			"position": 1,
+			"type": "Number",
+			"write_method": "writeVarLong"
+		},
+		{
+			"bounds": {
+				"low": "0",
+				"up": "9007199254740992.000000"
+			},
+			"default_value": "0",
+			"name": "source",
+			"position": 0,
+			"type": "Number",
+			"write_method": "writeVarLong"
+		}
+	],
+	"name": "ExchangeRequestedTradeMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.inventory.exchanges",
+	"protocolID": 6932,
+	"super": "ExchangeRequestedMessage",
+	"super_serialize": true,
+	"supernamespace": "com.ankamagames.dofus.network.messages.game.inventory.exchanges",
+	"use_hash_function": false
+}

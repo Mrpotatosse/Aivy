@@ -1,0 +1,10 @@
+{
+	"fields": [],
+	"name": "ExchangeObjectModifyPricedMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.inventory.exchanges",
+	"protocolID": 7865,
+	"super": "ExchangeObjectMovePricedMessage",
+	"super_serialize": true,
+	"supernamespace": "com.ankamagames.dofus.network.messages.game.inventory.exchanges",
+	"use_hash_function": true
+}

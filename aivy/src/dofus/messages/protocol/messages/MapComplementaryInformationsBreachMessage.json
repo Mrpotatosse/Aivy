@@ -1,0 +1,52 @@
+{
+	"fields": [
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"default_value": "0",
+			"name": "floor",
+			"position": 0,
+			"type": "uint",
+			"write_method": "writeVarInt"
+		},
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"default_value": "0",
+			"name": "room",
+			"position": 1,
+			"type": "uint",
+			"write_method": "writeByte"
+		},
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"default_value": "0",
+			"name": "infinityMode",
+			"position": 2,
+			"type": "uint",
+			"write_method": "writeShort"
+		},
+		{
+			"is_vector": true,
+			"name": "branches",
+			"position": 3,
+			"prefixed_by_type_id": true,
+			"self_serialize_method": "serialize",
+			"type": "BreachBranch",
+			"type_namespace": "com.ankamagames.dofus.network.types.game.context.roleplay.breach",
+			"write_length_method": "writeShort",
+			"write_type_id_method": "writeShort"
+		}
+	],
+	"name": "MapComplementaryInformationsBreachMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.context.roleplay.breach",
+	"protocolID": 7068,
+	"super": "MapComplementaryInformationsDataMessage",
+	"super_serialize": true,
+	"supernamespace": "com.ankamagames.dofus.network.messages.game.context.roleplay",
+	"use_hash_function": false
+}

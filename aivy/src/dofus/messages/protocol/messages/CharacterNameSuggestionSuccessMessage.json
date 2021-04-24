@@ -1,0 +1,17 @@
+{
+	"fields": [
+		{
+			"name": "suggestion",
+			"position": 0,
+			"type": "String",
+			"write_method": "writeUTF"
+		}
+	],
+	"name": "CharacterNameSuggestionSuccessMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.character.creation",
+	"protocolID": 9592,
+	"super": "NetworkMessage",
+	"super_serialize": false,
+	"supernamespace": "com.ankamagames.jerakine.network",
+	"use_hash_function": false
+}

@@ -1,0 +1,22 @@
+{
+	"fields": [
+		{
+			"bounds": {
+				"low": "0",
+				"up": "9007199254740992.000000"
+			},
+			"default_value": "0",
+			"name": "kamasTotal",
+			"position": 0,
+			"type": "Number",
+			"write_method": "writeVarLong"
+		}
+	],
+	"name": "StorageKamasUpdateMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.inventory.storage",
+	"protocolID": 6574,
+	"super": "NetworkMessage",
+	"super_serialize": false,
+	"supernamespace": "com.ankamagames.jerakine.network",
+	"use_hash_function": false
+}

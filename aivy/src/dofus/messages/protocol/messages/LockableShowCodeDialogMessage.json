@@ -1,0 +1,28 @@
+{
+	"fields": [
+		{
+			"default_value": "false",
+			"name": "changeOrUse",
+			"position": 0,
+			"type": "Boolean",
+			"write_method": "writeBoolean"
+		},
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"default_value": "0",
+			"name": "codeSize",
+			"position": 1,
+			"type": "uint",
+			"write_method": "writeByte"
+		}
+	],
+	"name": "LockableShowCodeDialogMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.context.roleplay.lockable",
+	"protocolID": 9446,
+	"super": "NetworkMessage",
+	"super_serialize": false,
+	"supernamespace": "com.ankamagames.jerakine.network",
+	"use_hash_function": false
+}

@@ -1,0 +1,30 @@
+{
+	"fields": [
+		{
+			"name": "allianceName",
+			"position": 0,
+			"type": "String",
+			"write_method": "writeUTF"
+		},
+		{
+			"name": "allianceTag",
+			"position": 1,
+			"type": "String",
+			"write_method": "writeUTF"
+		},
+		{
+			"name": "allianceEmblem",
+			"position": 2,
+			"self_serialize_method": "serializeAs_GuildEmblem",
+			"type": "GuildEmblem",
+			"type_namespace": "com.ankamagames.dofus.network.types.game.guild"
+		}
+	],
+	"name": "AllianceCreationValidMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.alliance",
+	"protocolID": 8549,
+	"super": "NetworkMessage",
+	"super_serialize": false,
+	"supernamespace": "com.ankamagames.jerakine.network",
+	"use_hash_function": false
+}

@@ -1,0 +1,10 @@
+{
+	"fields": [],
+	"name": "DungeonPartyFinderRegisterErrorMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.context.roleplay.party",
+	"protocolID": 4745,
+	"super": "NetworkMessage",
+	"super_serialize": false,
+	"supernamespace": "com.ankamagames.jerakine.network",
+	"use_hash_function": false
+}

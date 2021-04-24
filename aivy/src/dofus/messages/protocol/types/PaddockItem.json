@@ -1,0 +1,18 @@
+{
+	"fields": [
+		{
+			"name": "durability",
+			"position": 0,
+			"self_serialize_method": "serializeAs_ItemDurability",
+			"type": "ItemDurability",
+			"type_namespace": "com.ankamagames.dofus.network.types.game.mount"
+		}
+	],
+	"name": "PaddockItem",
+	"namespace": "com.ankamagames.dofus.network.types.game.paddock",
+	"protocolID": 488,
+	"super": "ObjectItemInRolePlay",
+	"super_serialize": true,
+	"supernamespace": "com.ankamagames.dofus.network.types.game.context.roleplay",
+	"use_hash_function": false
+}

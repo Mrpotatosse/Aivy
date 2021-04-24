@@ -1,0 +1,137 @@
+{
+	"fields": [
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"default_value": "0",
+			"name": "accountId",
+			"position": 10,
+			"type": "uint",
+			"write_method": "writeInt"
+		},
+		{
+			"default_value": "0",
+			"name": "breed",
+			"position": 1,
+			"type": "int",
+			"write_method": "writeByte"
+		},
+		{
+			"boolean_byte_wrapper_position": 1,
+			"default_value": "false",
+			"name": "sex",
+			"position": 0,
+			"type": "Boolean",
+			"use_boolean_byte_wrapper": true
+		},
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"default_value": "0",
+			"name": "rank",
+			"position": 2,
+			"type": "uint",
+			"write_method": "writeVarShort"
+		},
+		{
+			"bounds": {
+				"low": "0",
+				"up": "9007199254740992.000000"
+			},
+			"default_value": "0",
+			"name": "givenExperience",
+			"position": 3,
+			"type": "Number",
+			"write_method": "writeVarLong"
+		},
+		{
+			"bounds": {
+				"low": "0",
+				"up": "100"
+			},
+			"default_value": "0",
+			"name": "experienceGivenPercent",
+			"position": 4,
+			"type": "uint",
+			"write_method": "writeByte"
+		},
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"default_value": "0",
+			"name": "rights",
+			"position": 5,
+			"type": "uint",
+			"write_method": "writeVarInt"
+		},
+		{
+			"default_value": "99",
+			"name": "connected",
+			"position": 6,
+			"type": "uint",
+			"write_method": "writeByte"
+		},
+		{
+			"default_value": "0",
+			"name": "alignmentSide",
+			"position": 7,
+			"type": "int",
+			"write_method": "writeByte"
+		},
+		{
+			"bounds": {
+				"low": "0",
+				"up": "65535"
+			},
+			"default_value": "0",
+			"name": "hoursSinceLastConnection",
+			"position": 8,
+			"type": "uint",
+			"write_method": "writeShort"
+		},
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"default_value": "0",
+			"name": "moodSmileyId",
+			"position": 9,
+			"type": "uint",
+			"write_method": "writeVarShort"
+		},
+		{
+			"default_value": "0",
+			"name": "achievementPoints",
+			"position": 11,
+			"type": "int",
+			"write_method": "writeInt"
+		},
+		{
+			"name": "status",
+			"position": 12,
+			"prefixed_by_type_id": true,
+			"self_serialize_method": "serialize",
+			"type": "PlayerStatus",
+			"type_namespace": "com.ankamagames.dofus.network.types.game.character.status",
+			"write_type_id_method": "writeShort"
+		},
+		{
+			"boolean_byte_wrapper_position": 2,
+			"default_value": "false",
+			"name": "havenBagShared",
+			"position": 0,
+			"type": "Boolean",
+			"use_boolean_byte_wrapper": true
+		}
+	],
+	"name": "GuildMember",
+	"namespace": "com.ankamagames.dofus.network.types.game.guild",
+	"protocolID": 5295,
+	"super": "CharacterMinimalInformations",
+	"super_serialize": true,
+	"supernamespace": "com.ankamagames.dofus.network.types.game.character",
+	"use_hash_function": false
+}

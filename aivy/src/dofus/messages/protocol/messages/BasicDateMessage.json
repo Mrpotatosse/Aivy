@@ -1,0 +1,41 @@
+{
+	"fields": [
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"default_value": "0",
+			"name": "year",
+			"position": 2,
+			"type": "uint",
+			"write_method": "writeShort"
+		},
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"default_value": "0",
+			"name": "month",
+			"position": 1,
+			"type": "uint",
+			"write_method": "writeByte"
+		},
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"default_value": "0",
+			"name": "day",
+			"position": 0,
+			"type": "uint",
+			"write_method": "writeByte"
+		}
+	],
+	"name": "BasicDateMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.basic",
+	"protocolID": 1719,
+	"super": "NetworkMessage",
+	"super_serialize": false,
+	"supernamespace": "com.ankamagames.jerakine.network",
+	"use_hash_function": false
+}

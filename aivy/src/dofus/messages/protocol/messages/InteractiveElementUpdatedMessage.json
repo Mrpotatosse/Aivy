@@ -1,0 +1,18 @@
+{
+	"fields": [
+		{
+			"name": "interactiveElement",
+			"position": 0,
+			"self_serialize_method": "serializeAs_InteractiveElement",
+			"type": "InteractiveElement",
+			"type_namespace": "com.ankamagames.dofus.network.types.game.interactive"
+		}
+	],
+	"name": "InteractiveElementUpdatedMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.interactive",
+	"protocolID": 931,
+	"super": "NetworkMessage",
+	"super_serialize": false,
+	"supernamespace": "com.ankamagames.jerakine.network",
+	"use_hash_function": false
+}

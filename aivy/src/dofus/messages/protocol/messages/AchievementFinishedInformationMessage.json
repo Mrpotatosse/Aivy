@@ -1,0 +1,28 @@
+{
+	"fields": [
+		{
+			"name": "name",
+			"position": 0,
+			"type": "String",
+			"write_method": "writeUTF"
+		},
+		{
+			"bounds": {
+				"low": "0",
+				"up": "9007199254740992.000000"
+			},
+			"default_value": "0",
+			"name": "playerId",
+			"position": 1,
+			"type": "Number",
+			"write_method": "writeVarLong"
+		}
+	],
+	"name": "AchievementFinishedInformationMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.achievement",
+	"protocolID": 643,
+	"super": "AchievementFinishedMessage",
+	"super_serialize": true,
+	"supernamespace": "com.ankamagames.dofus.network.messages.game.achievement",
+	"use_hash_function": false
+}

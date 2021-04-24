@@ -1,0 +1,81 @@
+{
+	"fields": [
+		{
+			"bounds": {
+				"low": "0",
+				"up": "9007199254740992.000000"
+			},
+			"default_value": "0",
+			"name": "paddockId",
+			"position": 0,
+			"type": "Number",
+			"write_method": "writeDouble"
+		},
+		{
+			"default_value": "false",
+			"name": "abandonned",
+			"position": 5,
+			"type": "Boolean",
+			"write_method": "writeBoolean"
+		},
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"default_value": "0",
+			"name": "subAreaId",
+			"position": 4,
+			"type": "uint",
+			"write_method": "writeVarShort"
+		},
+		{
+			"bounds": {
+				"low": "-255",
+				"up": "255"
+			},
+			"default_value": "0",
+			"name": "worldX",
+			"position": 1,
+			"type": "int",
+			"write_method": "writeShort"
+		},
+		{
+			"bounds": {
+				"low": "-255",
+				"up": "255"
+			},
+			"default_value": "0",
+			"name": "worldY",
+			"position": 2,
+			"type": "int",
+			"write_method": "writeShort"
+		},
+		{
+			"is_vector": true,
+			"name": "mountsInformations",
+			"position": 6,
+			"self_serialize_method": "serializeAs_MountInformationsForPaddock",
+			"type": "MountInformationsForPaddock",
+			"type_namespace": "com.ankamagames.dofus.network.types.game.paddock",
+			"write_length_method": "writeShort"
+		},
+		{
+			"bounds": {
+				"low": "0",
+				"up": "9007199254740992.000000"
+			},
+			"default_value": "0",
+			"name": "mapId",
+			"position": 3,
+			"type": "Number",
+			"write_method": "writeDouble"
+		}
+	],
+	"name": "PaddockContentInformations",
+	"namespace": "com.ankamagames.dofus.network.types.game.paddock",
+	"protocolID": 4950,
+	"super": "PaddockInformations",
+	"super_serialize": true,
+	"supernamespace": "com.ankamagames.dofus.network.types.game.paddock",
+	"use_hash_function": false
+}

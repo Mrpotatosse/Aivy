@@ -1,0 +1,18 @@
+{
+	"fields": [
+		{
+			"name": "requiredVersion",
+			"position": 0,
+			"self_serialize_method": "serializeAs_Version",
+			"type": "Version",
+			"type_namespace": "com.ankamagames.dofus.network.types.version"
+		}
+	],
+	"name": "IdentificationFailedForBadVersionMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.connection",
+	"protocolID": 9835,
+	"super": "IdentificationFailedMessage",
+	"super_serialize": true,
+	"supernamespace": "com.ankamagames.dofus.network.messages.connection",
+	"use_hash_function": false
+}

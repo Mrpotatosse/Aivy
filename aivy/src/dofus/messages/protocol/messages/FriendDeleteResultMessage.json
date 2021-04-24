@@ -1,0 +1,24 @@
+{
+	"fields": [
+		{
+			"default_value": "false",
+			"name": "success",
+			"position": 0,
+			"type": "Boolean",
+			"write_method": "writeBoolean"
+		},
+		{
+			"name": "name",
+			"position": 1,
+			"type": "String",
+			"write_method": "writeUTF"
+		}
+	],
+	"name": "FriendDeleteResultMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.friend",
+	"protocolID": 7877,
+	"super": "NetworkMessage",
+	"super_serialize": false,
+	"supernamespace": "com.ankamagames.jerakine.network",
+	"use_hash_function": false
+}

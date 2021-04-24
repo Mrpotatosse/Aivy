@@ -1,0 +1,22 @@
+{
+	"fields": [
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"is_vector": true,
+			"name": "packIds",
+			"position": 0,
+			"type": "uint",
+			"write_length_method": "writeShort",
+			"write_method": "writeByte"
+		}
+	],
+	"name": "ChatSmileyExtraPackListMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.chat.smiley",
+	"protocolID": 7401,
+	"super": "NetworkMessage",
+	"super_serialize": false,
+	"supernamespace": "com.ankamagames.jerakine.network",
+	"use_hash_function": false
+}

@@ -1,0 +1,43 @@
+{
+	"fields": [
+		{
+			"boolean_byte_wrapper_position": 2,
+			"default_value": "false",
+			"name": "isRestrictedToPartyOnly",
+			"position": 0,
+			"type": "Boolean",
+			"use_boolean_byte_wrapper": true
+		},
+		{
+			"boolean_byte_wrapper_position": 1,
+			"default_value": "false",
+			"name": "isSecret",
+			"position": 0,
+			"type": "Boolean",
+			"use_boolean_byte_wrapper": true
+		},
+		{
+			"boolean_byte_wrapper_position": 3,
+			"default_value": "false",
+			"name": "isClosed",
+			"position": 0,
+			"type": "Boolean",
+			"use_boolean_byte_wrapper": true
+		},
+		{
+			"boolean_byte_wrapper_position": 4,
+			"default_value": "false",
+			"name": "isAskingForHelp",
+			"position": 0,
+			"type": "Boolean",
+			"use_boolean_byte_wrapper": true
+		}
+	],
+	"name": "FightOptionsInformations",
+	"namespace": "com.ankamagames.dofus.network.types.game.context.fight",
+	"protocolID": 1427,
+	"super": "",
+	"super_serialize": false,
+	"supernamespace": "",
+	"use_hash_function": false
+}

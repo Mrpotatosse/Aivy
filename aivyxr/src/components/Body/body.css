@@ -1,0 +1,21 @@
+.App-body {
+    height: 88vh;
+    padding: 1vh;
+    overflow-y: auto;
+}
+
+.App-body-module-link {
+    height: 5vh;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    margin: 20px;
+    box-shadow: 2px 2px 5px 2px #63636380;
+}
+
+.App-body-module-link > *:hover {
+    box-shadow: 2px 2px 5px 2px #054785bd;    
+}
+
+.App-body-module-link > *:active {
+    box-shadow: 2px 2px 5px 2px #6adb1fbd;    
+}

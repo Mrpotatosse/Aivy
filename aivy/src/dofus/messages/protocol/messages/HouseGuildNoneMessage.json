@@ -1,0 +1,38 @@
+{
+	"fields": [
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"default_value": "0",
+			"name": "houseId",
+			"position": 0,
+			"type": "uint",
+			"write_method": "writeVarInt"
+		},
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"default_value": "0",
+			"name": "instanceId",
+			"position": 1,
+			"type": "uint",
+			"write_method": "writeInt"
+		},
+		{
+			"default_value": "false",
+			"name": "secondHand",
+			"position": 2,
+			"type": "Boolean",
+			"write_method": "writeBoolean"
+		}
+	],
+	"name": "HouseGuildNoneMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.context.roleplay.houses.guild",
+	"protocolID": 7490,
+	"super": "NetworkMessage",
+	"super_serialize": false,
+	"supernamespace": "com.ankamagames.jerakine.network",
+	"use_hash_function": false
+}

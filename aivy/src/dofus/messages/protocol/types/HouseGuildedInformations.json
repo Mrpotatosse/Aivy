@@ -1,0 +1,18 @@
+{
+	"fields": [
+		{
+			"name": "guildInfo",
+			"position": 0,
+			"self_serialize_method": "serializeAs_GuildInformations",
+			"type": "GuildInformations",
+			"type_namespace": "com.ankamagames.dofus.network.types.game.context.roleplay"
+		}
+	],
+	"name": "HouseGuildedInformations",
+	"namespace": "com.ankamagames.dofus.network.types.game.house",
+	"protocolID": 777,
+	"super": "HouseInstanceInformations",
+	"super_serialize": true,
+	"supernamespace": "com.ankamagames.dofus.network.types.game.house",
+	"use_hash_function": false
+}

@@ -1,0 +1,31 @@
+{
+	"fields": [
+		{
+			"bounds": {
+				"low": "0",
+				"up": "9007199254740992.000000"
+			},
+			"default_value": "0",
+			"name": "kamas",
+			"position": 1,
+			"type": "Number",
+			"write_method": "writeVarLong"
+		},
+		{
+			"is_vector": true,
+			"name": "objects",
+			"position": 0,
+			"self_serialize_method": "serializeAs_ObjectItem",
+			"type": "ObjectItem",
+			"type_namespace": "com.ankamagames.dofus.network.types.game.data.items",
+			"write_length_method": "writeShort"
+		}
+	],
+	"name": "InventoryContentMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.inventory.items",
+	"protocolID": 6805,
+	"super": "NetworkMessage",
+	"super_serialize": false,
+	"supernamespace": "com.ankamagames.jerakine.network",
+	"use_hash_function": false
+}

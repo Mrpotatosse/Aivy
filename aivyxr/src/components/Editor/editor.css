@@ -1,0 +1,22 @@
+.App-script-editor {
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.App-script-editor-header {
+    height: 4vh;
+    display: flex;
+}
+
+.App-script-editor-header-button {
+    height: 3vh;
+    width: 8vh;
+    margin: 3px;
+    box-shadow: 2px 2px 5px 1px #63636380;
+    transition: 300ms;
+    border-radius: 5px;
+}
+
+.App-script-editor-header-button:hover {
+    box-shadow: 0px 0px 5px 2px #00000093;
+}

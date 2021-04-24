@@ -1,0 +1,29 @@
+{
+	"fields": [
+		{
+			"bounds": {
+				"low": "0",
+				"up": "9007199254740992.000000"
+			},
+			"default_value": "0",
+			"name": "memberId",
+			"position": 0,
+			"type": "Number",
+			"write_method": "writeVarLong"
+		},
+		{
+			"default_value": "false",
+			"name": "active",
+			"position": 1,
+			"type": "Boolean",
+			"write_method": "writeBoolean"
+		}
+	],
+	"name": "CompassUpdatePartyMemberMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.atlas.compass",
+	"protocolID": 8739,
+	"super": "CompassUpdateMessage",
+	"super_serialize": true,
+	"supernamespace": "com.ankamagames.dofus.network.messages.game.atlas.compass",
+	"use_hash_function": false
+}

@@ -1,0 +1,62 @@
+{
+	"fields": [
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"default_value": "0",
+			"name": "minLevel",
+			"position": 0,
+			"type": "uint",
+			"write_method": "writeVarShort"
+		},
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"default_value": "0",
+			"name": "activityCategoryId",
+			"position": 3,
+			"type": "uint",
+			"write_method": "writeVarShort"
+		},
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"default_value": "0",
+			"name": "areaId",
+			"position": 2,
+			"type": "uint",
+			"write_method": "writeVarShort"
+		},
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"default_value": "0",
+			"name": "maxLevel",
+			"position": 1,
+			"type": "uint",
+			"write_method": "writeVarShort"
+		},
+		{
+			"bounds": {
+				"low": "0",
+				"up": "65535"
+			},
+			"default_value": "0",
+			"name": "nbCards",
+			"position": 4,
+			"type": "uint",
+			"write_method": "writeShort"
+		}
+	],
+	"name": "ActivitySuggestionsRequestMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.progression.suggestion",
+	"protocolID": 5131,
+	"super": "NetworkMessage",
+	"super_serialize": false,
+	"supernamespace": "com.ankamagames.jerakine.network",
+	"use_hash_function": false
+}

@@ -1,0 +1,10 @@
+{
+	"fields": [],
+	"name": "ExchangeStartAsVendorMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.inventory.exchanges",
+	"protocolID": 9930,
+	"super": "NetworkMessage",
+	"super_serialize": false,
+	"supernamespace": "com.ankamagames.jerakine.network",
+	"use_hash_function": true
+}

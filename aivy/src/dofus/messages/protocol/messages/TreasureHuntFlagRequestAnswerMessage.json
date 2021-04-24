@@ -1,0 +1,35 @@
+{
+	"fields": [
+		{
+			"default_value": "0",
+			"name": "result",
+			"position": 1,
+			"type": "uint",
+			"write_method": "writeByte"
+		},
+		{
+			"default_value": "0",
+			"name": "questType",
+			"position": 0,
+			"type": "uint",
+			"write_method": "writeByte"
+		},
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"default_value": "0",
+			"name": "index",
+			"position": 2,
+			"type": "uint",
+			"write_method": "writeByte"
+		}
+	],
+	"name": "TreasureHuntFlagRequestAnswerMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.context.roleplay.treasureHunt",
+	"protocolID": 4288,
+	"super": "NetworkMessage",
+	"super_serialize": false,
+	"supernamespace": "com.ankamagames.jerakine.network",
+	"use_hash_function": false
+}

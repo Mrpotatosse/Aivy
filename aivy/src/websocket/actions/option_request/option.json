@@ -1,0 +1,14 @@
+{
+	"Log show": true,
+	"Log level": [
+		"none",
+		":all",
+		"client",
+		"server"
+	],
+	"Log show type": [
+		":minimum",
+		"data",
+		"full"
+	]
+}

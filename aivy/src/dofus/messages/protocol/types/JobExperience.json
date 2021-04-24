@@ -1,0 +1,65 @@
+{
+	"fields": [
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"default_value": "0",
+			"name": "jobId",
+			"position": 0,
+			"type": "uint",
+			"write_method": "writeByte"
+		},
+		{
+			"bounds": {
+				"low": "0",
+				"up": "255"
+			},
+			"default_value": "0",
+			"name": "jobLevel",
+			"position": 1,
+			"type": "uint",
+			"write_method": "writeByte"
+		},
+		{
+			"bounds": {
+				"low": "0",
+				"up": "9007199254740992.000000"
+			},
+			"default_value": "0",
+			"name": "jobXpLevelFloor",
+			"position": 3,
+			"type": "Number",
+			"write_method": "writeVarLong"
+		},
+		{
+			"bounds": {
+				"low": "0",
+				"up": "9007199254740992.000000"
+			},
+			"default_value": "0",
+			"name": "jobXP",
+			"position": 2,
+			"type": "Number",
+			"write_method": "writeVarLong"
+		},
+		{
+			"bounds": {
+				"low": "0",
+				"up": "9007199254740992.000000"
+			},
+			"default_value": "0",
+			"name": "jobXpNextLevelFloor",
+			"position": 4,
+			"type": "Number",
+			"write_method": "writeVarLong"
+		}
+	],
+	"name": "JobExperience",
+	"namespace": "com.ankamagames.dofus.network.types.game.context.roleplay.job",
+	"protocolID": 7718,
+	"super": "",
+	"super_serialize": false,
+	"supernamespace": "",
+	"use_hash_function": false
+}

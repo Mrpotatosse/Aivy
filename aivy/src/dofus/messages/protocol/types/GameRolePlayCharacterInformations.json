@@ -1,0 +1,18 @@
+{
+	"fields": [
+		{
+			"name": "alignmentInfos",
+			"position": 0,
+			"self_serialize_method": "serializeAs_ActorAlignmentInformations",
+			"type": "ActorAlignmentInformations",
+			"type_namespace": "com.ankamagames.dofus.network.types.game.character.alignment"
+		}
+	],
+	"name": "GameRolePlayCharacterInformations",
+	"namespace": "com.ankamagames.dofus.network.types.game.context.roleplay",
+	"protocolID": 4883,
+	"super": "GameRolePlayHumanoidInformations",
+	"super_serialize": true,
+	"supernamespace": "com.ankamagames.dofus.network.types.game.context.roleplay",
+	"use_hash_function": false
+}

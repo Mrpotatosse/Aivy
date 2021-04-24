@@ -1,0 +1,38 @@
+{
+	"fields": [
+		{
+			"bounds": {
+				"low": "0",
+				"up": "9007199254740992.000000"
+			},
+			"default_value": "0",
+			"name": "followedId",
+			"position": 1,
+			"type": "Number",
+			"write_method": "writeVarLong"
+		},
+		{
+			"boolean_byte_wrapper_position": 1,
+			"default_value": "false",
+			"name": "success",
+			"position": 0,
+			"type": "Boolean",
+			"use_boolean_byte_wrapper": true
+		},
+		{
+			"boolean_byte_wrapper_position": 2,
+			"default_value": "false",
+			"name": "isFollowed",
+			"position": 0,
+			"type": "Boolean",
+			"use_boolean_byte_wrapper": true
+		}
+	],
+	"name": "PartyFollowStatusUpdateMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.context.roleplay.party",
+	"protocolID": 4349,
+	"super": "AbstractPartyMessage",
+	"super_serialize": true,
+	"supernamespace": "com.ankamagames.dofus.network.messages.game.context.roleplay.party",
+	"use_hash_function": false
+}

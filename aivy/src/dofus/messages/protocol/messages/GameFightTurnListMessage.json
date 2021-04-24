@@ -1,0 +1,35 @@
+{
+	"fields": [
+		{
+			"bounds": {
+				"low": "-9007199254740992.000000",
+				"up": "9007199254740992.000000"
+			},
+			"is_vector": true,
+			"name": "ids",
+			"position": 0,
+			"type": "Number",
+			"write_length_method": "writeShort",
+			"write_method": "writeDouble"
+		},
+		{
+			"bounds": {
+				"low": "-9007199254740992.000000",
+				"up": "9007199254740992.000000"
+			},
+			"is_vector": true,
+			"name": "deadsIds",
+			"position": 1,
+			"type": "Number",
+			"write_length_method": "writeShort",
+			"write_method": "writeDouble"
+		}
+	],
+	"name": "GameFightTurnListMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.context.fight",
+	"protocolID": 2295,
+	"super": "NetworkMessage",
+	"super_serialize": false,
+	"supernamespace": "com.ankamagames.jerakine.network",
+	"use_hash_function": false
+}

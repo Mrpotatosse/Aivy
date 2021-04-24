@@ -1,0 +1,18 @@
+{
+	"fields": [
+		{
+			"default_value": "99",
+			"name": "playerState",
+			"position": 0,
+			"type": "uint",
+			"write_method": "writeByte"
+		}
+	],
+	"name": "AcquaintanceInformation",
+	"namespace": "com.ankamagames.dofus.network.types.game.friend",
+	"protocolID": 5637,
+	"super": "AbstractContactInformations",
+	"super_serialize": true,
+	"supernamespace": "com.ankamagames.dofus.network.types.game.friend",
+	"use_hash_function": false
+}

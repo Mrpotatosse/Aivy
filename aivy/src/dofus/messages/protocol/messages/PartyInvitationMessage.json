@@ -1,0 +1,62 @@
+{
+	"fields": [
+		{
+			"name": "partyName",
+			"position": 1,
+			"type": "String",
+			"write_method": "writeUTF"
+		},
+		{
+			"default_value": "0",
+			"name": "partyType",
+			"position": 0,
+			"type": "uint",
+			"write_method": "writeByte"
+		},
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"default_value": "0",
+			"name": "maxParticipants",
+			"position": 2,
+			"type": "uint",
+			"write_method": "writeByte"
+		},
+		{
+			"bounds": {
+				"low": "0",
+				"up": "9007199254740992.000000"
+			},
+			"default_value": "0",
+			"name": "fromId",
+			"position": 3,
+			"type": "Number",
+			"write_method": "writeVarLong"
+		},
+		{
+			"name": "fromName",
+			"position": 4,
+			"type": "String",
+			"write_method": "writeUTF"
+		},
+		{
+			"bounds": {
+				"low": "0",
+				"up": "9007199254740992.000000"
+			},
+			"default_value": "0",
+			"name": "toId",
+			"position": 5,
+			"type": "Number",
+			"write_method": "writeVarLong"
+		}
+	],
+	"name": "PartyInvitationMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.context.roleplay.party",
+	"protocolID": 8172,
+	"super": "AbstractPartyMessage",
+	"super_serialize": true,
+	"supernamespace": "com.ankamagames.dofus.network.messages.game.context.roleplay.party",
+	"use_hash_function": false
+}

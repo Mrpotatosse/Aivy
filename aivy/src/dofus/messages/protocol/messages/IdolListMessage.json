@@ -1,0 +1,44 @@
+{
+	"fields": [
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"is_vector": true,
+			"name": "chosenIdols",
+			"position": 0,
+			"type": "uint",
+			"write_length_method": "writeShort",
+			"write_method": "writeVarShort"
+		},
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"is_vector": true,
+			"name": "partyChosenIdols",
+			"position": 1,
+			"type": "uint",
+			"write_length_method": "writeShort",
+			"write_method": "writeVarShort"
+		},
+		{
+			"is_vector": true,
+			"name": "partyIdols",
+			"position": 2,
+			"prefixed_by_type_id": true,
+			"self_serialize_method": "serialize",
+			"type": "PartyIdol",
+			"type_namespace": "com.ankamagames.dofus.network.types.game.idol",
+			"write_length_method": "writeShort",
+			"write_type_id_method": "writeShort"
+		}
+	],
+	"name": "IdolListMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.idol",
+	"protocolID": 6744,
+	"super": "NetworkMessage",
+	"super_serialize": false,
+	"supernamespace": "com.ankamagames.jerakine.network",
+	"use_hash_function": false
+}

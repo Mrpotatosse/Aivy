@@ -1,0 +1,33 @@
+{
+	"fields": [
+		{
+			"bounds": {
+				"low": "-9007199254740992.000000",
+				"up": "9007199254740992.000000"
+			},
+			"default_value": "0",
+			"name": "masterId",
+			"position": 0,
+			"type": "Number",
+			"write_method": "writeDouble"
+		},
+		{
+			"bounds": {
+				"low": "-9007199254740992.000000",
+				"up": "9007199254740992.000000"
+			},
+			"default_value": "0",
+			"name": "slaveId",
+			"position": 1,
+			"type": "Number",
+			"write_method": "writeDouble"
+		}
+	],
+	"name": "SlaveNoLongerControledMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.context.fight",
+	"protocolID": 2486,
+	"super": "NetworkMessage",
+	"super_serialize": false,
+	"supernamespace": "com.ankamagames.jerakine.network",
+	"use_hash_function": false
+}

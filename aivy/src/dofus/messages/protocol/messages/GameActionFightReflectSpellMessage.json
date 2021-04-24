@@ -1,0 +1,22 @@
+{
+	"fields": [
+		{
+			"bounds": {
+				"low": "-9007199254740992.000000",
+				"up": "9007199254740992.000000"
+			},
+			"default_value": "0",
+			"name": "targetId",
+			"position": 0,
+			"type": "Number",
+			"write_method": "writeDouble"
+		}
+	],
+	"name": "GameActionFightReflectSpellMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.actions.fight",
+	"protocolID": 3385,
+	"super": "AbstractGameActionMessage",
+	"super_serialize": true,
+	"supernamespace": "com.ankamagames.dofus.network.messages.game.actions",
+	"use_hash_function": false
+}

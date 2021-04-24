@@ -1,0 +1,23 @@
+{
+	"fields": [
+		{
+			"bounds": {
+				"low": "-9007199254740992.000000",
+				"up": "9007199254740992.000000"
+			},
+			"is_vector": true,
+			"name": "tacklersIds",
+			"position": 0,
+			"type": "Number",
+			"write_length_method": "writeShort",
+			"write_method": "writeDouble"
+		}
+	],
+	"name": "GameActionFightTackledMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.actions.fight",
+	"protocolID": 2806,
+	"super": "AbstractGameActionMessage",
+	"super_serialize": true,
+	"supernamespace": "com.ankamagames.dofus.network.messages.game.actions",
+	"use_hash_function": false
+}

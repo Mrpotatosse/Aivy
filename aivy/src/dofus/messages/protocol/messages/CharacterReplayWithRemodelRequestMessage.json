@@ -1,0 +1,18 @@
+{
+	"fields": [
+		{
+			"name": "remodel",
+			"position": 0,
+			"self_serialize_method": "serializeAs_RemodelingInformation",
+			"type": "RemodelingInformation",
+			"type_namespace": "com.ankamagames.dofus.network.types.game.character.choice"
+		}
+	],
+	"name": "CharacterReplayWithRemodelRequestMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.character.choice",
+	"protocolID": 3848,
+	"super": "CharacterReplayRequestMessage",
+	"super_serialize": true,
+	"supernamespace": "com.ankamagames.dofus.network.messages.game.character.replay",
+	"use_hash_function": false
+}

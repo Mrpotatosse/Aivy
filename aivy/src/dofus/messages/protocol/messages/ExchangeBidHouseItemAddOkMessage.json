@@ -1,0 +1,18 @@
+{
+	"fields": [
+		{
+			"name": "itemInfo",
+			"position": 0,
+			"self_serialize_method": "serializeAs_ObjectItemToSellInBid",
+			"type": "ObjectItemToSellInBid",
+			"type_namespace": "com.ankamagames.dofus.network.types.game.data.items"
+		}
+	],
+	"name": "ExchangeBidHouseItemAddOkMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.inventory.exchanges",
+	"protocolID": 8183,
+	"super": "NetworkMessage",
+	"super_serialize": false,
+	"supernamespace": "com.ankamagames.jerakine.network",
+	"use_hash_function": false
+}

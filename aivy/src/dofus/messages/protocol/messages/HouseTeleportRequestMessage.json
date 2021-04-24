@@ -1,0 +1,31 @@
+{
+	"fields": [
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"default_value": "0",
+			"name": "houseId",
+			"position": 0,
+			"type": "uint",
+			"write_method": "writeVarInt"
+		},
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"default_value": "0",
+			"name": "houseInstanceId",
+			"position": 1,
+			"type": "uint",
+			"write_method": "writeInt"
+		}
+	],
+	"name": "HouseTeleportRequestMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.house",
+	"protocolID": 2228,
+	"super": "NetworkMessage",
+	"super_serialize": false,
+	"supernamespace": "com.ankamagames.jerakine.network",
+	"use_hash_function": false
+}

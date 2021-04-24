@@ -1,0 +1,62 @@
+{
+	"fields": [
+		{
+			"name": "ownerName",
+			"position": 2,
+			"type": "String",
+			"write_method": "writeUTF"
+		},
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"default_value": "0",
+			"name": "instanceId",
+			"position": 1,
+			"type": "uint",
+			"write_method": "writeInt"
+		},
+		{
+			"boolean_byte_wrapper_position": 3,
+			"default_value": "false",
+			"name": "isSaleLocked",
+			"position": 0,
+			"type": "Boolean",
+			"use_boolean_byte_wrapper": true
+		},
+		{
+			"boolean_byte_wrapper_position": 1,
+			"default_value": "false",
+			"name": "secondHand",
+			"position": 0,
+			"type": "Boolean",
+			"use_boolean_byte_wrapper": true
+		},
+		{
+			"boolean_byte_wrapper_position": 2,
+			"default_value": "false",
+			"name": "isLocked",
+			"position": 0,
+			"type": "Boolean",
+			"use_boolean_byte_wrapper": true
+		},
+		{
+			"bounds": {
+				"low": "-9007199254740992.000000",
+				"up": "9007199254740992.000000"
+			},
+			"default_value": "0",
+			"name": "price",
+			"position": 3,
+			"type": "Number",
+			"write_method": "writeVarLong"
+		}
+	],
+	"name": "HouseInstanceInformations",
+	"namespace": "com.ankamagames.dofus.network.types.game.house",
+	"protocolID": 438,
+	"super": "",
+	"super_serialize": false,
+	"supernamespace": "",
+	"use_hash_function": false
+}

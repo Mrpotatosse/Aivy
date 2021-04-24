@@ -1,0 +1,18 @@
+{
+	"fields": [
+		{
+			"name": "alliance",
+			"position": 0,
+			"self_serialize_method": "serializeAs_BasicAllianceInformations",
+			"type": "BasicAllianceInformations",
+			"type_namespace": "com.ankamagames.dofus.network.types.game.context.roleplay"
+		}
+	],
+	"name": "CharacterMinimalAllianceInformations",
+	"namespace": "com.ankamagames.dofus.network.types.game.character",
+	"protocolID": 7749,
+	"super": "CharacterMinimalGuildInformations",
+	"super_serialize": true,
+	"supernamespace": "com.ankamagames.dofus.network.types.game.character",
+	"use_hash_function": false
+}

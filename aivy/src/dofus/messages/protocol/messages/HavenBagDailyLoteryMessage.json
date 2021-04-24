@@ -1,0 +1,24 @@
+{
+	"fields": [
+		{
+			"default_value": "0",
+			"name": "returnType",
+			"position": 0,
+			"type": "uint",
+			"write_method": "writeByte"
+		},
+		{
+			"name": "gameActionId",
+			"position": 1,
+			"type": "String",
+			"write_method": "writeUTF"
+		}
+	],
+	"name": "HavenBagDailyLoteryMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.context.roleplay.havenbag",
+	"protocolID": 4039,
+	"super": "NetworkMessage",
+	"super_serialize": false,
+	"supernamespace": "com.ankamagames.jerakine.network",
+	"use_hash_function": false
+}

@@ -1,0 +1,10 @@
+{
+	"fields": [],
+	"name": "HaapiShopApiKeyRequestMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.web.haapi",
+	"protocolID": 5026,
+	"super": "NetworkMessage",
+	"super_serialize": false,
+	"supernamespace": "com.ankamagames.jerakine.network",
+	"use_hash_function": false
+}

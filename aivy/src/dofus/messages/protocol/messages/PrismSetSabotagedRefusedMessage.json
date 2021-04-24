@@ -1,0 +1,28 @@
+{
+	"fields": [
+		{
+			"default_value": "0",
+			"name": "reason",
+			"position": 1,
+			"type": "int",
+			"write_method": "writeByte"
+		},
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"default_value": "0",
+			"name": "subAreaId",
+			"position": 0,
+			"type": "uint",
+			"write_method": "writeVarShort"
+		}
+	],
+	"name": "PrismSetSabotagedRefusedMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.prism",
+	"protocolID": 2137,
+	"super": "NetworkMessage",
+	"super_serialize": false,
+	"supernamespace": "com.ankamagames.jerakine.network",
+	"use_hash_function": false
+}

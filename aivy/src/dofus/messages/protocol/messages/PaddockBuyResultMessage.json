@@ -1,0 +1,40 @@
+{
+	"fields": [
+		{
+			"bounds": {
+				"low": "0",
+				"up": "9007199254740992.000000"
+			},
+			"default_value": "0",
+			"name": "paddockId",
+			"position": 0,
+			"type": "Number",
+			"write_method": "writeDouble"
+		},
+		{
+			"default_value": "false",
+			"name": "bought",
+			"position": 1,
+			"type": "Boolean",
+			"write_method": "writeBoolean"
+		},
+		{
+			"bounds": {
+				"low": "0",
+				"up": "9007199254740992.000000"
+			},
+			"default_value": "0",
+			"name": "realPrice",
+			"position": 2,
+			"type": "Number",
+			"write_method": "writeVarLong"
+		}
+	],
+	"name": "PaddockBuyResultMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.context.mount",
+	"protocolID": 2794,
+	"super": "NetworkMessage",
+	"super_serialize": false,
+	"supernamespace": "com.ankamagames.jerakine.network",
+	"use_hash_function": false
+}

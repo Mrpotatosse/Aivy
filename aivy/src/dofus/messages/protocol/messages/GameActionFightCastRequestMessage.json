@@ -1,0 +1,32 @@
+{
+	"fields": [
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"default_value": "0",
+			"name": "spellId",
+			"position": 0,
+			"type": "uint",
+			"write_method": "writeVarShort"
+		},
+		{
+			"bounds": {
+				"low": "-1",
+				"up": "559"
+			},
+			"default_value": "0",
+			"name": "cellId",
+			"position": 1,
+			"type": "int",
+			"write_method": "writeShort"
+		}
+	],
+	"name": "GameActionFightCastRequestMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.actions.fight",
+	"protocolID": 9769,
+	"super": "NetworkMessage",
+	"super_serialize": false,
+	"supernamespace": "com.ankamagames.jerakine.network",
+	"use_hash_function": true
+}

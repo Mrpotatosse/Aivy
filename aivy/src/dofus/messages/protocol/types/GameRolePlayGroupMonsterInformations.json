@@ -1,0 +1,62 @@
+{
+	"fields": [
+		{
+			"name": "staticInfos",
+			"position": 1,
+			"prefixed_by_type_id": true,
+			"self_serialize_method": "serialize",
+			"type": "GroupMonsterStaticInformations",
+			"type_namespace": "com.ankamagames.dofus.network.types.game.context.roleplay",
+			"write_type_id_method": "writeShort"
+		},
+		{
+			"bounds": {
+				"low": "-1",
+				"up": "8"
+			},
+			"default_value": "0",
+			"name": "lootShare",
+			"position": 2,
+			"type": "int",
+			"write_method": "writeByte"
+		},
+		{
+			"default_value": "0",
+			"name": "alignmentSide",
+			"position": 3,
+			"type": "int",
+			"write_method": "writeByte"
+		},
+		{
+			"boolean_byte_wrapper_position": 3,
+			"default_value": "false",
+			"name": "hasAVARewardToken",
+			"position": 0,
+			"type": "Boolean",
+			"use_boolean_byte_wrapper": true
+		},
+		{
+			"boolean_byte_wrapper_position": 1,
+			"default_value": "false",
+			"name": "keyRingBonus",
+			"position": 0,
+			"type": "Boolean",
+			"use_boolean_byte_wrapper": true
+		},
+		{
+			"boolean_byte_wrapper_position": 2,
+			"default_value": "false",
+			"name": "hasHardcoreDrop",
+			"position": 0,
+			"type": "Boolean",
+			"use_boolean_byte_wrapper": true
+		}
+	],
+	"name": "GameRolePlayGroupMonsterInformations",
+	"namespace": "com.ankamagames.dofus.network.types.game.context.roleplay",
+	"protocolID": 7103,
+	"super": "GameRolePlayActorInformations",
+	"super_serialize": true,
+	"supernamespace": "com.ankamagames.dofus.network.types.game.context.roleplay",
+	"use_hash_function": false
+}

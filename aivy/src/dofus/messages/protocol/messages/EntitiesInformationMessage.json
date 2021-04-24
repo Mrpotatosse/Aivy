@@ -1,0 +1,20 @@
+{
+	"fields": [
+		{
+			"is_vector": true,
+			"name": "entities",
+			"position": 0,
+			"self_serialize_method": "serializeAs_EntityInformation",
+			"type": "EntityInformation",
+			"type_namespace": "com.ankamagames.dofus.network.types.game.entity",
+			"write_length_method": "writeShort"
+		}
+	],
+	"name": "EntitiesInformationMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.entity",
+	"protocolID": 5544,
+	"super": "NetworkMessage",
+	"super_serialize": false,
+	"supernamespace": "com.ankamagames.jerakine.network",
+	"use_hash_function": false
+}

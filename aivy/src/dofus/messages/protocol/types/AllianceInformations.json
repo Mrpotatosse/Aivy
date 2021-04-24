@@ -1,0 +1,18 @@
+{
+	"fields": [
+		{
+			"name": "allianceEmblem",
+			"position": 0,
+			"self_serialize_method": "serializeAs_GuildEmblem",
+			"type": "GuildEmblem",
+			"type_namespace": "com.ankamagames.dofus.network.types.game.guild"
+		}
+	],
+	"name": "AllianceInformations",
+	"namespace": "com.ankamagames.dofus.network.types.game.context.roleplay",
+	"protocolID": 6968,
+	"super": "BasicNamedAllianceInformations",
+	"super_serialize": true,
+	"supernamespace": "com.ankamagames.dofus.network.types.game.context.roleplay",
+	"use_hash_function": false
+}

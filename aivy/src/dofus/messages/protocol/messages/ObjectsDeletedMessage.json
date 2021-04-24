@@ -1,0 +1,22 @@
+{
+	"fields": [
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"is_vector": true,
+			"name": "objectUID",
+			"position": 0,
+			"type": "uint",
+			"write_length_method": "writeShort",
+			"write_method": "writeVarInt"
+		}
+	],
+	"name": "ObjectsDeletedMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.inventory.items",
+	"protocolID": 3209,
+	"super": "NetworkMessage",
+	"super_serialize": false,
+	"supernamespace": "com.ankamagames.jerakine.network",
+	"use_hash_function": false
+}

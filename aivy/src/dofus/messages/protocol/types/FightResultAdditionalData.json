@@ -1,0 +1,10 @@
+{
+	"fields": [],
+	"name": "FightResultAdditionalData",
+	"namespace": "com.ankamagames.dofus.network.types.game.context.fight",
+	"protocolID": 8982,
+	"super": "",
+	"super_serialize": false,
+	"supernamespace": "",
+	"use_hash_function": false
+}

@@ -1,0 +1,10 @@
+{
+	"fields": [],
+	"name": "AllianceMotdSetErrorMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.alliance",
+	"protocolID": 4933,
+	"super": "SocialNoticeSetErrorMessage",
+	"super_serialize": true,
+	"supernamespace": "com.ankamagames.dofus.network.messages.game.social",
+	"use_hash_function": false
+}

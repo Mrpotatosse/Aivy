@@ -1,0 +1,49 @@
+{
+	"fields": [
+		{
+			"default_value": "0",
+			"name": "leagueId",
+			"position": 3,
+			"type": "int",
+			"write_method": "writeVarShort"
+		},
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"default_value": "0",
+			"name": "lastConnection",
+			"position": 1,
+			"type": "uint",
+			"write_method": "writeVarShort"
+		},
+		{
+			"default_value": "99",
+			"name": "playerState",
+			"position": 0,
+			"type": "uint",
+			"write_method": "writeByte"
+		},
+		{
+			"default_value": "0",
+			"name": "achievementPoints",
+			"position": 2,
+			"type": "int",
+			"write_method": "writeInt"
+		},
+		{
+			"default_value": "0",
+			"name": "ladderPosition",
+			"position": 4,
+			"type": "int",
+			"write_method": "writeInt"
+		}
+	],
+	"name": "FriendInformations",
+	"namespace": "com.ankamagames.dofus.network.types.game.friend",
+	"protocolID": 1496,
+	"super": "AbstractContactInformations",
+	"super_serialize": true,
+	"supernamespace": "com.ankamagames.dofus.network.types.game.friend",
+	"use_hash_function": false
+}

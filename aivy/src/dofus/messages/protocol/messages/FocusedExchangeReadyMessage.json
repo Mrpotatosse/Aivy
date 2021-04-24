@@ -1,0 +1,21 @@
+{
+	"fields": [
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"default_value": "0",
+			"name": "focusActionId",
+			"position": 0,
+			"type": "uint",
+			"write_method": "writeVarInt"
+		}
+	],
+	"name": "FocusedExchangeReadyMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.inventory.exchanges",
+	"protocolID": 2164,
+	"super": "ExchangeReadyMessage",
+	"super_serialize": true,
+	"supernamespace": "com.ankamagames.dofus.network.messages.game.inventory.exchanges",
+	"use_hash_function": true
+}

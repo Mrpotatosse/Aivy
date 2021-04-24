@@ -1,0 +1,48 @@
+{
+	"fields": [
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"default_value": "0",
+			"name": "quantity",
+			"position": 3,
+			"type": "uint",
+			"write_method": "writeVarInt"
+		},
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"default_value": "0",
+			"name": "mountFoodUid",
+			"position": 2,
+			"type": "uint",
+			"write_method": "writeVarInt"
+		},
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"default_value": "0",
+			"name": "mountUid",
+			"position": 0,
+			"type": "uint",
+			"write_method": "writeVarInt"
+		},
+		{
+			"default_value": "0",
+			"name": "mountLocation",
+			"position": 1,
+			"type": "int",
+			"write_method": "writeByte"
+		}
+	],
+	"name": "MountFeedRequestMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.context.mount",
+	"protocolID": 655,
+	"super": "NetworkMessage",
+	"super_serialize": false,
+	"supernamespace": "com.ankamagames.jerakine.network",
+	"use_hash_function": false
+}

@@ -1,0 +1,17 @@
+{
+	"fields": [
+		{
+			"name": "content",
+			"position": 0,
+			"type": "String",
+			"write_method": "writeUTF"
+		}
+	],
+	"name": "AdminCommandMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.authorized",
+	"protocolID": 7898,
+	"super": "NetworkMessage",
+	"super_serialize": false,
+	"supernamespace": "com.ankamagames.jerakine.network",
+	"use_hash_function": false
+}

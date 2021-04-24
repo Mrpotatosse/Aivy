@@ -1,0 +1,18 @@
+{
+	"fields": [
+		{
+			"name": "alliance",
+			"position": 0,
+			"self_serialize_method": "serializeAs_AllianceInformations",
+			"type": "AllianceInformations",
+			"type_namespace": "com.ankamagames.dofus.network.types.game.context.roleplay"
+		}
+	],
+	"name": "AlliancePrismInformation",
+	"namespace": "com.ankamagames.dofus.network.types.game.prism",
+	"protocolID": 7181,
+	"super": "PrismInformation",
+	"super_serialize": true,
+	"supernamespace": "com.ankamagames.dofus.network.types.game.prism",
+	"use_hash_function": false
+}

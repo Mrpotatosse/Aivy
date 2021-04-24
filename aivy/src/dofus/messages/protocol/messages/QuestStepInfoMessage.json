@@ -1,0 +1,20 @@
+{
+	"fields": [
+		{
+			"name": "infos",
+			"position": 0,
+			"prefixed_by_type_id": true,
+			"self_serialize_method": "serialize",
+			"type": "QuestActiveInformations",
+			"type_namespace": "com.ankamagames.dofus.network.types.game.context.roleplay.quest",
+			"write_type_id_method": "writeShort"
+		}
+	],
+	"name": "QuestStepInfoMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.context.roleplay.quest",
+	"protocolID": 5603,
+	"super": "NetworkMessage",
+	"super_serialize": false,
+	"supernamespace": "com.ankamagames.jerakine.network",
+	"use_hash_function": false
+}

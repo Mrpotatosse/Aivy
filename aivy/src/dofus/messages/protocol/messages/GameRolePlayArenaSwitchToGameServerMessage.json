@@ -1,0 +1,33 @@
+{
+	"fields": [
+		{
+			"default_value": "0",
+			"name": "homeServerId",
+			"position": 2,
+			"type": "int",
+			"write_method": "writeShort"
+		},
+		{
+			"default_value": "false",
+			"name": "validToken",
+			"position": 0,
+			"type": "Boolean",
+			"write_method": "writeBoolean"
+		},
+		{
+			"is_vector": true,
+			"name": "ticket",
+			"position": 1,
+			"type": "int",
+			"write_length_method": "writeVarInt",
+			"write_method": "writeByte"
+		}
+	],
+	"name": "GameRolePlayArenaSwitchToGameServerMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.context.roleplay.fight.arena",
+	"protocolID": 8825,
+	"super": "NetworkMessage",
+	"super_serialize": false,
+	"supernamespace": "com.ankamagames.jerakine.network",
+	"use_hash_function": false
+}

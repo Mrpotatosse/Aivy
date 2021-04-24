@@ -1,0 +1,22 @@
+{
+	"fields": [
+		{
+			"bounds": {
+				"low": "-1",
+				"up": "1000"
+			},
+			"default_value": "0",
+			"name": "ageBonus",
+			"position": 0,
+			"type": "int",
+			"write_method": "writeShort"
+		}
+	],
+	"name": "InteractiveElementWithAgeBonus",
+	"namespace": "com.ankamagames.dofus.network.types.game.interactive",
+	"protocolID": 9243,
+	"super": "InteractiveElement",
+	"super_serialize": true,
+	"supernamespace": "com.ankamagames.dofus.network.types.game.interactive",
+	"use_hash_function": false
+}

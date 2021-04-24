@@ -1,0 +1,32 @@
+.App-cubor {
+    background-color: white;
+}
+
+.App-cubor-content {    
+    display: grid;
+    height: 100%;
+    grid-template-areas: 
+        "b1 b2 b3"
+        "b4 b5 b6"
+        "b7 b8 b9";     
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    grid-template-rows: 33.3% 33.3% 33.3%;
+}
+
+.App-cubor-content-case {
+    background-color: gray;
+    margin: 1vh;
+}
+
+.App-cubor-content-case-anim {
+    animation: return-anim 500ms ease;
+}
+
+@keyframes return-anim {
+    from {
+        transform: rotateY(0deg);
+    }
+    to{        
+        transform: rotateY(360deg);
+    }
+}

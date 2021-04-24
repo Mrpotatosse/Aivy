@@ -1,0 +1,22 @@
+{
+	"fields": [
+		{
+			"bounds": {
+				"low": "0",
+				"up": "9007199254740992.000000"
+			},
+			"default_value": "0",
+			"name": "mapId",
+			"position": 0,
+			"type": "Number",
+			"write_method": "writeDouble"
+		}
+	],
+	"name": "MapCoordinatesAndId",
+	"namespace": "com.ankamagames.dofus.network.types.game.context",
+	"protocolID": 5589,
+	"super": "MapCoordinates",
+	"super_serialize": true,
+	"supernamespace": "com.ankamagames.dofus.network.types.game.context",
+	"use_hash_function": false
+}

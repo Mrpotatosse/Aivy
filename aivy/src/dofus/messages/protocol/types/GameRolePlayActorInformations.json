@@ -1,0 +1,10 @@
+{
+	"fields": [],
+	"name": "GameRolePlayActorInformations",
+	"namespace": "com.ankamagames.dofus.network.types.game.context.roleplay",
+	"protocolID": 9389,
+	"super": "GameContextActorInformations",
+	"super_serialize": true,
+	"supernamespace": "com.ankamagames.dofus.network.types.game.context",
+	"use_hash_function": false
+}

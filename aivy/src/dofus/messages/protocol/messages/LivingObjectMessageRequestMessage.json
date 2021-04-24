@@ -1,0 +1,39 @@
+{
+	"fields": [
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"default_value": "0",
+			"name": "livingObject",
+			"position": 2,
+			"type": "uint",
+			"write_method": "writeVarInt"
+		},
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"default_value": "0",
+			"name": "msgId",
+			"position": 0,
+			"type": "uint",
+			"write_method": "writeVarShort"
+		},
+		{
+			"is_vector": true,
+			"name": "parameters",
+			"position": 1,
+			"type": "String",
+			"write_length_method": "writeShort",
+			"write_method": "writeUTF"
+		}
+	],
+	"name": "LivingObjectMessageRequestMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.inventory.items",
+	"protocolID": 1385,
+	"super": "NetworkMessage",
+	"super_serialize": false,
+	"supernamespace": "com.ankamagames.jerakine.network",
+	"use_hash_function": false
+}

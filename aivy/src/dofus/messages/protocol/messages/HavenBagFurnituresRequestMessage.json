@@ -1,0 +1,41 @@
+{
+	"fields": [
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"is_vector": true,
+			"name": "cellIds",
+			"position": 0,
+			"type": "uint",
+			"write_length_method": "writeShort",
+			"write_method": "writeVarShort"
+		},
+		{
+			"is_vector": true,
+			"name": "funitureIds",
+			"position": 1,
+			"type": "int",
+			"write_length_method": "writeShort",
+			"write_method": "writeInt"
+		},
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"is_vector": true,
+			"name": "orientations",
+			"position": 2,
+			"type": "uint",
+			"write_length_method": "writeShort",
+			"write_method": "writeByte"
+		}
+	],
+	"name": "HavenBagFurnituresRequestMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.context.roleplay.havenbag",
+	"protocolID": 6311,
+	"super": "NetworkMessage",
+	"super_serialize": false,
+	"supernamespace": "com.ankamagames.jerakine.network",
+	"use_hash_function": false
+}

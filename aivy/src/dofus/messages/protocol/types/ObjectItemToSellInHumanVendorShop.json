@@ -1,0 +1,74 @@
+{
+	"fields": [
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"default_value": "0",
+			"name": "objectGID",
+			"position": 0,
+			"type": "uint",
+			"write_method": "writeVarShort"
+		},
+		{
+			"bounds": {
+				"low": "0",
+				"up": "9007199254740992.000000"
+			},
+			"default_value": "0",
+			"name": "publicPrice",
+			"position": 5,
+			"type": "Number",
+			"write_method": "writeVarLong"
+		},
+		{
+			"is_vector": true,
+			"name": "effects",
+			"position": 1,
+			"prefixed_by_type_id": true,
+			"self_serialize_method": "serialize",
+			"type": "ObjectEffect",
+			"type_namespace": "com.ankamagames.dofus.network.types.game.data.items.effects",
+			"write_length_method": "writeShort",
+			"write_type_id_method": "writeShort"
+		},
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"default_value": "0",
+			"name": "quantity",
+			"position": 3,
+			"type": "uint",
+			"write_method": "writeVarInt"
+		},
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"default_value": "0",
+			"name": "objectUID",
+			"position": 2,
+			"type": "uint",
+			"write_method": "writeVarInt"
+		},
+		{
+			"bounds": {
+				"low": "0",
+				"up": "9007199254740992.000000"
+			},
+			"default_value": "0",
+			"name": "objectPrice",
+			"position": 4,
+			"type": "Number",
+			"write_method": "writeVarLong"
+		}
+	],
+	"name": "ObjectItemToSellInHumanVendorShop",
+	"namespace": "com.ankamagames.dofus.network.types.game.data.items",
+	"protocolID": 7693,
+	"super": "Item",
+	"super_serialize": true,
+	"supernamespace": "com.ankamagames.dofus.network.types.game.data.items",
+	"use_hash_function": false
+}

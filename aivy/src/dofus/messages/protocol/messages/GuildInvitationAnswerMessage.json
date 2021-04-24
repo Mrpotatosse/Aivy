@@ -1,0 +1,18 @@
+{
+	"fields": [
+		{
+			"default_value": "false",
+			"name": "accept",
+			"position": 0,
+			"type": "Boolean",
+			"write_method": "writeBoolean"
+		}
+	],
+	"name": "GuildInvitationAnswerMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.guild",
+	"protocolID": 5598,
+	"super": "NetworkMessage",
+	"super_serialize": false,
+	"supernamespace": "com.ankamagames.jerakine.network",
+	"use_hash_function": false
+}

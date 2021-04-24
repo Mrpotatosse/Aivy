@@ -1,0 +1,22 @@
+{
+	"fields": [
+		{
+			"bounds": {
+				"low": "0",
+				"up": "9007199254740992.000000"
+			},
+			"default_value": "0",
+			"name": "replacedCharacterId",
+			"position": 0,
+			"type": "Number",
+			"write_method": "writeVarLong"
+		}
+	],
+	"name": "GuildFightTakePlaceRequestMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.guild.tax",
+	"protocolID": 324,
+	"super": "GuildFightJoinRequestMessage",
+	"super_serialize": true,
+	"supernamespace": "com.ankamagames.dofus.network.messages.game.guild.tax",
+	"use_hash_function": false
+}

@@ -1,0 +1,20 @@
+{
+	"fields": [
+		{
+			"is_vector": true,
+			"name": "finishMoves",
+			"position": 0,
+			"self_serialize_method": "serializeAs_FinishMoveInformations",
+			"type": "FinishMoveInformations",
+			"type_namespace": "com.ankamagames.dofus.network.types.game.finishmoves",
+			"write_length_method": "writeShort"
+		}
+	],
+	"name": "FinishMoveListMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.finishmoves",
+	"protocolID": 5730,
+	"super": "NetworkMessage",
+	"super_serialize": false,
+	"supernamespace": "com.ankamagames.jerakine.network",
+	"use_hash_function": false
+}

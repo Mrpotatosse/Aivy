@@ -1,0 +1,72 @@
+{
+	"fields": [
+		{
+			"name": "partyName",
+			"position": 6,
+			"type": "String",
+			"write_method": "writeUTF"
+		},
+		{
+			"default_value": "false",
+			"name": "restricted",
+			"position": 5,
+			"type": "Boolean",
+			"write_method": "writeBoolean"
+		},
+		{
+			"default_value": "0",
+			"name": "partyType",
+			"position": 0,
+			"type": "uint",
+			"write_method": "writeByte"
+		},
+		{
+			"bounds": {
+				"low": "0",
+				"up": "9007199254740992.000000"
+			},
+			"default_value": "0",
+			"name": "partyLeaderId",
+			"position": 1,
+			"type": "Number",
+			"write_method": "writeVarLong"
+		},
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"default_value": "0",
+			"name": "maxParticipants",
+			"position": 2,
+			"type": "uint",
+			"write_method": "writeByte"
+		},
+		{
+			"is_vector": true,
+			"name": "guests",
+			"position": 4,
+			"self_serialize_method": "serializeAs_PartyGuestInformations",
+			"type": "PartyGuestInformations",
+			"type_namespace": "com.ankamagames.dofus.network.types.game.context.roleplay.party",
+			"write_length_method": "writeShort"
+		},
+		{
+			"is_vector": true,
+			"name": "members",
+			"position": 3,
+			"prefixed_by_type_id": true,
+			"self_serialize_method": "serialize",
+			"type": "PartyMemberInformations",
+			"type_namespace": "com.ankamagames.dofus.network.types.game.context.roleplay.party",
+			"write_length_method": "writeShort",
+			"write_type_id_method": "writeShort"
+		}
+	],
+	"name": "PartyJoinMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.context.roleplay.party",
+	"protocolID": 6609,
+	"super": "AbstractPartyMessage",
+	"super_serialize": true,
+	"supernamespace": "com.ankamagames.dofus.network.messages.game.context.roleplay.party",
+	"use_hash_function": false
+}

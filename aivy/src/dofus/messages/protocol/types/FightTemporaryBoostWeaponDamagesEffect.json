@@ -1,0 +1,18 @@
+{
+	"fields": [
+		{
+			"default_value": "0",
+			"name": "weaponTypeId",
+			"position": 0,
+			"type": "int",
+			"write_method": "writeShort"
+		}
+	],
+	"name": "FightTemporaryBoostWeaponDamagesEffect",
+	"namespace": "com.ankamagames.dofus.network.types.game.actions.fight",
+	"protocolID": 2407,
+	"super": "FightTemporaryBoostEffect",
+	"super_serialize": true,
+	"supernamespace": "com.ankamagames.dofus.network.types.game.actions.fight",
+	"use_hash_function": false
+}

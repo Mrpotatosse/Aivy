@@ -1,0 +1,29 @@
+{
+	"fields": [
+		{
+			"is_vector": true,
+			"name": "familyBoosts",
+			"position": 1,
+			"self_serialize_method": "serializeAs_MonsterBoosts",
+			"type": "MonsterBoosts",
+			"type_namespace": "com.ankamagames.dofus.network.types.game.context.roleplay",
+			"write_length_method": "writeShort"
+		},
+		{
+			"is_vector": true,
+			"name": "monsterBoosts",
+			"position": 0,
+			"self_serialize_method": "serializeAs_MonsterBoosts",
+			"type": "MonsterBoosts",
+			"type_namespace": "com.ankamagames.dofus.network.types.game.context.roleplay",
+			"write_length_method": "writeShort"
+		}
+	],
+	"name": "GameRefreshMonsterBoostsMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.context",
+	"protocolID": 4221,
+	"super": "NetworkMessage",
+	"super_serialize": false,
+	"supernamespace": "com.ankamagames.jerakine.network",
+	"use_hash_function": false
+}

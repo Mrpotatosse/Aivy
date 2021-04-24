@@ -1,0 +1,18 @@
+{
+	"fields": [
+		{
+			"name": "listEntry",
+			"position": 0,
+			"self_serialize_method": "serializeAs_JobCrafterDirectoryListEntry",
+			"type": "JobCrafterDirectoryListEntry",
+			"type_namespace": "com.ankamagames.dofus.network.types.game.context.roleplay.job"
+		}
+	],
+	"name": "JobCrafterDirectoryAddMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.context.roleplay.job",
+	"protocolID": 1986,
+	"super": "NetworkMessage",
+	"super_serialize": false,
+	"supernamespace": "com.ankamagames.jerakine.network",
+	"use_hash_function": false
+}

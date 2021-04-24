@@ -1,0 +1,22 @@
+{
+	"fields": [
+		{
+			"is_vector": true,
+			"name": "effects",
+			"position": 0,
+			"prefixed_by_type_id": true,
+			"self_serialize_method": "serialize",
+			"type": "ObjectEffect",
+			"type_namespace": "com.ankamagames.dofus.network.types.game.data.items.effects",
+			"write_length_method": "writeShort",
+			"write_type_id_method": "writeShort"
+		}
+	],
+	"name": "ObjectEffects",
+	"namespace": "com.ankamagames.dofus.network.types.game.data.items",
+	"protocolID": 4372,
+	"super": "",
+	"super_serialize": false,
+	"supernamespace": "",
+	"use_hash_function": false
+}

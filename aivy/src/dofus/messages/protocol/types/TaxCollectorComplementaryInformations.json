@@ -1,0 +1,10 @@
+{
+	"fields": [],
+	"name": "TaxCollectorComplementaryInformations",
+	"namespace": "com.ankamagames.dofus.network.types.game.guild.tax",
+	"protocolID": 9770,
+	"super": "",
+	"super_serialize": false,
+	"supernamespace": "",
+	"use_hash_function": false
+}

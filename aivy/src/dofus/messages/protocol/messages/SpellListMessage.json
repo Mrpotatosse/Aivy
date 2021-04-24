@@ -1,0 +1,27 @@
+{
+	"fields": [
+		{
+			"is_vector": true,
+			"name": "spells",
+			"position": 1,
+			"self_serialize_method": "serializeAs_SpellItem",
+			"type": "SpellItem",
+			"type_namespace": "com.ankamagames.dofus.network.types.game.data.items",
+			"write_length_method": "writeShort"
+		},
+		{
+			"default_value": "false",
+			"name": "spellPrevisualization",
+			"position": 0,
+			"type": "Boolean",
+			"write_method": "writeBoolean"
+		}
+	],
+	"name": "SpellListMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.inventory.spells",
+	"protocolID": 87,
+	"super": "NetworkMessage",
+	"super_serialize": false,
+	"supernamespace": "com.ankamagames.jerakine.network",
+	"use_hash_function": false
+}

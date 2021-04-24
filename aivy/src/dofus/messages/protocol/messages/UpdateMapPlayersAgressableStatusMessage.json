@@ -1,0 +1,31 @@
+{
+	"fields": [
+		{
+			"bounds": {
+				"low": "0",
+				"up": "9007199254740992.000000"
+			},
+			"is_vector": true,
+			"name": "playerIds",
+			"position": 0,
+			"type": "Number",
+			"write_length_method": "writeShort",
+			"write_method": "writeVarLong"
+		},
+		{
+			"is_vector": true,
+			"name": "enable",
+			"position": 1,
+			"type": "uint",
+			"write_length_method": "writeShort",
+			"write_method": "writeByte"
+		}
+	],
+	"name": "UpdateMapPlayersAgressableStatusMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.pvp",
+	"protocolID": 9063,
+	"super": "NetworkMessage",
+	"super_serialize": false,
+	"supernamespace": "com.ankamagames.jerakine.network",
+	"use_hash_function": false
+}

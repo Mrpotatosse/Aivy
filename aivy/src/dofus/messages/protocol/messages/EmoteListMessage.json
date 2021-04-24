@@ -1,0 +1,23 @@
+{
+	"fields": [
+		{
+			"bounds": {
+				"low": "0",
+				"up": "255"
+			},
+			"is_vector": true,
+			"name": "emoteIds",
+			"position": 0,
+			"type": "uint",
+			"write_length_method": "writeShort",
+			"write_method": "writeByte"
+		}
+	],
+	"name": "EmoteListMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.context.roleplay.emote",
+	"protocolID": 8375,
+	"super": "NetworkMessage",
+	"super_serialize": false,
+	"supernamespace": "com.ankamagames.jerakine.network",
+	"use_hash_function": false
+}

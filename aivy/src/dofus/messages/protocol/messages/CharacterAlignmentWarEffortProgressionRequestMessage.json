@@ -1,0 +1,10 @@
+{
+	"fields": [],
+	"name": "CharacterAlignmentWarEffortProgressionRequestMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.character.alignment.war.effort",
+	"protocolID": 9482,
+	"super": "NetworkMessage",
+	"super_serialize": false,
+	"supernamespace": "com.ankamagames.jerakine.network",
+	"use_hash_function": false
+}

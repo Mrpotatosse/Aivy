@@ -1,0 +1,18 @@
+{
+	"fields": [
+		{
+			"name": "Alliancemblem",
+			"position": 0,
+			"self_serialize_method": "serializeAs_GuildEmblem",
+			"type": "GuildEmblem",
+			"type_namespace": "com.ankamagames.dofus.network.types.game.guild"
+		}
+	],
+	"name": "AllianceModificationEmblemValidMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.alliance",
+	"protocolID": 5512,
+	"super": "NetworkMessage",
+	"super_serialize": false,
+	"supernamespace": "com.ankamagames.jerakine.network",
+	"use_hash_function": false
+}

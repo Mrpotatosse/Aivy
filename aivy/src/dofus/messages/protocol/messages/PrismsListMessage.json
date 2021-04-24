@@ -1,0 +1,22 @@
+{
+	"fields": [
+		{
+			"is_vector": true,
+			"name": "prisms",
+			"position": 0,
+			"prefixed_by_type_id": true,
+			"self_serialize_method": "serialize",
+			"type": "PrismSubareaEmptyInfo",
+			"type_namespace": "com.ankamagames.dofus.network.types.game.prism",
+			"write_length_method": "writeShort",
+			"write_type_id_method": "writeShort"
+		}
+	],
+	"name": "PrismsListMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.prism",
+	"protocolID": 5542,
+	"super": "NetworkMessage",
+	"super_serialize": false,
+	"supernamespace": "com.ankamagames.jerakine.network",
+	"use_hash_function": false
+}

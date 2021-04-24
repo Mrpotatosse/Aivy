@@ -1,0 +1,49 @@
+{
+	"fields": [
+		{
+			"name": "name",
+			"position": 0,
+			"type": "String",
+			"write_method": "writeUTF"
+		},
+		{
+			"constant_length": 5,
+			"is_vector": true,
+			"name": "colors",
+			"position": 3,
+			"type": "int",
+			"write_method": "writeInt"
+		},
+		{
+			"default_value": "0",
+			"name": "breed",
+			"position": 1,
+			"type": "int",
+			"write_method": "writeByte"
+		},
+		{
+			"default_value": "false",
+			"name": "sex",
+			"position": 2,
+			"type": "Boolean",
+			"write_method": "writeBoolean"
+		},
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"default_value": "0",
+			"name": "cosmeticId",
+			"position": 4,
+			"type": "uint",
+			"write_method": "writeVarShort"
+		}
+	],
+	"name": "CharacterCreationRequestMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.character.creation",
+	"protocolID": 5908,
+	"super": "NetworkMessage",
+	"super_serialize": false,
+	"supernamespace": "com.ankamagames.jerakine.network",
+	"use_hash_function": false
+}

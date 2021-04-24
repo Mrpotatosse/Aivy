@@ -1,0 +1,32 @@
+{
+	"fields": [
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"default_value": "0",
+			"name": "iconId",
+			"position": 0,
+			"type": "uint",
+			"write_method": "writeShort"
+		},
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"is_vector": true,
+			"name": "idolIds",
+			"position": 1,
+			"type": "uint",
+			"write_length_method": "writeShort",
+			"write_method": "writeVarShort"
+		}
+	],
+	"name": "IdolsPreset",
+	"namespace": "com.ankamagames.dofus.network.types.game.presets",
+	"protocolID": 9666,
+	"super": "Preset",
+	"super_serialize": true,
+	"supernamespace": "com.ankamagames.dofus.network.types.game.presets",
+	"use_hash_function": false
+}

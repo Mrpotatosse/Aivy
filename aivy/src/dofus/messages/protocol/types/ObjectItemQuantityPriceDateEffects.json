@@ -1,0 +1,39 @@
+{
+	"fields": [
+		{
+			"bounds": {
+				"low": "0",
+				"up": "9007199254740992.000000"
+			},
+			"default_value": "0",
+			"name": "price",
+			"position": 0,
+			"type": "Number",
+			"write_method": "writeVarLong"
+		},
+		{
+			"name": "effects",
+			"position": 1,
+			"self_serialize_method": "serializeAs_ObjectEffects",
+			"type": "ObjectEffects",
+			"type_namespace": "com.ankamagames.dofus.network.types.game.data.items"
+		},
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"default_value": "0",
+			"name": "date",
+			"position": 2,
+			"type": "uint",
+			"write_method": "writeInt"
+		}
+	],
+	"name": "ObjectItemQuantityPriceDateEffects",
+	"namespace": "com.ankamagames.dofus.network.types.game.data.items",
+	"protocolID": 8791,
+	"super": "ObjectItemGenericQuantity",
+	"super_serialize": true,
+	"supernamespace": "com.ankamagames.dofus.network.types.game.data.items",
+	"use_hash_function": false
+}

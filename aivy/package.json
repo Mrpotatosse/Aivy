@@ -1,0 +1,20 @@
+{
+  "name": "aivy",
+  "version": "0.1.0",
+  "description": "Aivy Back-end",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Aivy"
+  ],
+  "author": "MrPot",
+  "license": "ISC",
+  "dependencies": {
+    "frida": "^14.2.13",
+    "node-fetch": "^2.6.1",
+    "ws": "^7.4.4"
+  }
+}

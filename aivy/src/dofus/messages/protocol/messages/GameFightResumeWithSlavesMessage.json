@@ -1,0 +1,20 @@
+{
+	"fields": [
+		{
+			"is_vector": true,
+			"name": "slavesInfo",
+			"position": 0,
+			"self_serialize_method": "serializeAs_GameFightResumeSlaveInfo",
+			"type": "GameFightResumeSlaveInfo",
+			"type_namespace": "com.ankamagames.dofus.network.types.game.context.fight",
+			"write_length_method": "writeShort"
+		}
+	],
+	"name": "GameFightResumeWithSlavesMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.context.fight",
+	"protocolID": 7065,
+	"super": "GameFightResumeMessage",
+	"super_serialize": true,
+	"supernamespace": "com.ankamagames.dofus.network.messages.game.context.fight",
+	"use_hash_function": false
+}

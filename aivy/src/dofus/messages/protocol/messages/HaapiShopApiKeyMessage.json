@@ -1,0 +1,17 @@
+{
+	"fields": [
+		{
+			"name": "token",
+			"position": 0,
+			"type": "String",
+			"write_method": "writeUTF"
+		}
+	],
+	"name": "HaapiShopApiKeyMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.web.haapi",
+	"protocolID": 6631,
+	"super": "NetworkMessage",
+	"super_serialize": false,
+	"supernamespace": "com.ankamagames.jerakine.network",
+	"use_hash_function": false
+}

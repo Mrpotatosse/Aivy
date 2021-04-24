@@ -1,0 +1,132 @@
+{
+	"fields": [
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"default_value": "0",
+			"name": "lifePoints",
+			"position": 0,
+			"type": "uint",
+			"write_method": "writeVarInt"
+		},
+		{
+			"bounds": {
+				"low": "0",
+				"up": "255"
+			},
+			"default_value": "0",
+			"name": "regenRate",
+			"position": 3,
+			"type": "uint",
+			"write_method": "writeByte"
+		},
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"default_value": "0",
+			"name": "maxLifePoints",
+			"position": 1,
+			"type": "uint",
+			"write_method": "writeVarInt"
+		},
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"default_value": "0",
+			"name": "prospecting",
+			"position": 2,
+			"type": "uint",
+			"write_method": "writeVarShort"
+		},
+		{
+			"name": "status",
+			"position": 10,
+			"prefixed_by_type_id": true,
+			"self_serialize_method": "serialize",
+			"type": "PlayerStatus",
+			"type_namespace": "com.ankamagames.dofus.network.types.game.character.status",
+			"write_type_id_method": "writeShort"
+		},
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"default_value": "0",
+			"name": "initiative",
+			"position": 4,
+			"type": "uint",
+			"write_method": "writeVarShort"
+		},
+		{
+			"default_value": "0",
+			"name": "alignmentSide",
+			"position": 5,
+			"type": "int",
+			"write_method": "writeByte"
+		},
+		{
+			"bounds": {
+				"low": "-255",
+				"up": "255"
+			},
+			"default_value": "0",
+			"name": "worldX",
+			"position": 6,
+			"type": "int",
+			"write_method": "writeShort"
+		},
+		{
+			"bounds": {
+				"low": "-255",
+				"up": "255"
+			},
+			"default_value": "0",
+			"name": "worldY",
+			"position": 7,
+			"type": "int",
+			"write_method": "writeShort"
+		},
+		{
+			"bounds": {
+				"low": "0",
+				"up": "9007199254740992.000000"
+			},
+			"default_value": "0",
+			"name": "mapId",
+			"position": 8,
+			"type": "Number",
+			"write_method": "writeDouble"
+		},
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"default_value": "0",
+			"name": "subAreaId",
+			"position": 9,
+			"type": "uint",
+			"write_method": "writeVarShort"
+		},
+		{
+			"is_vector": true,
+			"name": "entities",
+			"position": 11,
+			"prefixed_by_type_id": true,
+			"self_serialize_method": "serialize",
+			"type": "PartyEntityBaseInformation",
+			"type_namespace": "com.ankamagames.dofus.network.types.game.context.roleplay.party.entity",
+			"write_length_method": "writeShort",
+			"write_type_id_method": "writeShort"
+		}
+	],
+	"name": "PartyMemberInformations",
+	"namespace": "com.ankamagames.dofus.network.types.game.context.roleplay.party",
+	"protocolID": 653,
+	"super": "CharacterBaseInformations",
+	"super_serialize": true,
+	"supernamespace": "com.ankamagames.dofus.network.types.game.character.choice",
+	"use_hash_function": false
+}

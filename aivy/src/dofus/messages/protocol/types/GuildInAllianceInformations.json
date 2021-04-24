@@ -1,0 +1,32 @@
+{
+	"fields": [
+		{
+			"bounds": {
+				"low": "1",
+				"up": "240"
+			},
+			"default_value": "0",
+			"name": "nbMembers",
+			"position": 0,
+			"type": "uint",
+			"write_method": "writeByte"
+		},
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"default_value": "0",
+			"name": "joinDate",
+			"position": 1,
+			"type": "uint",
+			"write_method": "writeInt"
+		}
+	],
+	"name": "GuildInAllianceInformations",
+	"namespace": "com.ankamagames.dofus.network.types.game.context.roleplay",
+	"protocolID": 9610,
+	"super": "GuildInformations",
+	"super_serialize": true,
+	"supernamespace": "com.ankamagames.dofus.network.types.game.context.roleplay",
+	"use_hash_function": false
+}

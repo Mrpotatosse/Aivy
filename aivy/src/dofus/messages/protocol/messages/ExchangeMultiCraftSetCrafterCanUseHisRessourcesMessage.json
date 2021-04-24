@@ -1,0 +1,18 @@
+{
+	"fields": [
+		{
+			"default_value": "false",
+			"name": "allow",
+			"position": 0,
+			"type": "Boolean",
+			"write_method": "writeBoolean"
+		}
+	],
+	"name": "ExchangeMultiCraftSetCrafterCanUseHisRessourcesMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.inventory.items",
+	"protocolID": 3402,
+	"super": "NetworkMessage",
+	"super_serialize": false,
+	"supernamespace": "com.ankamagames.jerakine.network",
+	"use_hash_function": false
+}

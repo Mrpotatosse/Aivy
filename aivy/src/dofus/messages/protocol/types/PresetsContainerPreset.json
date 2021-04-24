@@ -1,0 +1,22 @@
+{
+	"fields": [
+		{
+			"is_vector": true,
+			"name": "presets",
+			"position": 0,
+			"prefixed_by_type_id": true,
+			"self_serialize_method": "serialize",
+			"type": "Preset",
+			"type_namespace": "com.ankamagames.dofus.network.types.game.presets",
+			"write_length_method": "writeShort",
+			"write_type_id_method": "writeShort"
+		}
+	],
+	"name": "PresetsContainerPreset",
+	"namespace": "com.ankamagames.dofus.network.types.game.presets",
+	"protocolID": 7529,
+	"super": "Preset",
+	"super_serialize": true,
+	"supernamespace": "com.ankamagames.dofus.network.types.game.presets",
+	"use_hash_function": false
+}

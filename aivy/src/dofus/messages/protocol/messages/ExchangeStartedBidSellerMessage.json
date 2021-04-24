@@ -1,0 +1,27 @@
+{
+	"fields": [
+		{
+			"is_vector": true,
+			"name": "objectsInfos",
+			"position": 1,
+			"self_serialize_method": "serializeAs_ObjectItemToSellInBid",
+			"type": "ObjectItemToSellInBid",
+			"type_namespace": "com.ankamagames.dofus.network.types.game.data.items",
+			"write_length_method": "writeShort"
+		},
+		{
+			"name": "sellerDescriptor",
+			"position": 0,
+			"self_serialize_method": "serializeAs_SellerBuyerDescriptor",
+			"type": "SellerBuyerDescriptor",
+			"type_namespace": "com.ankamagames.dofus.network.types.game.data.items"
+		}
+	],
+	"name": "ExchangeStartedBidSellerMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.inventory.exchanges",
+	"protocolID": 8157,
+	"super": "NetworkMessage",
+	"super_serialize": false,
+	"supernamespace": "com.ankamagames.jerakine.network",
+	"use_hash_function": false
+}

@@ -1,0 +1,18 @@
+{
+	"fields": [
+		{
+			"name": "mountData",
+			"position": 0,
+			"self_serialize_method": "serializeAs_MountClientData",
+			"type": "MountClientData",
+			"type_namespace": "com.ankamagames.dofus.network.types.game.mount"
+		}
+	],
+	"name": "MountSetMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.context.mount",
+	"protocolID": 4921,
+	"super": "NetworkMessage",
+	"super_serialize": false,
+	"supernamespace": "com.ankamagames.jerakine.network",
+	"use_hash_function": false
+}

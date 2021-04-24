@@ -1,0 +1,24 @@
+{
+	"fields": [
+		{
+			"name": "key",
+			"position": 0,
+			"type": "String",
+			"write_method": "writeUTF"
+		},
+		{
+			"default_value": "0",
+			"name": "type",
+			"position": 1,
+			"type": "uint",
+			"write_method": "writeByte"
+		}
+	],
+	"name": "HaapiSessionMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.web.haapi",
+	"protocolID": 722,
+	"super": "NetworkMessage",
+	"super_serialize": false,
+	"supernamespace": "com.ankamagames.jerakine.network",
+	"use_hash_function": false
+}

@@ -1,0 +1,17 @@
+{
+	"fields": [
+		{
+			"name": "name",
+			"position": 0,
+			"type": "String",
+			"write_method": "writeUTF"
+		}
+	],
+	"name": "GameRolePlayNamedActorInformations",
+	"namespace": "com.ankamagames.dofus.network.types.game.context.roleplay",
+	"protocolID": 6979,
+	"super": "GameRolePlayActorInformations",
+	"super_serialize": true,
+	"supernamespace": "com.ankamagames.dofus.network.types.game.context.roleplay",
+	"use_hash_function": false
+}

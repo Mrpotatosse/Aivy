@@ -1,0 +1,32 @@
+{
+	"fields": [
+		{
+			"default_value": "0",
+			"name": "value",
+			"position": 1,
+			"type": "int",
+			"write_method": "writeInt"
+		},
+		{
+			"default_value": "0",
+			"name": "rideId",
+			"position": 0,
+			"type": "int",
+			"write_method": "writeInt"
+		},
+		{
+			"default_value": "0",
+			"name": "type",
+			"position": 2,
+			"type": "uint",
+			"write_method": "writeByte"
+		}
+	],
+	"name": "DisplayNumericalValuePaddockMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.context.display",
+	"protocolID": 2934,
+	"super": "NetworkMessage",
+	"super_serialize": false,
+	"supernamespace": "com.ankamagames.jerakine.network",
+	"use_hash_function": false
+}

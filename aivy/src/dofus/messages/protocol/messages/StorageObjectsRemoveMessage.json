@@ -1,0 +1,22 @@
+{
+	"fields": [
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"is_vector": true,
+			"name": "objectUIDList",
+			"position": 0,
+			"type": "uint",
+			"write_length_method": "writeShort",
+			"write_method": "writeVarInt"
+		}
+	],
+	"name": "StorageObjectsRemoveMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.inventory.storage",
+	"protocolID": 7479,
+	"super": "NetworkMessage",
+	"super_serialize": false,
+	"supernamespace": "com.ankamagames.jerakine.network",
+	"use_hash_function": false
+}

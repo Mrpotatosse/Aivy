@@ -1,0 +1,23 @@
+{
+	"fields": [
+		{
+			"bounds": {
+				"low": "0",
+				"up": "559"
+			},
+			"is_vector": true,
+			"name": "cells",
+			"position": 0,
+			"type": "uint",
+			"write_length_method": "writeShort",
+			"write_method": "writeVarShort"
+		}
+	],
+	"name": "ObjectGroundRemovedMultipleMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.context.roleplay.objects",
+	"protocolID": 7369,
+	"super": "NetworkMessage",
+	"super_serialize": false,
+	"supernamespace": "com.ankamagames.jerakine.network",
+	"use_hash_function": false
+}

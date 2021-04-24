@@ -1,0 +1,32 @@
+{
+	"fields": [
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"default_value": "0",
+			"name": "livingUID",
+			"position": 0,
+			"type": "uint",
+			"write_method": "writeVarInt"
+		},
+		{
+			"bounds": {
+				"low": "0",
+				"up": "255"
+			},
+			"default_value": "0",
+			"name": "livingPosition",
+			"position": 1,
+			"type": "uint",
+			"write_method": "writeByte"
+		}
+	],
+	"name": "LivingObjectDissociateMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.inventory.items",
+	"protocolID": 1896,
+	"super": "NetworkMessage",
+	"super_serialize": false,
+	"supernamespace": "com.ankamagames.jerakine.network",
+	"use_hash_function": false
+}

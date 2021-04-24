@@ -1,0 +1,28 @@
+{
+	"fields": [
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"default_value": "0",
+			"name": "questId",
+			"position": 0,
+			"type": "uint",
+			"write_method": "writeVarShort"
+		},
+		{
+			"default_value": "0",
+			"name": "objectiveId",
+			"position": 1,
+			"type": "int",
+			"write_method": "writeShort"
+		}
+	],
+	"name": "UnfollowQuestObjectiveRequestMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.context.roleplay.quest",
+	"protocolID": 2966,
+	"super": "NetworkMessage",
+	"super_serialize": false,
+	"supernamespace": "com.ankamagames.jerakine.network",
+	"use_hash_function": false
+}

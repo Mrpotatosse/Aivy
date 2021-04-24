@@ -1,0 +1,22 @@
+{
+	"fields": [
+		{
+			"bounds": {
+				"low": "0",
+				"up": "9007199254740992.000000"
+			},
+			"default_value": "0",
+			"name": "playerId",
+			"position": 0,
+			"type": "Number",
+			"write_method": "writeVarLong"
+		}
+	],
+	"name": "JobExperienceOtherPlayerUpdateMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.context.roleplay.job",
+	"protocolID": 3200,
+	"super": "JobExperienceUpdateMessage",
+	"super_serialize": true,
+	"supernamespace": "com.ankamagames.dofus.network.messages.game.context.roleplay.job",
+	"use_hash_function": false
+}

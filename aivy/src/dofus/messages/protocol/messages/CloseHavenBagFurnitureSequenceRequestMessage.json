@@ -1,0 +1,10 @@
+{
+	"fields": [],
+	"name": "CloseHavenBagFurnitureSequenceRequestMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.context.roleplay.havenbag",
+	"protocolID": 9629,
+	"super": "NetworkMessage",
+	"super_serialize": false,
+	"supernamespace": "com.ankamagames.jerakine.network",
+	"use_hash_function": false
+}

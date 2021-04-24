@@ -1,0 +1,10 @@
+{
+	"fields": [],
+	"name": "SocialNoticeSetRequestMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.social",
+	"protocolID": 2201,
+	"super": "NetworkMessage",
+	"super_serialize": false,
+	"supernamespace": "com.ankamagames.jerakine.network",
+	"use_hash_function": false
+}

@@ -1,0 +1,22 @@
+{
+	"fields": [
+		{
+			"bounds": {
+				"low": "0",
+				"up": "9007199254740992.000000"
+			},
+			"default_value": "0",
+			"name": "sum",
+			"position": 0,
+			"type": "Number",
+			"write_method": "writeVarLong"
+		}
+	],
+	"name": "GoldItem",
+	"namespace": "com.ankamagames.dofus.network.types.game.data.items",
+	"protocolID": 1260,
+	"super": "Item",
+	"super_serialize": true,
+	"supernamespace": "com.ankamagames.dofus.network.types.game.data.items",
+	"use_hash_function": false
+}

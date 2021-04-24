@@ -1,0 +1,60 @@
+{
+	"fields": [
+		{
+			"bounds": {
+				"low": "-9007199254740992.000000",
+				"up": "9007199254740992.000000"
+			},
+			"default_value": "0",
+			"name": "masterId",
+			"position": 0,
+			"type": "Number",
+			"write_method": "writeDouble"
+		},
+		{
+			"bounds": {
+				"low": "-9007199254740992.000000",
+				"up": "9007199254740992.000000"
+			},
+			"default_value": "0",
+			"name": "slaveId",
+			"position": 1,
+			"type": "Number",
+			"write_method": "writeDouble"
+		},
+		{
+			"name": "slaveStats",
+			"position": 3,
+			"self_serialize_method": "serializeAs_CharacterCharacteristicsInformations",
+			"type": "CharacterCharacteristicsInformations",
+			"type_namespace": "com.ankamagames.dofus.network.types.game.character.characteristic"
+		},
+		{
+			"is_vector": true,
+			"name": "slaveSpells",
+			"position": 2,
+			"self_serialize_method": "serializeAs_SpellItem",
+			"type": "SpellItem",
+			"type_namespace": "com.ankamagames.dofus.network.types.game.data.items",
+			"write_length_method": "writeShort"
+		},
+		{
+			"is_vector": true,
+			"name": "shortcuts",
+			"position": 4,
+			"prefixed_by_type_id": true,
+			"self_serialize_method": "serialize",
+			"type": "Shortcut",
+			"type_namespace": "com.ankamagames.dofus.network.types.game.shortcut",
+			"write_length_method": "writeShort",
+			"write_type_id_method": "writeShort"
+		}
+	],
+	"name": "SlaveSwitchContextMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.context.fight",
+	"protocolID": 1470,
+	"super": "NetworkMessage",
+	"super_serialize": false,
+	"supernamespace": "com.ankamagames.jerakine.network",
+	"use_hash_function": false
+}

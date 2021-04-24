@@ -1,0 +1,25 @@
+{
+	"fields": [
+		{
+			"name": "allianceInformations",
+			"position": 0,
+			"self_serialize_method": "serializeAs_AllianceInformations",
+			"type": "AllianceInformations",
+			"type_namespace": "com.ankamagames.dofus.network.types.game.context.roleplay"
+		},
+		{
+			"default_value": "0",
+			"name": "aggressable",
+			"position": 1,
+			"type": "uint",
+			"write_method": "writeByte"
+		}
+	],
+	"name": "HumanOptionAlliance",
+	"namespace": "com.ankamagames.dofus.network.types.game.context.roleplay",
+	"protocolID": 7642,
+	"super": "HumanOption",
+	"super_serialize": true,
+	"supernamespace": "com.ankamagames.dofus.network.types.game.context.roleplay",
+	"use_hash_function": false
+}

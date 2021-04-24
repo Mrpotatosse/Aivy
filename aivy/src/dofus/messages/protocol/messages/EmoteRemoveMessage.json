@@ -1,0 +1,22 @@
+{
+	"fields": [
+		{
+			"bounds": {
+				"low": "0",
+				"up": "255"
+			},
+			"default_value": "0",
+			"name": "emoteId",
+			"position": 0,
+			"type": "uint",
+			"write_method": "writeByte"
+		}
+	],
+	"name": "EmoteRemoveMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.context.roleplay.emote",
+	"protocolID": 9787,
+	"super": "NetworkMessage",
+	"super_serialize": false,
+	"supernamespace": "com.ankamagames.jerakine.network",
+	"use_hash_function": false
+}

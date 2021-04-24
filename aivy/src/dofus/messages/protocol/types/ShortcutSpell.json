@@ -1,0 +1,21 @@
+{
+	"fields": [
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"default_value": "0",
+			"name": "spellId",
+			"position": 0,
+			"type": "uint",
+			"write_method": "writeVarShort"
+		}
+	],
+	"name": "ShortcutSpell",
+	"namespace": "com.ankamagames.dofus.network.types.game.shortcut",
+	"protocolID": 3720,
+	"super": "Shortcut",
+	"super_serialize": true,
+	"supernamespace": "com.ankamagames.dofus.network.types.game.shortcut",
+	"use_hash_function": false
+}

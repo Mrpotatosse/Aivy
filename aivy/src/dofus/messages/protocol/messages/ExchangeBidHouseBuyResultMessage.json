@@ -1,0 +1,28 @@
+{
+	"fields": [
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"default_value": "0",
+			"name": "uid",
+			"position": 0,
+			"type": "uint",
+			"write_method": "writeVarInt"
+		},
+		{
+			"default_value": "false",
+			"name": "bought",
+			"position": 1,
+			"type": "Boolean",
+			"write_method": "writeBoolean"
+		}
+	],
+	"name": "ExchangeBidHouseBuyResultMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.inventory.exchanges",
+	"protocolID": 3251,
+	"super": "NetworkMessage",
+	"super_serialize": false,
+	"supernamespace": "com.ankamagames.jerakine.network",
+	"use_hash_function": false
+}

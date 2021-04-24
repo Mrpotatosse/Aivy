@@ -1,0 +1,18 @@
+{
+	"fields": [
+		{
+			"name": "allianceInfos",
+			"position": 0,
+			"self_serialize_method": "serializeAs_BasicNamedAllianceInformations",
+			"type": "BasicNamedAllianceInformations",
+			"type_namespace": "com.ankamagames.dofus.network.types.game.context.roleplay"
+		}
+	],
+	"name": "AlliancedGuildFactSheetInformations",
+	"namespace": "com.ankamagames.dofus.network.types.game.social",
+	"protocolID": 9602,
+	"super": "GuildInformations",
+	"super_serialize": true,
+	"supernamespace": "com.ankamagames.dofus.network.types.game.context.roleplay",
+	"use_hash_function": false
+}

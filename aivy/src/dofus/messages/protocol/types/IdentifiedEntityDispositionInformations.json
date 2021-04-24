@@ -1,0 +1,22 @@
+{
+	"fields": [
+		{
+			"bounds": {
+				"low": "-9007199254740992.000000",
+				"up": "9007199254740992.000000"
+			},
+			"default_value": "0",
+			"name": "id",
+			"position": 0,
+			"type": "Number",
+			"write_method": "writeDouble"
+		}
+	],
+	"name": "IdentifiedEntityDispositionInformations",
+	"namespace": "com.ankamagames.dofus.network.types.game.context",
+	"protocolID": 7342,
+	"super": "EntityDispositionInformations",
+	"super_serialize": true,
+	"supernamespace": "com.ankamagames.dofus.network.types.game.context",
+	"use_hash_function": false
+}

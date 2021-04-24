@@ -1,0 +1,53 @@
+{
+	"fields": [
+		{
+			"bounds": {
+				"low": "0",
+				"up": "9007199254740992.000000"
+			},
+			"default_value": "0",
+			"name": "memberId",
+			"position": 0,
+			"type": "Number",
+			"write_method": "writeVarLong"
+		},
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"default_value": "0",
+			"name": "rank",
+			"position": 1,
+			"type": "uint",
+			"write_method": "writeVarShort"
+		},
+		{
+			"bounds": {
+				"low": "0",
+				"up": "100"
+			},
+			"default_value": "0",
+			"name": "experienceGivenPercent",
+			"position": 2,
+			"type": "uint",
+			"write_method": "writeByte"
+		},
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"default_value": "0",
+			"name": "rights",
+			"position": 3,
+			"type": "uint",
+			"write_method": "writeVarInt"
+		}
+	],
+	"name": "GuildChangeMemberParametersMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.guild",
+	"protocolID": 3559,
+	"super": "NetworkMessage",
+	"super_serialize": false,
+	"supernamespace": "com.ankamagames.jerakine.network",
+	"use_hash_function": false
+}

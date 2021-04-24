@@ -1,0 +1,33 @@
+{
+	"fields": [
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"is_vector": true,
+			"name": "availables",
+			"position": 0,
+			"type": "uint",
+			"write_length_method": "writeShort",
+			"write_method": "writeVarShort"
+		},
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"is_vector": true,
+			"name": "unavailables",
+			"position": 1,
+			"type": "uint",
+			"write_length_method": "writeShort",
+			"write_method": "writeVarShort"
+		}
+	],
+	"name": "DungeonKeyRingMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.context.dungeon",
+	"protocolID": 5216,
+	"super": "NetworkMessage",
+	"super_serialize": false,
+	"supernamespace": "com.ankamagames.jerakine.network",
+	"use_hash_function": false
+}

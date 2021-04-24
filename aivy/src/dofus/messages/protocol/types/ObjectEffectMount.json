@@ -1,0 +1,134 @@
+{
+	"fields": [
+		{
+			"bounds": {
+				"low": "0",
+				"up": "9007199254740992.000000"
+			},
+			"default_value": "0",
+			"name": "id",
+			"position": 1,
+			"type": "Number",
+			"write_method": "writeVarLong"
+		},
+		{
+			"name": "owner",
+			"position": 5,
+			"type": "String",
+			"write_method": "writeUTF"
+		},
+		{
+			"bounds": {
+				"low": "0",
+				"up": "9007199254740992.000000"
+			},
+			"default_value": "0",
+			"name": "expirationDate",
+			"position": 2,
+			"type": "Number",
+			"write_method": "writeVarLong"
+		},
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"default_value": "0",
+			"name": "model",
+			"position": 3,
+			"type": "uint",
+			"write_method": "writeVarInt"
+		},
+		{
+			"name": "name",
+			"position": 4,
+			"type": "String",
+			"write_method": "writeUTF"
+		},
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"default_value": "0",
+			"name": "level",
+			"position": 6,
+			"type": "uint",
+			"write_method": "writeByte"
+		},
+		{
+			"boolean_byte_wrapper_position": 1,
+			"default_value": "false",
+			"name": "sex",
+			"position": 0,
+			"type": "Boolean",
+			"use_boolean_byte_wrapper": true
+		},
+		{
+			"boolean_byte_wrapper_position": 2,
+			"default_value": "false",
+			"name": "isRideable",
+			"position": 0,
+			"type": "Boolean",
+			"use_boolean_byte_wrapper": true
+		},
+		{
+			"boolean_byte_wrapper_position": 3,
+			"default_value": "false",
+			"name": "isFeconded",
+			"position": 0,
+			"type": "Boolean",
+			"use_boolean_byte_wrapper": true
+		},
+		{
+			"boolean_byte_wrapper_position": 4,
+			"default_value": "false",
+			"name": "isFecondationReady",
+			"position": 0,
+			"type": "Boolean",
+			"use_boolean_byte_wrapper": true
+		},
+		{
+			"default_value": "0",
+			"name": "reproductionCount",
+			"position": 7,
+			"type": "int",
+			"write_method": "writeVarInt"
+		},
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"default_value": "0",
+			"name": "reproductionCountMax",
+			"position": 8,
+			"type": "uint",
+			"write_method": "writeVarInt"
+		},
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"is_vector": true,
+			"name": "capacities",
+			"position": 10,
+			"type": "uint",
+			"write_length_method": "writeShort",
+			"write_method": "writeVarInt"
+		},
+		{
+			"is_vector": true,
+			"name": "effects",
+			"position": 9,
+			"self_serialize_method": "serializeAs_ObjectEffectInteger",
+			"type": "ObjectEffectInteger",
+			"type_namespace": "com.ankamagames.dofus.network.types.game.data.items.effects",
+			"write_length_method": "writeShort"
+		}
+	],
+	"name": "ObjectEffectMount",
+	"namespace": "com.ankamagames.dofus.network.types.game.data.items.effects",
+	"protocolID": 7937,
+	"super": "ObjectEffect",
+	"super_serialize": true,
+	"supernamespace": "com.ankamagames.dofus.network.types.game.data.items.effects",
+	"use_hash_function": false
+}

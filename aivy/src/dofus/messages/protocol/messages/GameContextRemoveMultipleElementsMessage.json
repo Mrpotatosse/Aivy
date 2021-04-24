@@ -1,0 +1,23 @@
+{
+	"fields": [
+		{
+			"bounds": {
+				"low": "-9007199254740992.000000",
+				"up": "9007199254740992.000000"
+			},
+			"is_vector": true,
+			"name": "elementsIds",
+			"position": 0,
+			"type": "Number",
+			"write_length_method": "writeShort",
+			"write_method": "writeDouble"
+		}
+	],
+	"name": "GameContextRemoveMultipleElementsMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.context",
+	"protocolID": 9291,
+	"super": "NetworkMessage",
+	"super_serialize": false,
+	"supernamespace": "com.ankamagames.jerakine.network",
+	"use_hash_function": false
+}

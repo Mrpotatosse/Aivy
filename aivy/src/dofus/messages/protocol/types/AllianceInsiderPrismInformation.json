@@ -1,0 +1,57 @@
+{
+	"fields": [
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"default_value": "0",
+			"name": "lastTimeSlotModificationDate",
+			"position": 0,
+			"type": "uint",
+			"write_method": "writeInt"
+		},
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"default_value": "0",
+			"name": "lastTimeSlotModificationAuthorGuildId",
+			"position": 1,
+			"type": "uint",
+			"write_method": "writeVarInt"
+		},
+		{
+			"is_vector": true,
+			"name": "modulesObjects",
+			"position": 4,
+			"self_serialize_method": "serializeAs_ObjectItem",
+			"type": "ObjectItem",
+			"type_namespace": "com.ankamagames.dofus.network.types.game.data.items",
+			"write_length_method": "writeShort"
+		},
+		{
+			"bounds": {
+				"low": "0",
+				"up": "9007199254740992.000000"
+			},
+			"default_value": "0",
+			"name": "lastTimeSlotModificationAuthorId",
+			"position": 2,
+			"type": "Number",
+			"write_method": "writeVarLong"
+		},
+		{
+			"name": "lastTimeSlotModificationAuthorName",
+			"position": 3,
+			"type": "String",
+			"write_method": "writeUTF"
+		}
+	],
+	"name": "AllianceInsiderPrismInformation",
+	"namespace": "com.ankamagames.dofus.network.types.game.prism",
+	"protocolID": 7613,
+	"super": "PrismInformation",
+	"super_serialize": true,
+	"supernamespace": "com.ankamagames.dofus.network.types.game.prism",
+	"use_hash_function": false
+}

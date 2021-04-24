@@ -1,0 +1,45 @@
+{
+	"fields": [
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"default_value": "0",
+			"name": "symbolShape",
+			"position": 0,
+			"type": "uint",
+			"write_method": "writeVarShort"
+		},
+		{
+			"default_value": "0",
+			"name": "symbolColor",
+			"position": 1,
+			"type": "int",
+			"write_method": "writeInt"
+		},
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"default_value": "0",
+			"name": "backgroundShape",
+			"position": 2,
+			"type": "uint",
+			"write_method": "writeByte"
+		},
+		{
+			"default_value": "0",
+			"name": "backgroundColor",
+			"position": 3,
+			"type": "int",
+			"write_method": "writeInt"
+		}
+	],
+	"name": "GuildEmblem",
+	"namespace": "com.ankamagames.dofus.network.types.game.guild",
+	"protocolID": 3828,
+	"super": "",
+	"super_serialize": false,
+	"supernamespace": "",
+	"use_hash_function": false
+}

@@ -1,0 +1,20 @@
+{
+	"fields": [
+		{
+			"is_vector": true,
+			"name": "followingCharactersLook",
+			"position": 0,
+			"self_serialize_method": "serializeAs_IndexedEntityLook",
+			"type": "IndexedEntityLook",
+			"type_namespace": "com.ankamagames.dofus.network.types.game.look",
+			"write_length_method": "writeShort"
+		}
+	],
+	"name": "HumanOptionFollowers",
+	"namespace": "com.ankamagames.dofus.network.types.game.context.roleplay",
+	"protocolID": 7456,
+	"super": "HumanOption",
+	"super_serialize": true,
+	"supernamespace": "com.ankamagames.dofus.network.types.game.context.roleplay",
+	"use_hash_function": false
+}

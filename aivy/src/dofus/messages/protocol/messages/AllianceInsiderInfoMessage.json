@@ -1,0 +1,38 @@
+{
+	"fields": [
+		{
+			"name": "allianceInfos",
+			"position": 0,
+			"self_serialize_method": "serializeAs_AllianceFactSheetInformations",
+			"type": "AllianceFactSheetInformations",
+			"type_namespace": "com.ankamagames.dofus.network.types.game.social"
+		},
+		{
+			"is_vector": true,
+			"name": "guilds",
+			"position": 1,
+			"self_serialize_method": "serializeAs_GuildInsiderFactSheetInformations",
+			"type": "GuildInsiderFactSheetInformations",
+			"type_namespace": "com.ankamagames.dofus.network.types.game.social",
+			"write_length_method": "writeShort"
+		},
+		{
+			"is_vector": true,
+			"name": "prisms",
+			"position": 2,
+			"prefixed_by_type_id": true,
+			"self_serialize_method": "serialize",
+			"type": "PrismSubareaEmptyInfo",
+			"type_namespace": "com.ankamagames.dofus.network.types.game.prism",
+			"write_length_method": "writeShort",
+			"write_type_id_method": "writeShort"
+		}
+	],
+	"name": "AllianceInsiderInfoMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.alliance",
+	"protocolID": 8289,
+	"super": "NetworkMessage",
+	"super_serialize": false,
+	"supernamespace": "com.ankamagames.jerakine.network",
+	"use_hash_function": false
+}

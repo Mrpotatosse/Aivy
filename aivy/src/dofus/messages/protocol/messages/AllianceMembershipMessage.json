@@ -1,0 +1,10 @@
+{
+	"fields": [],
+	"name": "AllianceMembershipMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.alliance",
+	"protocolID": 9713,
+	"super": "AllianceJoinedMessage",
+	"super_serialize": true,
+	"supernamespace": "com.ankamagames.dofus.network.messages.game.alliance",
+	"use_hash_function": false
+}

@@ -1,0 +1,18 @@
+{
+	"fields": [
+		{
+			"name": "guildInfo",
+			"position": 0,
+			"self_serialize_method": "serializeAs_BasicGuildInformations",
+			"type": "BasicGuildInformations",
+			"type_namespace": "com.ankamagames.dofus.network.types.game.context.roleplay"
+		}
+	],
+	"name": "TaxCollectorDialogQuestionBasicMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.context.roleplay.npc",
+	"protocolID": 5353,
+	"super": "NetworkMessage",
+	"super_serialize": false,
+	"supernamespace": "com.ankamagames.jerakine.network",
+	"use_hash_function": false
+}

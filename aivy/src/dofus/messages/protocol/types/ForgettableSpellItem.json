@@ -1,0 +1,18 @@
+{
+	"fields": [
+		{
+			"default_value": "false",
+			"name": "available",
+			"position": 0,
+			"type": "Boolean",
+			"write_method": "writeBoolean"
+		}
+	],
+	"name": "ForgettableSpellItem",
+	"namespace": "com.ankamagames.dofus.network.types.game.data.items",
+	"protocolID": 2698,
+	"super": "SpellItem",
+	"super_serialize": true,
+	"supernamespace": "com.ankamagames.dofus.network.types.game.data.items",
+	"use_hash_function": false
+}

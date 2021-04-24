@@ -1,0 +1,10 @@
+{
+	"fields": [],
+	"name": "IdolsPresetSaveRequestMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.presets",
+	"protocolID": 4461,
+	"super": "IconPresetSaveRequestMessage",
+	"super_serialize": true,
+	"supernamespace": "com.ankamagames.dofus.network.messages.game.presets",
+	"use_hash_function": false
+}

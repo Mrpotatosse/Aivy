@@ -1,0 +1,21 @@
+{
+	"fields": [
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"default_value": "0",
+			"name": "questId",
+			"position": 0,
+			"type": "uint",
+			"write_method": "writeVarShort"
+		}
+	],
+	"name": "QuestStartRequestMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.context.roleplay.quest",
+	"protocolID": 9650,
+	"super": "NetworkMessage",
+	"super_serialize": false,
+	"supernamespace": "com.ankamagames.jerakine.network",
+	"use_hash_function": false
+}

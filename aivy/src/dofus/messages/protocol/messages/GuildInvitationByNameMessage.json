@@ -1,0 +1,17 @@
+{
+	"fields": [
+		{
+			"name": "name",
+			"position": 0,
+			"type": "String",
+			"write_method": "writeUTF"
+		}
+	],
+	"name": "GuildInvitationByNameMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.guild",
+	"protocolID": 409,
+	"super": "NetworkMessage",
+	"super_serialize": false,
+	"supernamespace": "com.ankamagames.jerakine.network",
+	"use_hash_function": false
+}

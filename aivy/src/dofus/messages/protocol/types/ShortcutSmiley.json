@@ -1,0 +1,21 @@
+{
+	"fields": [
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"default_value": "0",
+			"name": "smileyId",
+			"position": 0,
+			"type": "uint",
+			"write_method": "writeVarShort"
+		}
+	],
+	"name": "ShortcutSmiley",
+	"namespace": "com.ankamagames.dofus.network.types.game.shortcut",
+	"protocolID": 2339,
+	"super": "Shortcut",
+	"super_serialize": true,
+	"supernamespace": "com.ankamagames.dofus.network.types.game.shortcut",
+	"use_hash_function": false
+}

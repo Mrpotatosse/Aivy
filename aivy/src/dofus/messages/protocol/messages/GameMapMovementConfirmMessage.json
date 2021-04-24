@@ -1,0 +1,10 @@
+{
+	"fields": [],
+	"name": "GameMapMovementConfirmMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.context",
+	"protocolID": 7132,
+	"super": "NetworkMessage",
+	"super_serialize": false,
+	"supernamespace": "com.ankamagames.jerakine.network",
+	"use_hash_function": false
+}

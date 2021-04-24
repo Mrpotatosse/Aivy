@@ -1,0 +1,19 @@
+{
+	"fields": [
+		{
+			"name": "content",
+			"position": 0,
+			"type": "ByteArray",
+			"type_namespace": "flash.utils",
+			"write_length_method": "writeVarInt",
+			"write_method": "writeByte"
+		}
+	],
+	"name": "RawDataMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.security",
+	"protocolID": 6253,
+	"super": "NetworkMessage",
+	"super_serialize": false,
+	"supernamespace": "com.ankamagames.jerakine.network",
+	"use_hash_function": false
+}

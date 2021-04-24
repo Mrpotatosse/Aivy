@@ -1,0 +1,29 @@
+{
+	"fields": [
+		{
+			"bounds": {
+				"low": "0",
+				"up": "9007199254740992.000000"
+			},
+			"default_value": "0",
+			"name": "mapId",
+			"position": 0,
+			"type": "Number",
+			"write_method": "writeDouble"
+		},
+		{
+			"name": "fightStartPositions",
+			"position": 1,
+			"self_serialize_method": "serializeAs_FightStartingPositions",
+			"type": "FightStartingPositions",
+			"type_namespace": "com.ankamagames.dofus.network.types.game.context.fight"
+		}
+	],
+	"name": "MapFightStartPositionsUpdateMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.context.roleplay",
+	"protocolID": 8923,
+	"super": "NetworkMessage",
+	"super_serialize": false,
+	"supernamespace": "com.ankamagames.jerakine.network",
+	"use_hash_function": false
+}

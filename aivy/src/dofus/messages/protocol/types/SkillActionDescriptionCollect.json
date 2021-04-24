@@ -1,0 +1,31 @@
+{
+	"fields": [
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"default_value": "0",
+			"name": "min",
+			"position": 0,
+			"type": "uint",
+			"write_method": "writeVarShort"
+		},
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"default_value": "0",
+			"name": "max",
+			"position": 1,
+			"type": "uint",
+			"write_method": "writeVarShort"
+		}
+	],
+	"name": "SkillActionDescriptionCollect",
+	"namespace": "com.ankamagames.dofus.network.types.game.interactive.skill",
+	"protocolID": 8681,
+	"super": "SkillActionDescriptionTimed",
+	"super_serialize": true,
+	"supernamespace": "com.ankamagames.dofus.network.types.game.interactive.skill",
+	"use_hash_function": false
+}

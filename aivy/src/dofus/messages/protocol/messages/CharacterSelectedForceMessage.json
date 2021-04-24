@@ -1,0 +1,22 @@
+{
+	"fields": [
+		{
+			"bounds": {
+				"low": "1",
+				"up": "2147483647"
+			},
+			"default_value": "0",
+			"name": "id",
+			"position": 0,
+			"type": "int",
+			"write_method": "writeInt"
+		}
+	],
+	"name": "CharacterSelectedForceMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.character.choice",
+	"protocolID": 4833,
+	"super": "NetworkMessage",
+	"super_serialize": false,
+	"supernamespace": "com.ankamagames.jerakine.network",
+	"use_hash_function": false
+}

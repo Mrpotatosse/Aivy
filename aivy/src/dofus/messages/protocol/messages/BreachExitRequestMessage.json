@@ -1,0 +1,10 @@
+{
+	"fields": [],
+	"name": "BreachExitRequestMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.context.roleplay.breach",
+	"protocolID": 658,
+	"super": "NetworkMessage",
+	"super_serialize": false,
+	"supernamespace": "com.ankamagames.jerakine.network",
+	"use_hash_function": false
+}

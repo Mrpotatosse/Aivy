@@ -1,0 +1,10 @@
+{
+	"fields": [],
+	"name": "ReloginTokenRequestMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.approach",
+	"protocolID": 90,
+	"super": "NetworkMessage",
+	"super_serialize": false,
+	"supernamespace": "com.ankamagames.jerakine.network",
+	"use_hash_function": false
+}

@@ -1,0 +1,10 @@
+{
+	"fields": [],
+	"name": "SpawnInformation",
+	"namespace": "com.ankamagames.dofus.network.types.game.context.fight",
+	"protocolID": 3926,
+	"super": "",
+	"super_serialize": false,
+	"supernamespace": "",
+	"use_hash_function": false
+}

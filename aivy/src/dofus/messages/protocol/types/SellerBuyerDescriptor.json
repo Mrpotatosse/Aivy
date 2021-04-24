@@ -1,0 +1,85 @@
+{
+	"fields": [
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"is_vector": true,
+			"name": "quantities",
+			"position": 0,
+			"type": "uint",
+			"write_length_method": "writeShort",
+			"write_method": "writeVarInt"
+		},
+		{
+			"default_value": "0",
+			"name": "npcContextualId",
+			"position": 6,
+			"type": "int",
+			"write_method": "writeInt"
+		},
+		{
+			"default_value": "0",
+			"name": "taxModificationPercentage",
+			"position": 3,
+			"type": "Number",
+			"write_method": "writeFloat"
+		},
+		{
+			"default_value": "0",
+			"name": "taxPercentage",
+			"position": 2,
+			"type": "Number",
+			"write_method": "writeFloat"
+		},
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"is_vector": true,
+			"name": "types",
+			"position": 1,
+			"type": "uint",
+			"write_length_method": "writeShort",
+			"write_method": "writeVarInt"
+		},
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"default_value": "0",
+			"name": "maxItemPerAccount",
+			"position": 5,
+			"type": "uint",
+			"write_method": "writeVarInt"
+		},
+		{
+			"bounds": {
+				"low": "0",
+				"up": "255"
+			},
+			"default_value": "0",
+			"name": "maxItemLevel",
+			"position": 4,
+			"type": "uint",
+			"write_method": "writeByte"
+		},
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"default_value": "0",
+			"name": "unsoldDelay",
+			"position": 7,
+			"type": "uint",
+			"write_method": "writeVarShort"
+		}
+	],
+	"name": "SellerBuyerDescriptor",
+	"namespace": "com.ankamagames.dofus.network.types.game.data.items",
+	"protocolID": 8564,
+	"super": "",
+	"super_serialize": false,
+	"supernamespace": "",
+	"use_hash_function": false
+}

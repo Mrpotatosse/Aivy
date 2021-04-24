@@ -1,0 +1,20 @@
+{
+	"fields": [
+		{
+			"is_vector": true,
+			"name": "objectList",
+			"position": 0,
+			"self_serialize_method": "serializeAs_ObjectItem",
+			"type": "ObjectItem",
+			"type_namespace": "com.ankamagames.dofus.network.types.game.data.items",
+			"write_length_method": "writeShort"
+		}
+	],
+	"name": "StorageObjectsUpdateMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.inventory.storage",
+	"protocolID": 2173,
+	"super": "NetworkMessage",
+	"super_serialize": false,
+	"supernamespace": "com.ankamagames.jerakine.network",
+	"use_hash_function": false
+}

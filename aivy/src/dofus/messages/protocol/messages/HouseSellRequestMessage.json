@@ -1,0 +1,39 @@
+{
+	"fields": [
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"default_value": "0",
+			"name": "instanceId",
+			"position": 0,
+			"type": "uint",
+			"write_method": "writeInt"
+		},
+		{
+			"bounds": {
+				"low": "0",
+				"up": "9007199254740992.000000"
+			},
+			"default_value": "0",
+			"name": "amount",
+			"position": 1,
+			"type": "Number",
+			"write_method": "writeVarLong"
+		},
+		{
+			"default_value": "false",
+			"name": "forSale",
+			"position": 2,
+			"type": "Boolean",
+			"write_method": "writeBoolean"
+		}
+	],
+	"name": "HouseSellRequestMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.context.roleplay.houses",
+	"protocolID": 9295,
+	"super": "NetworkMessage",
+	"super_serialize": false,
+	"supernamespace": "com.ankamagames.jerakine.network",
+	"use_hash_function": false
+}

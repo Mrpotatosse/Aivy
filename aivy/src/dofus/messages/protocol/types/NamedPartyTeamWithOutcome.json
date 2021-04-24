@@ -1,0 +1,25 @@
+{
+	"fields": [
+		{
+			"name": "team",
+			"position": 0,
+			"self_serialize_method": "serializeAs_NamedPartyTeam",
+			"type": "NamedPartyTeam",
+			"type_namespace": "com.ankamagames.dofus.network.types.game.context.roleplay.party"
+		},
+		{
+			"default_value": "0",
+			"name": "outcome",
+			"position": 1,
+			"type": "uint",
+			"write_method": "writeVarShort"
+		}
+	],
+	"name": "NamedPartyTeamWithOutcome",
+	"namespace": "com.ankamagames.dofus.network.types.game.context.roleplay.party",
+	"protocolID": 5039,
+	"super": "",
+	"super_serialize": false,
+	"supernamespace": "",
+	"use_hash_function": false
+}

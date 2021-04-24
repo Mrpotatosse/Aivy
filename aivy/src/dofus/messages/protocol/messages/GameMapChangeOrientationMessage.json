@@ -1,0 +1,18 @@
+{
+	"fields": [
+		{
+			"name": "orientation",
+			"position": 0,
+			"self_serialize_method": "serializeAs_ActorOrientation",
+			"type": "ActorOrientation",
+			"type_namespace": "com.ankamagames.dofus.network.types.game.context"
+		}
+	],
+	"name": "GameMapChangeOrientationMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.context",
+	"protocolID": 2766,
+	"super": "NetworkMessage",
+	"super_serialize": false,
+	"supernamespace": "com.ankamagames.jerakine.network",
+	"use_hash_function": false
+}

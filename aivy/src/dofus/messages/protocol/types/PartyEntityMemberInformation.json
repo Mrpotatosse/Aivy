@@ -1,0 +1,62 @@
+{
+	"fields": [
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"default_value": "0",
+			"name": "initiative",
+			"position": 0,
+			"type": "uint",
+			"write_method": "writeVarShort"
+		},
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"default_value": "0",
+			"name": "lifePoints",
+			"position": 1,
+			"type": "uint",
+			"write_method": "writeVarInt"
+		},
+		{
+			"bounds": {
+				"low": "0",
+				"up": "255"
+			},
+			"default_value": "0",
+			"name": "regenRate",
+			"position": 4,
+			"type": "uint",
+			"write_method": "writeByte"
+		},
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"default_value": "0",
+			"name": "maxLifePoints",
+			"position": 2,
+			"type": "uint",
+			"write_method": "writeVarInt"
+		},
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"default_value": "0",
+			"name": "prospecting",
+			"position": 3,
+			"type": "uint",
+			"write_method": "writeVarShort"
+		}
+	],
+	"name": "PartyEntityMemberInformation",
+	"namespace": "com.ankamagames.dofus.network.types.game.context.roleplay.party.entity",
+	"protocolID": 160,
+	"super": "PartyEntityBaseInformation",
+	"super_serialize": true,
+	"supernamespace": "com.ankamagames.dofus.network.types.game.context.roleplay.party.entity",
+	"use_hash_function": false
+}

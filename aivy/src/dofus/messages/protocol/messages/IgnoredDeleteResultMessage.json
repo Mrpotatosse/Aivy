@@ -1,0 +1,33 @@
+{
+	"fields": [
+		{
+			"boolean_byte_wrapper_position": 1,
+			"default_value": "false",
+			"name": "success",
+			"position": 0,
+			"type": "Boolean",
+			"use_boolean_byte_wrapper": true
+		},
+		{
+			"name": "name",
+			"position": 1,
+			"type": "String",
+			"write_method": "writeUTF"
+		},
+		{
+			"boolean_byte_wrapper_position": 2,
+			"default_value": "false",
+			"name": "session",
+			"position": 0,
+			"type": "Boolean",
+			"use_boolean_byte_wrapper": true
+		}
+	],
+	"name": "IgnoredDeleteResultMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.friend",
+	"protocolID": 2839,
+	"super": "NetworkMessage",
+	"super_serialize": false,
+	"supernamespace": "com.ankamagames.jerakine.network",
+	"use_hash_function": false
+}

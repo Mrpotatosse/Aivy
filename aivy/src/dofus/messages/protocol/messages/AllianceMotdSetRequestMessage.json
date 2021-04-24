@@ -1,0 +1,17 @@
+{
+	"fields": [
+		{
+			"name": "content",
+			"position": 0,
+			"type": "String",
+			"write_method": "writeUTF"
+		}
+	],
+	"name": "AllianceMotdSetRequestMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.alliance",
+	"protocolID": 6123,
+	"super": "SocialNoticeSetRequestMessage",
+	"super_serialize": true,
+	"supernamespace": "com.ankamagames.dofus.network.messages.game.social",
+	"use_hash_function": false
+}

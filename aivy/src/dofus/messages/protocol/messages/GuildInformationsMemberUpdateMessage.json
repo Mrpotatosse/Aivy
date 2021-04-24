@@ -1,0 +1,18 @@
+{
+	"fields": [
+		{
+			"name": "member",
+			"position": 0,
+			"self_serialize_method": "serializeAs_GuildMember",
+			"type": "GuildMember",
+			"type_namespace": "com.ankamagames.dofus.network.types.game.guild"
+		}
+	],
+	"name": "GuildInformationsMemberUpdateMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.guild",
+	"protocolID": 1319,
+	"super": "NetworkMessage",
+	"super_serialize": false,
+	"supernamespace": "com.ankamagames.jerakine.network",
+	"use_hash_function": false
+}

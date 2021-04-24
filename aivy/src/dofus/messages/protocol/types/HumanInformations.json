@@ -1,0 +1,36 @@
+{
+	"fields": [
+		{
+			"name": "restrictions",
+			"position": 0,
+			"self_serialize_method": "serializeAs_ActorRestrictionsInformations",
+			"type": "ActorRestrictionsInformations",
+			"type_namespace": "com.ankamagames.dofus.network.types.game.character.restriction"
+		},
+		{
+			"default_value": "false",
+			"name": "sex",
+			"position": 1,
+			"type": "Boolean",
+			"write_method": "writeBoolean"
+		},
+		{
+			"is_vector": true,
+			"name": "options",
+			"position": 2,
+			"prefixed_by_type_id": true,
+			"self_serialize_method": "serialize",
+			"type": "HumanOption",
+			"type_namespace": "com.ankamagames.dofus.network.types.game.context.roleplay",
+			"write_length_method": "writeShort",
+			"write_type_id_method": "writeShort"
+		}
+	],
+	"name": "HumanInformations",
+	"namespace": "com.ankamagames.dofus.network.types.game.context.roleplay",
+	"protocolID": 5786,
+	"super": "",
+	"super_serialize": false,
+	"supernamespace": "",
+	"use_hash_function": false
+}

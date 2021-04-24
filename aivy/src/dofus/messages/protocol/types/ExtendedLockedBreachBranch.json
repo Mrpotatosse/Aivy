@@ -1,0 +1,21 @@
+{
+	"fields": [
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"default_value": "0",
+			"name": "unlockPrice",
+			"position": 0,
+			"type": "uint",
+			"write_method": "writeVarInt"
+		}
+	],
+	"name": "ExtendedLockedBreachBranch",
+	"namespace": "com.ankamagames.dofus.network.types.game.context.roleplay.breach",
+	"protocolID": 1727,
+	"super": "ExtendedBreachBranch",
+	"super_serialize": true,
+	"supernamespace": "com.ankamagames.dofus.network.types.game.context.roleplay.breach",
+	"use_hash_function": false
+}

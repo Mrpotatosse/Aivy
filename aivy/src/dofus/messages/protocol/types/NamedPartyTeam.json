@@ -1,0 +1,24 @@
+{
+	"fields": [
+		{
+			"default_value": "2",
+			"name": "teamId",
+			"position": 0,
+			"type": "uint",
+			"write_method": "writeByte"
+		},
+		{
+			"name": "partyName",
+			"position": 1,
+			"type": "String",
+			"write_method": "writeUTF"
+		}
+	],
+	"name": "NamedPartyTeam",
+	"namespace": "com.ankamagames.dofus.network.types.game.context.roleplay.party",
+	"protocolID": 2065,
+	"super": "",
+	"super_serialize": false,
+	"supernamespace": "",
+	"use_hash_function": false
+}

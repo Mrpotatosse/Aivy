@@ -1,0 +1,10 @@
+{
+	"fields": [],
+	"name": "GuildBulletinSetErrorMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.guild",
+	"protocolID": 7557,
+	"super": "SocialNoticeSetErrorMessage",
+	"super_serialize": true,
+	"supernamespace": "com.ankamagames.dofus.network.messages.game.social",
+	"use_hash_function": false
+}

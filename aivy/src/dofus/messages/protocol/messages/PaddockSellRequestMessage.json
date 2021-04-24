@@ -1,0 +1,29 @@
+{
+	"fields": [
+		{
+			"bounds": {
+				"low": "0",
+				"up": "9007199254740992.000000"
+			},
+			"default_value": "0",
+			"name": "price",
+			"position": 0,
+			"type": "Number",
+			"write_method": "writeVarLong"
+		},
+		{
+			"default_value": "false",
+			"name": "forSale",
+			"position": 1,
+			"type": "Boolean",
+			"write_method": "writeBoolean"
+		}
+	],
+	"name": "PaddockSellRequestMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.context.mount",
+	"protocolID": 9051,
+	"super": "NetworkMessage",
+	"super_serialize": false,
+	"supernamespace": "com.ankamagames.jerakine.network",
+	"use_hash_function": false
+}

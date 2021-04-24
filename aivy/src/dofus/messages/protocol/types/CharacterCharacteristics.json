@@ -1,0 +1,22 @@
+{
+	"fields": [
+		{
+			"is_vector": true,
+			"name": "characteristics",
+			"position": 0,
+			"prefixed_by_type_id": true,
+			"self_serialize_method": "serialize",
+			"type": "CharacterCharacteristic",
+			"type_namespace": "com.ankamagames.dofus.network.types.game.character.characteristic",
+			"write_length_method": "writeShort",
+			"write_type_id_method": "writeShort"
+		}
+	],
+	"name": "CharacterCharacteristics",
+	"namespace": "com.ankamagames.dofus.network.types.game.character.characteristic",
+	"protocolID": 5080,
+	"super": "",
+	"super_serialize": false,
+	"supernamespace": "",
+	"use_hash_function": false
+}

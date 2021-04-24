@@ -1,0 +1,179 @@
+{
+	"fields": [
+		{
+			"boolean_byte_wrapper_position": 4,
+			"default_value": "false",
+			"name": "cantBeAttackedByMutant",
+			"position": 0,
+			"type": "Boolean",
+			"use_boolean_byte_wrapper": true
+		},
+		{
+			"boolean_byte_wrapper_position": 2,
+			"default_value": "false",
+			"name": "cantBeChallenged",
+			"position": 0,
+			"type": "Boolean",
+			"use_boolean_byte_wrapper": true
+		},
+		{
+			"boolean_byte_wrapper_position": 13,
+			"default_value": "false",
+			"name": "cantChat",
+			"position": 1,
+			"type": "Boolean",
+			"use_boolean_byte_wrapper": true
+		},
+		{
+			"boolean_byte_wrapper_position": 1,
+			"default_value": "false",
+			"name": "cantBeAggressed",
+			"position": 0,
+			"type": "Boolean",
+			"use_boolean_byte_wrapper": true
+		},
+		{
+			"boolean_byte_wrapper_position": 3,
+			"default_value": "false",
+			"name": "cantTrade",
+			"position": 0,
+			"type": "Boolean",
+			"use_boolean_byte_wrapper": true
+		},
+		{
+			"boolean_byte_wrapper_position": 6,
+			"default_value": "false",
+			"name": "forceSlowWalk",
+			"position": 0,
+			"type": "Boolean",
+			"use_boolean_byte_wrapper": true
+		},
+		{
+			"boolean_byte_wrapper_position": 5,
+			"default_value": "false",
+			"name": "cantRun",
+			"position": 0,
+			"type": "Boolean",
+			"use_boolean_byte_wrapper": true
+		},
+		{
+			"boolean_byte_wrapper_position": 7,
+			"default_value": "false",
+			"name": "cantMinimize",
+			"position": 0,
+			"type": "Boolean",
+			"use_boolean_byte_wrapper": true
+		},
+		{
+			"boolean_byte_wrapper_position": 8,
+			"default_value": "false",
+			"name": "cantMove",
+			"position": 0,
+			"type": "Boolean",
+			"use_boolean_byte_wrapper": true
+		},
+		{
+			"boolean_byte_wrapper_position": 9,
+			"default_value": "false",
+			"name": "cantAggress",
+			"position": 1,
+			"type": "Boolean",
+			"use_boolean_byte_wrapper": true
+		},
+		{
+			"boolean_byte_wrapper_position": 10,
+			"default_value": "false",
+			"name": "cantChallenge",
+			"position": 1,
+			"type": "Boolean",
+			"use_boolean_byte_wrapper": true
+		},
+		{
+			"boolean_byte_wrapper_position": 11,
+			"default_value": "false",
+			"name": "cantExchange",
+			"position": 1,
+			"type": "Boolean",
+			"use_boolean_byte_wrapper": true
+		},
+		{
+			"boolean_byte_wrapper_position": 12,
+			"default_value": "false",
+			"name": "cantAttack",
+			"position": 1,
+			"type": "Boolean",
+			"use_boolean_byte_wrapper": true
+		},
+		{
+			"boolean_byte_wrapper_position": 14,
+			"default_value": "false",
+			"name": "cantBeMerchant",
+			"position": 1,
+			"type": "Boolean",
+			"use_boolean_byte_wrapper": true
+		},
+		{
+			"boolean_byte_wrapper_position": 18,
+			"default_value": "false",
+			"name": "cantSpeakToNPC",
+			"position": 2,
+			"type": "Boolean",
+			"use_boolean_byte_wrapper": true
+		},
+		{
+			"boolean_byte_wrapper_position": 15,
+			"default_value": "false",
+			"name": "cantUseObject",
+			"position": 1,
+			"type": "Boolean",
+			"use_boolean_byte_wrapper": true
+		},
+		{
+			"boolean_byte_wrapper_position": 16,
+			"default_value": "false",
+			"name": "cantUseTaxCollector",
+			"position": 1,
+			"type": "Boolean",
+			"use_boolean_byte_wrapper": true
+		},
+		{
+			"boolean_byte_wrapper_position": 17,
+			"default_value": "false",
+			"name": "cantUseInteractive",
+			"position": 2,
+			"type": "Boolean",
+			"use_boolean_byte_wrapper": true
+		},
+		{
+			"boolean_byte_wrapper_position": 19,
+			"default_value": "false",
+			"name": "cantChangeZone",
+			"position": 2,
+			"type": "Boolean",
+			"use_boolean_byte_wrapper": true
+		},
+		{
+			"boolean_byte_wrapper_position": 20,
+			"default_value": "false",
+			"name": "cantAttackMonster",
+			"position": 2,
+			"type": "Boolean",
+			"use_boolean_byte_wrapper": true
+		},
+		{
+			"boolean_byte_wrapper_position": 21,
+			"default_value": "false",
+			"name": "cantWalk8Directions",
+			"position": 2,
+			"type": "Boolean",
+			"use_boolean_byte_wrapper": true
+		}
+	],
+	"name": "ActorRestrictionsInformations",
+	"namespace": "com.ankamagames.dofus.network.types.game.character.restriction",
+	"protocolID": 9773,
+	"super": "",
+	"super_serialize": false,
+	"supernamespace": "",
+	"use_hash_function": false
+}

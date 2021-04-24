@@ -1,0 +1,17 @@
+{
+	"fields": [
+		{
+			"name": "loginToken",
+			"position": 0,
+			"type": "String",
+			"write_method": "writeUTF"
+		}
+	],
+	"name": "IdentificationSuccessWithLoginTokenMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.connection",
+	"protocolID": 9413,
+	"super": "IdentificationSuccessMessage",
+	"super_serialize": true,
+	"supernamespace": "com.ankamagames.dofus.network.messages.connection",
+	"use_hash_function": false
+}

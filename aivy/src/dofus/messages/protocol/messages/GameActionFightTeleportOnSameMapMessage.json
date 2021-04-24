@@ -1,0 +1,33 @@
+{
+	"fields": [
+		{
+			"bounds": {
+				"low": "-9007199254740992.000000",
+				"up": "9007199254740992.000000"
+			},
+			"default_value": "0",
+			"name": "targetId",
+			"position": 0,
+			"type": "Number",
+			"write_method": "writeDouble"
+		},
+		{
+			"bounds": {
+				"low": "-1",
+				"up": "559"
+			},
+			"default_value": "0",
+			"name": "cellId",
+			"position": 1,
+			"type": "int",
+			"write_method": "writeShort"
+		}
+	],
+	"name": "GameActionFightTeleportOnSameMapMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.actions.fight",
+	"protocolID": 5133,
+	"super": "AbstractGameActionMessage",
+	"super_serialize": true,
+	"supernamespace": "com.ankamagames.dofus.network.messages.game.actions",
+	"use_hash_function": false
+}

@@ -1,0 +1,61 @@
+{
+	"fields": [
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"default_value": "0",
+			"name": "year",
+			"position": 0,
+			"type": "uint",
+			"write_method": "writeVarShort"
+		},
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"default_value": "0",
+			"name": "day",
+			"position": 2,
+			"type": "uint",
+			"write_method": "writeByte"
+		},
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"default_value": "0",
+			"name": "month",
+			"position": 1,
+			"type": "uint",
+			"write_method": "writeByte"
+		},
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"default_value": "0",
+			"name": "hour",
+			"position": 3,
+			"type": "uint",
+			"write_method": "writeByte"
+		},
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"default_value": "0",
+			"name": "minute",
+			"position": 4,
+			"type": "uint",
+			"write_method": "writeByte"
+		}
+	],
+	"name": "ObjectEffectDate",
+	"namespace": "com.ankamagames.dofus.network.types.game.data.items.effects",
+	"protocolID": 4314,
+	"super": "ObjectEffect",
+	"super_serialize": true,
+	"supernamespace": "com.ankamagames.dofus.network.types.game.data.items.effects",
+	"use_hash_function": false
+}

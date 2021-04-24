@@ -1,0 +1,28 @@
+{
+	"fields": [
+		{
+			"default_value": "0",
+			"name": "powerLevel",
+			"position": 1,
+			"type": "int",
+			"write_method": "writeByte"
+		},
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"default_value": "0",
+			"name": "monsterId",
+			"position": 0,
+			"type": "uint",
+			"write_method": "writeVarShort"
+		}
+	],
+	"name": "GameRolePlayMutantInformations",
+	"namespace": "com.ankamagames.dofus.network.types.game.context.roleplay",
+	"protocolID": 3636,
+	"super": "GameRolePlayHumanoidInformations",
+	"super_serialize": true,
+	"supernamespace": "com.ankamagames.dofus.network.types.game.context.roleplay",
+	"use_hash_function": false
+}

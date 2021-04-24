@@ -1,0 +1,10 @@
+{
+	"fields": [],
+	"name": "AdminQuietCommandMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.authorized",
+	"protocolID": 8734,
+	"super": "AdminCommandMessage",
+	"super_serialize": true,
+	"supernamespace": "com.ankamagames.dofus.network.messages.authorized",
+	"use_hash_function": false
+}

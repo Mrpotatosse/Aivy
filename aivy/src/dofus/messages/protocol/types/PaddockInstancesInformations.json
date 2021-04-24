@@ -1,0 +1,22 @@
+{
+	"fields": [
+		{
+			"is_vector": true,
+			"name": "paddocks",
+			"position": 0,
+			"prefixed_by_type_id": true,
+			"self_serialize_method": "serialize",
+			"type": "PaddockBuyableInformations",
+			"type_namespace": "com.ankamagames.dofus.network.types.game.paddock",
+			"write_length_method": "writeShort",
+			"write_type_id_method": "writeShort"
+		}
+	],
+	"name": "PaddockInstancesInformations",
+	"namespace": "com.ankamagames.dofus.network.types.game.paddock",
+	"protocolID": 5838,
+	"super": "PaddockInformations",
+	"super_serialize": true,
+	"supernamespace": "com.ankamagames.dofus.network.types.game.paddock",
+	"use_hash_function": false
+}

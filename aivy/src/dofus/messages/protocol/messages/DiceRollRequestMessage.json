@@ -1,0 +1,38 @@
+{
+	"fields": [
+		{
+			"default_value": "0",
+			"name": "channel",
+			"position": 2,
+			"type": "uint",
+			"write_method": "writeByte"
+		},
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"default_value": "0",
+			"name": "dice",
+			"position": 0,
+			"type": "uint",
+			"write_method": "writeVarInt"
+		},
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"default_value": "0",
+			"name": "faces",
+			"position": 1,
+			"type": "uint",
+			"write_method": "writeVarInt"
+		}
+	],
+	"name": "DiceRollRequestMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.context.roleplay",
+	"protocolID": 6385,
+	"super": "NetworkMessage",
+	"super_serialize": false,
+	"supernamespace": "com.ankamagames.jerakine.network",
+	"use_hash_function": false
+}

@@ -1,0 +1,28 @@
+{
+	"fields": [
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"default_value": "0",
+			"name": "id",
+			"position": 0,
+			"type": "uint",
+			"write_method": "writeVarInt"
+		},
+		{
+			"default_value": "false",
+			"name": "bought",
+			"position": 1,
+			"type": "Boolean",
+			"write_method": "writeBoolean"
+		}
+	],
+	"name": "BreachRewardBoughtMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.context.roleplay.breach.reward",
+	"protocolID": 480,
+	"super": "NetworkMessage",
+	"super_serialize": false,
+	"supernamespace": "com.ankamagames.jerakine.network",
+	"use_hash_function": false
+}

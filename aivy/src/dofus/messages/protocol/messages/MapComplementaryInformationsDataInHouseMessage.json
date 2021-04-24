@@ -1,0 +1,18 @@
+{
+	"fields": [
+		{
+			"name": "currentHouse",
+			"position": 0,
+			"self_serialize_method": "serializeAs_HouseInformationsInside",
+			"type": "HouseInformationsInside",
+			"type_namespace": "com.ankamagames.dofus.network.types.game.house"
+		}
+	],
+	"name": "MapComplementaryInformationsDataInHouseMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.context.roleplay",
+	"protocolID": 222,
+	"super": "MapComplementaryInformationsDataMessage",
+	"super_serialize": true,
+	"supernamespace": "com.ankamagames.dofus.network.messages.game.context.roleplay",
+	"use_hash_function": false
+}

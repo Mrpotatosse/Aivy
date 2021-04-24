@@ -1,0 +1,29 @@
+{
+	"fields": [
+		{
+			"default_value": "0",
+			"name": "actionType",
+			"position": 0,
+			"type": "int",
+			"write_method": "writeByte"
+		},
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"is_vector": true,
+			"name": "ridesId",
+			"position": 1,
+			"type": "uint",
+			"write_length_method": "writeShort",
+			"write_method": "writeVarInt"
+		}
+	],
+	"name": "ExchangeHandleMountsMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.inventory.exchanges",
+	"protocolID": 1543,
+	"super": "NetworkMessage",
+	"super_serialize": false,
+	"supernamespace": "com.ankamagames.jerakine.network",
+	"use_hash_function": true
+}

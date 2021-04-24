@@ -1,0 +1,29 @@
+{
+	"fields": [
+		{
+			"name": "stats",
+			"position": 1,
+			"self_serialize_method": "serializeAs_GameFightCharacteristics",
+			"type": "GameFightCharacteristics",
+			"type_namespace": "com.ankamagames.dofus.network.types.game.context.fight"
+		},
+		{
+			"bounds": {
+				"low": "-9007199254740992.000000",
+				"up": "9007199254740992.000000"
+			},
+			"default_value": "0",
+			"name": "fighterId",
+			"position": 0,
+			"type": "Number",
+			"write_method": "writeDouble"
+		}
+	],
+	"name": "RefreshCharacterStatsMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.context.fight",
+	"protocolID": 4398,
+	"super": "NetworkMessage",
+	"super_serialize": false,
+	"supernamespace": "com.ankamagames.jerakine.network",
+	"use_hash_function": false
+}

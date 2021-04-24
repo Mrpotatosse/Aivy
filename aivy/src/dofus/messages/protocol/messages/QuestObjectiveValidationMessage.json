@@ -1,0 +1,31 @@
+{
+	"fields": [
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"default_value": "0",
+			"name": "questId",
+			"position": 0,
+			"type": "uint",
+			"write_method": "writeVarShort"
+		},
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"default_value": "0",
+			"name": "objectiveId",
+			"position": 1,
+			"type": "uint",
+			"write_method": "writeVarShort"
+		}
+	],
+	"name": "QuestObjectiveValidationMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.context.roleplay.quest",
+	"protocolID": 5825,
+	"super": "NetworkMessage",
+	"super_serialize": false,
+	"supernamespace": "com.ankamagames.jerakine.network",
+	"use_hash_function": false
+}

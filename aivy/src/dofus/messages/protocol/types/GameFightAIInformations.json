@@ -1,0 +1,10 @@
+{
+	"fields": [],
+	"name": "GameFightAIInformations",
+	"namespace": "com.ankamagames.dofus.network.types.game.context.fight",
+	"protocolID": 385,
+	"super": "GameFightFighterInformations",
+	"super_serialize": true,
+	"supernamespace": "com.ankamagames.dofus.network.types.game.context.fight",
+	"use_hash_function": false
+}

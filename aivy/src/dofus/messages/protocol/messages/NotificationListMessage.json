@@ -1,0 +1,19 @@
+{
+	"fields": [
+		{
+			"is_vector": true,
+			"name": "flags",
+			"position": 0,
+			"type": "int",
+			"write_length_method": "writeShort",
+			"write_method": "writeVarInt"
+		}
+	],
+	"name": "NotificationListMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.context.notification",
+	"protocolID": 2850,
+	"super": "NetworkMessage",
+	"super_serialize": false,
+	"supernamespace": "com.ankamagames.jerakine.network",
+	"use_hash_function": false
+}

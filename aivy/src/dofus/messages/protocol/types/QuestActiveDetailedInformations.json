@@ -1,0 +1,32 @@
+{
+	"fields": [
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"default_value": "0",
+			"name": "stepId",
+			"position": 0,
+			"type": "uint",
+			"write_method": "writeVarShort"
+		},
+		{
+			"is_vector": true,
+			"name": "objectives",
+			"position": 1,
+			"prefixed_by_type_id": true,
+			"self_serialize_method": "serialize",
+			"type": "QuestObjectiveInformations",
+			"type_namespace": "com.ankamagames.dofus.network.types.game.context.roleplay.quest",
+			"write_length_method": "writeShort",
+			"write_type_id_method": "writeShort"
+		}
+	],
+	"name": "QuestActiveDetailedInformations",
+	"namespace": "com.ankamagames.dofus.network.types.game.context.roleplay.quest",
+	"protocolID": 2704,
+	"super": "QuestActiveInformations",
+	"super_serialize": true,
+	"supernamespace": "com.ankamagames.dofus.network.types.game.context.roleplay.quest",
+	"use_hash_function": false
+}

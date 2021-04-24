@@ -1,0 +1,20 @@
+{
+	"fields": [
+		{
+			"is_vector": true,
+			"name": "charactersToRemodel",
+			"position": 0,
+			"self_serialize_method": "serializeAs_CharacterToRemodelInformations",
+			"type": "CharacterToRemodelInformations",
+			"type_namespace": "com.ankamagames.dofus.network.types.game.character.choice",
+			"write_length_method": "writeShort"
+		}
+	],
+	"name": "CharactersListWithRemodelingMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.character.choice",
+	"protocolID": 5417,
+	"super": "CharactersListMessage",
+	"super_serialize": true,
+	"supernamespace": "com.ankamagames.dofus.network.messages.game.character.choice",
+	"use_hash_function": false
+}

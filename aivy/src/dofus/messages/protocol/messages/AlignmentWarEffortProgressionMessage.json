@@ -1,0 +1,20 @@
+{
+	"fields": [
+		{
+			"is_vector": true,
+			"name": "effortProgressions",
+			"position": 0,
+			"self_serialize_method": "serializeAs_AlignmentWarEffortInformation",
+			"type": "AlignmentWarEffortInformation",
+			"type_namespace": "com.ankamagames.dofus.network.types.game.context.roleplay.alignment.war.effort",
+			"write_length_method": "writeShort"
+		}
+	],
+	"name": "AlignmentWarEffortProgressionMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.context.roleplay.alignment.war.effort",
+	"protocolID": 4515,
+	"super": "NetworkMessage",
+	"super_serialize": false,
+	"supernamespace": "com.ankamagames.jerakine.network",
+	"use_hash_function": false
+}

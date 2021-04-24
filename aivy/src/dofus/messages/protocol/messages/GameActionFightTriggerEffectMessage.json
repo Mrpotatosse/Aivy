@@ -1,0 +1,10 @@
+{
+	"fields": [],
+	"name": "GameActionFightTriggerEffectMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.actions.fight",
+	"protocolID": 4962,
+	"super": "GameActionFightDispellEffectMessage",
+	"super_serialize": true,
+	"supernamespace": "com.ankamagames.dofus.network.messages.game.actions.fight",
+	"use_hash_function": false
+}

@@ -1,0 +1,25 @@
+{
+	"fields": [
+		{
+			"default_value": "0",
+			"name": "portalId",
+			"position": 0,
+			"type": "int",
+			"write_method": "writeInt"
+		},
+		{
+			"default_value": "0",
+			"name": "areaId",
+			"position": 1,
+			"type": "int",
+			"write_method": "writeShort"
+		}
+	],
+	"name": "PortalInformation",
+	"namespace": "com.ankamagames.dofus.network.types.game.context.roleplay.treasureHunt",
+	"protocolID": 3898,
+	"super": "",
+	"super_serialize": false,
+	"supernamespace": "",
+	"use_hash_function": false
+}

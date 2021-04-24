@@ -1,0 +1,18 @@
+{
+	"fields": [
+		{
+			"name": "mark",
+			"position": 0,
+			"self_serialize_method": "serializeAs_GameActionMark",
+			"type": "GameActionMark",
+			"type_namespace": "com.ankamagames.dofus.network.types.game.actions.fight"
+		}
+	],
+	"name": "GameActionFightMarkCellsMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.actions.fight",
+	"protocolID": 5883,
+	"super": "AbstractGameActionMessage",
+	"super_serialize": true,
+	"supernamespace": "com.ankamagames.dofus.network.messages.game.actions",
+	"use_hash_function": false
+}

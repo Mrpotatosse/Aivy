@@ -1,0 +1,91 @@
+{
+	"fields": [
+		{
+			"bounds": {
+				"low": "-9007199254740992.000000",
+				"up": "9007199254740992.000000"
+			},
+			"default_value": "0",
+			"name": "markAuthorId",
+			"position": 0,
+			"type": "Number",
+			"write_method": "writeDouble"
+		},
+		{
+			"default_value": "2",
+			"name": "markTeamId",
+			"position": 1,
+			"type": "uint",
+			"write_method": "writeByte"
+		},
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"default_value": "0",
+			"name": "markSpellId",
+			"position": 2,
+			"type": "uint",
+			"write_method": "writeInt"
+		},
+		{
+			"bounds": {
+				"low": "1",
+				"up": "32767"
+			},
+			"default_value": "0",
+			"name": "markSpellLevel",
+			"position": 3,
+			"type": "int",
+			"write_method": "writeShort"
+		},
+		{
+			"default_value": "0",
+			"name": "markType",
+			"position": 5,
+			"type": "int",
+			"write_method": "writeByte"
+		},
+		{
+			"default_value": "0",
+			"name": "markId",
+			"position": 4,
+			"type": "int",
+			"write_method": "writeShort"
+		},
+		{
+			"is_vector": true,
+			"name": "cells",
+			"position": 7,
+			"self_serialize_method": "serializeAs_GameActionMarkedCell",
+			"type": "GameActionMarkedCell",
+			"type_namespace": "com.ankamagames.dofus.network.types.game.actions.fight",
+			"write_length_method": "writeShort"
+		},
+		{
+			"bounds": {
+				"low": "-1",
+				"up": "559"
+			},
+			"default_value": "0",
+			"name": "markimpactCell",
+			"position": 6,
+			"type": "int",
+			"write_method": "writeShort"
+		},
+		{
+			"default_value": "false",
+			"name": "active",
+			"position": 8,
+			"type": "Boolean",
+			"write_method": "writeBoolean"
+		}
+	],
+	"name": "GameActionMark",
+	"namespace": "com.ankamagames.dofus.network.types.game.actions.fight",
+	"protocolID": 8948,
+	"super": "",
+	"super_serialize": false,
+	"supernamespace": "",
+	"use_hash_function": false
+}

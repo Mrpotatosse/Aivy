@@ -1,0 +1,17 @@
+{
+	"fields": [
+		{
+			"name": "content",
+			"position": 0,
+			"type": "String",
+			"write_method": "writeUTF"
+		}
+	],
+	"name": "GuildMotdSetRequestMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.guild",
+	"protocolID": 9962,
+	"super": "SocialNoticeSetRequestMessage",
+	"super_serialize": true,
+	"supernamespace": "com.ankamagames.dofus.network.messages.game.social",
+	"use_hash_function": false
+}

@@ -1,0 +1,27 @@
+{
+	"fields": [
+		{
+			"name": "collectorCallerName",
+			"position": 0,
+			"type": "String",
+			"write_method": "writeUTF"
+		},
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"default_value": "0",
+			"name": "date",
+			"position": 1,
+			"type": "uint",
+			"write_method": "writeInt"
+		}
+	],
+	"name": "AdditionalTaxCollectorInformations",
+	"namespace": "com.ankamagames.dofus.network.types.game.guild.tax",
+	"protocolID": 9247,
+	"super": "",
+	"super_serialize": false,
+	"supernamespace": "",
+	"use_hash_function": false
+}

@@ -1,0 +1,52 @@
+{
+	"fields": [
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"default_value": "0",
+			"name": "level",
+			"position": 4,
+			"type": "uint",
+			"write_method": "writeVarShort"
+		},
+		{
+			"bounds": {
+				"low": "0",
+				"up": "9007199254740992.000000"
+			},
+			"default_value": "0",
+			"name": "playerId",
+			"position": 0,
+			"type": "Number",
+			"write_method": "writeVarLong"
+		},
+		{
+			"name": "playerName",
+			"position": 1,
+			"type": "String",
+			"write_method": "writeUTF"
+		},
+		{
+			"default_value": "0",
+			"name": "breed",
+			"position": 2,
+			"type": "int",
+			"write_method": "writeByte"
+		},
+		{
+			"default_value": "false",
+			"name": "sex",
+			"position": 3,
+			"type": "Boolean",
+			"write_method": "writeBoolean"
+		}
+	],
+	"name": "DungeonPartyFinderPlayer",
+	"namespace": "com.ankamagames.dofus.network.types.game.context.roleplay.party",
+	"protocolID": 1443,
+	"super": "",
+	"super_serialize": false,
+	"supernamespace": "",
+	"use_hash_function": false
+}

@@ -1,0 +1,24 @@
+{
+	"fields": [
+		{
+			"name": "name",
+			"position": 0,
+			"type": "String",
+			"write_method": "writeUTF"
+		},
+		{
+			"default_value": "0",
+			"name": "type",
+			"position": 1,
+			"type": "uint",
+			"write_method": "writeByte"
+		}
+	],
+	"name": "IconNamedPresetSaveRequestMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.presets",
+	"protocolID": 8228,
+	"super": "IconPresetSaveRequestMessage",
+	"super_serialize": true,
+	"supernamespace": "com.ankamagames.dofus.network.messages.game.presets",
+	"use_hash_function": false
+}

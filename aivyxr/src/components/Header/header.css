@@ -1,0 +1,205 @@
+.App-header {
+    height: 5vh;
+    background-color: #6161617a;
+    display: flex;
+    align-items: center;
+}
+
+.App-header-img {
+    height: 2vh;
+    margin: 5px;
+}
+
+.App-header-text {
+    height: 3vh;
+    padding-left: 3px;
+    padding-right: 3px;
+    margin: 3px 3px 3px 6px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px 1px #63636380;
+    transition: 300ms;
+}
+
+.App-header-text:hover {
+    box-shadow: 0px 0px 5px 2px #00000093;
+}
+
+.App-header-btn-content-wrapper {
+    overflow-y: hidden;
+}
+
+.App-header-btn-content {
+    display: grid;
+    height: 100%;
+    grid-template-areas: 
+        "b1 b2 b3"
+        "b4 b5 b6"
+        "b7 b8 b9";     
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    grid-template-rows: 33.3% 33.3% 33.3%;
+}
+
+.b1 {
+    grid-area: b1;
+}
+.b2 {
+    grid-area: b2;
+}
+.b3 {
+    grid-area: b3;
+}
+.b4 {
+    grid-area: b4;
+}
+.b5 {
+    grid-area: b5;
+}
+.b6 {
+    grid-area: b6;
+}
+.b7 {
+    grid-area: b7;
+}
+.b8 {
+    grid-area: b8;
+}
+.b9 {
+    grid-area: b9;
+}
+
+.App-header-btn-content > * {
+    border: 1px solid transparent;
+    border-radius: 5px;
+    margin: 2vh;
+    animation: btn-content-anim-shr 500ms forwards; 
+    box-shadow: 2px 2px 5px 2px #63636380; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.App-header-btn-content > *:hover {
+    animation: btn-content-anim-ext 500ms forwards;
+    box-shadow: 2px 2px 5px 2px #054785bd;    
+}
+
+.App-header-btn-content > *:active {
+    box-shadow: 2px 2px 5px 2px #6adb1fbd;    
+}
+
+.App-header-btn-content-page-selector {
+    outline: none;
+    -webkit-appearance: none;
+    background-color: transparent;
+    font-family: -apple-system, BlinkMacSystemFont, /*'Voice In My Head',*/ 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    font-size: 17px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align-last: center;
+    border: 1px solid transparent;
+}
+
+.App-header-btn-content-page-selector:hover {
+    background-color: transparent;
+}
+
+.App-header-upper-root-content {
+    margin: 5px;
+}
+
+.App-header-btn-content-apear {
+    animation: btn-header-content-anim-ext 300ms forwards;
+}
+
+.App-header-btn-content-disapear {
+    animation: btn-header-content-anim-shr 300ms forwards;
+}
+
+@keyframes btn-header-content-anim-ext {
+    from{
+        transform: scale(0.2);
+    }
+    to{
+        transform: scale(1);
+    }
+}
+
+@keyframes btn-header-content-anim-shr {
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(0.2);
+    }
+}
+
+@keyframes btn-content-anim-ext {
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.2);
+    }
+}
+
+@keyframes btn-content-anim-shr {
+    from{
+        transform: scale(1.2);
+    }
+    to{
+        transform: scale(1);
+    }
+}
+
+/*.App-header-btn-content-reset-up {
+    animation: btn-header-content-anim-reset-up 500ms forwards;
+}
+
+.App-header-btn-content-reset-down {
+    animation: btn-header-content-anim-reset-down 500ms forwards;
+}
+
+.App-header-btn-content-up {
+    animation: btn-header-content-anim-up 500ms forwards;
+}
+
+.App-header-btn-content-down {
+    animation: btn-header-content-anim-down 500ms forwards;    
+}
+
+@keyframes btn-header-content-anim-up {
+    from{
+        transform: translate(0,0);
+    }
+    to{
+        transform: translate(0,-100%);
+    }
+}
+
+@keyframes btn-header-content-anim-down {
+    from{
+        transform: translate(0,0);
+    }
+    to{
+        transform: translate(0, 100%);
+    }
+}
+
+@keyframes btn-header-content-anim-reset-up {
+    from{
+        transform: translate(0,-100%);
+    }
+    to{
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes btn-header-content-anim-reset-down {
+    from{
+        transform: translate(0,100%);
+    }
+    to{
+        transform: translate(0, 0);
+    }
+}*/

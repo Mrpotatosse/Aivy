@@ -1,0 +1,23 @@
+{
+	"fields": [
+		{
+			"name": "allianceName",
+			"position": 0,
+			"type": "String",
+			"write_method": "writeUTF"
+		},
+		{
+			"name": "allianceTag",
+			"position": 1,
+			"type": "String",
+			"write_method": "writeUTF"
+		}
+	],
+	"name": "AllianceModificationNameAndTagValidMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.alliance",
+	"protocolID": 179,
+	"super": "NetworkMessage",
+	"super_serialize": false,
+	"supernamespace": "com.ankamagames.jerakine.network",
+	"use_hash_function": false
+}

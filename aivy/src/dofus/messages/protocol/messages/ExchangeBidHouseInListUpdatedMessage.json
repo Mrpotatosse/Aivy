@@ -1,0 +1,10 @@
+{
+	"fields": [],
+	"name": "ExchangeBidHouseInListUpdatedMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.inventory.exchanges",
+	"protocolID": 1033,
+	"super": "ExchangeBidHouseInListAddedMessage",
+	"super_serialize": true,
+	"supernamespace": "com.ankamagames.dofus.network.messages.game.inventory.exchanges",
+	"use_hash_function": false
+}

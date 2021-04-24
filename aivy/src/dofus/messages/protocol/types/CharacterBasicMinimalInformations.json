@@ -1,0 +1,17 @@
+{
+	"fields": [
+		{
+			"name": "name",
+			"position": 0,
+			"type": "String",
+			"write_method": "writeUTF"
+		}
+	],
+	"name": "CharacterBasicMinimalInformations",
+	"namespace": "com.ankamagames.dofus.network.types.game.character",
+	"protocolID": 5944,
+	"super": "AbstractCharacterInformation",
+	"super_serialize": true,
+	"supernamespace": "com.ankamagames.dofus.network.types.game.character",
+	"use_hash_function": false
+}

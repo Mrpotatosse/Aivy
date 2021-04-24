@@ -1,0 +1,29 @@
+{
+	"fields": [
+		{
+			"name": "jobsDescription",
+			"position": 1,
+			"self_serialize_method": "serializeAs_JobDescription",
+			"type": "JobDescription",
+			"type_namespace": "com.ankamagames.dofus.network.types.game.context.roleplay.job"
+		},
+		{
+			"bounds": {
+				"low": "0",
+				"up": "255"
+			},
+			"default_value": "0",
+			"name": "newLevel",
+			"position": 0,
+			"type": "uint",
+			"write_method": "writeByte"
+		}
+	],
+	"name": "JobLevelUpMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.context.roleplay.job",
+	"protocolID": 6078,
+	"super": "NetworkMessage",
+	"super_serialize": false,
+	"supernamespace": "com.ankamagames.jerakine.network",
+	"use_hash_function": false
+}

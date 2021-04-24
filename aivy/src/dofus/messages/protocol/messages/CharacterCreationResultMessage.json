@@ -1,0 +1,18 @@
+{
+	"fields": [
+		{
+			"default_value": "1",
+			"name": "result",
+			"position": 0,
+			"type": "uint",
+			"write_method": "writeByte"
+		}
+	],
+	"name": "CharacterCreationResultMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.character.creation",
+	"protocolID": 9926,
+	"super": "NetworkMessage",
+	"super_serialize": false,
+	"supernamespace": "com.ankamagames.jerakine.network",
+	"use_hash_function": false
+}

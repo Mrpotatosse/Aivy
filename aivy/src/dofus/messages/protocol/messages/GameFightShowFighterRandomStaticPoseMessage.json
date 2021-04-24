@@ -1,0 +1,10 @@
+{
+	"fields": [],
+	"name": "GameFightShowFighterRandomStaticPoseMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.context.fight.character",
+	"protocolID": 6689,
+	"super": "GameFightShowFighterMessage",
+	"super_serialize": true,
+	"supernamespace": "com.ankamagames.dofus.network.messages.game.context.fight.character",
+	"use_hash_function": false
+}

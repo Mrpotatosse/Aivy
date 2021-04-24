@@ -1,0 +1,29 @@
+{
+	"fields": [
+		{
+			"bounds": {
+				"low": "0",
+				"up": "9007199254740992.000000"
+			},
+			"default_value": "0",
+			"name": "timestamp",
+			"position": 0,
+			"type": "Number",
+			"write_method": "writeDouble"
+		},
+		{
+			"default_value": "0",
+			"name": "timezoneOffset",
+			"position": 1,
+			"type": "int",
+			"write_method": "writeShort"
+		}
+	],
+	"name": "BasicTimeMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.basic",
+	"protocolID": 6707,
+	"super": "NetworkMessage",
+	"super_serialize": false,
+	"supernamespace": "com.ankamagames.jerakine.network",
+	"use_hash_function": false
+}

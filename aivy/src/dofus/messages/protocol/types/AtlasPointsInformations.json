@@ -1,0 +1,27 @@
+{
+	"fields": [
+		{
+			"default_value": "0",
+			"name": "type",
+			"position": 0,
+			"type": "uint",
+			"write_method": "writeByte"
+		},
+		{
+			"is_vector": true,
+			"name": "coords",
+			"position": 1,
+			"self_serialize_method": "serializeAs_MapCoordinatesExtended",
+			"type": "MapCoordinatesExtended",
+			"type_namespace": "com.ankamagames.dofus.network.types.game.context",
+			"write_length_method": "writeShort"
+		}
+	],
+	"name": "AtlasPointsInformations",
+	"namespace": "com.ankamagames.dofus.network.types.game.context.roleplay",
+	"protocolID": 8573,
+	"super": "",
+	"super_serialize": false,
+	"supernamespace": "",
+	"use_hash_function": false
+}

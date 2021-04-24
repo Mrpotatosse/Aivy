@@ -1,0 +1,21 @@
+{
+	"fields": [
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"default_value": "0",
+			"name": "quantity",
+			"position": 0,
+			"type": "uint",
+			"write_method": "writeVarInt"
+		}
+	],
+	"name": "ObjectUseMultipleMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.inventory.items",
+	"protocolID": 3822,
+	"super": "ObjectUseMessage",
+	"super_serialize": true,
+	"supernamespace": "com.ankamagames.dofus.network.messages.game.inventory.items",
+	"use_hash_function": false
+}

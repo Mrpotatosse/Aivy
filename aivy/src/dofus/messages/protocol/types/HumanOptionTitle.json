@@ -1,0 +1,27 @@
+{
+	"fields": [
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"default_value": "0",
+			"name": "titleId",
+			"position": 0,
+			"type": "uint",
+			"write_method": "writeVarShort"
+		},
+		{
+			"name": "titleParam",
+			"position": 1,
+			"type": "String",
+			"write_method": "writeUTF"
+		}
+	],
+	"name": "HumanOptionTitle",
+	"namespace": "com.ankamagames.dofus.network.types.game.context.roleplay",
+	"protocolID": 9712,
+	"super": "HumanOption",
+	"super_serialize": true,
+	"supernamespace": "com.ankamagames.dofus.network.types.game.context.roleplay",
+	"use_hash_function": false
+}

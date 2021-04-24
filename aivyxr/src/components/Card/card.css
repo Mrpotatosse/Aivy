@@ -1,0 +1,63 @@
+.App-card {
+    display: grid;
+    min-height: 50px;
+    grid-template-areas: 
+        "App-card-title" 
+        "App-card-text";     
+    grid-template-columns: auto;
+    grid-template-rows: 15% auto;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 2px 2px 5px 2px #63636380;
+    transition: 200ms ease;
+}
+
+.App-card-clickable:hover {
+    box-shadow: 0px 0px 5px 2px #00000093;
+}
+
+.App-card-clickable:active {
+    box-shadow: 0px 0px 5px 2px #b10c0c;
+    transition: none;
+}
+
+.App-card-template-with-subtitle {
+    grid-template-areas: 
+        "App-card-title" 
+        "App-card-subtitle" 
+        "App-card-text"; 
+    grid-template-rows: 15% 15% auto;
+}
+
+.App-card-title {
+    grid-area: App-card-title;
+    border-bottom: 1px solid #63636380;
+    margin-left: 3px;
+    margin-right: 3px;
+    display: flex;
+    overflow: hidden;
+}
+
+.App-card-title-icon {
+    height: 100%;
+    max-width: 50%;
+}
+
+.App-card-title-text {
+    width: 100%;
+}
+
+.App-card-subtitle {
+    grid-area: App-card-subtitle;
+    border-bottom: 1px solid #63636380;
+    margin-left: 3px;
+    margin-right: 3px;
+}
+
+.App-card-text {
+    grid-area: App-card-text;
+    margin-left: 3px;
+    margin-right: 3px;
+    margin-bottom: 6px;
+    overflow-y: auto;
+}

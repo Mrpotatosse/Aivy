@@ -1,0 +1,28 @@
+{
+	"fields": [
+		{
+			"bounds": {
+				"low": "0",
+				"up": "9007199254740992.000000"
+			},
+			"default_value": "0",
+			"name": "objectPrice",
+			"position": 0,
+			"type": "Number",
+			"write_method": "writeVarLong"
+		},
+		{
+			"name": "buyCriterion",
+			"position": 1,
+			"type": "String",
+			"write_method": "writeUTF"
+		}
+	],
+	"name": "ObjectItemToSellInNpcShop",
+	"namespace": "com.ankamagames.dofus.network.types.game.data.items",
+	"protocolID": 6935,
+	"super": "ObjectItemMinimalInformation",
+	"super_serialize": true,
+	"supernamespace": "com.ankamagames.dofus.network.types.game.data.items",
+	"use_hash_function": false
+}

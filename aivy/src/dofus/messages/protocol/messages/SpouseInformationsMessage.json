@@ -1,0 +1,20 @@
+{
+	"fields": [
+		{
+			"name": "spouse",
+			"position": 0,
+			"prefixed_by_type_id": true,
+			"self_serialize_method": "serialize",
+			"type": "FriendSpouseInformations",
+			"type_namespace": "com.ankamagames.dofus.network.types.game.friend",
+			"write_type_id_method": "writeShort"
+		}
+	],
+	"name": "SpouseInformationsMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.friend",
+	"protocolID": 769,
+	"super": "NetworkMessage",
+	"super_serialize": false,
+	"supernamespace": "com.ankamagames.jerakine.network",
+	"use_hash_function": false
+}

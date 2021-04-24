@@ -1,0 +1,20 @@
+{
+	"fields": [
+		{
+			"is_vector": true,
+			"name": "recycledItems",
+			"position": 0,
+			"self_serialize_method": "serializeAs_RecycledItem",
+			"type": "RecycledItem",
+			"type_namespace": "com.ankamagames.dofus.network.types.game.inventory.exchanges",
+			"write_length_method": "writeShort"
+		}
+	],
+	"name": "EvolutiveObjectRecycleResultMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.inventory.exchanges",
+	"protocolID": 844,
+	"super": "NetworkMessage",
+	"super_serialize": false,
+	"supernamespace": "com.ankamagames.jerakine.network",
+	"use_hash_function": false
+}

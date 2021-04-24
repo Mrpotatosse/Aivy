@@ -1,0 +1,10 @@
+{
+	"fields": [],
+	"name": "PartyInvitationArenaRequestMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.context.roleplay.party",
+	"protocolID": 7744,
+	"super": "PartyInvitationRequestMessage",
+	"super_serialize": true,
+	"supernamespace": "com.ankamagames.dofus.network.messages.game.context.roleplay.party",
+	"use_hash_function": true
+}

@@ -1,0 +1,17 @@
+{
+	"fields": [
+		{
+			"name": "code",
+			"position": 0,
+			"type": "String",
+			"write_method": "writeUTF"
+		}
+	],
+	"name": "LockableUseCodeMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.context.roleplay.lockable",
+	"protocolID": 615,
+	"super": "NetworkMessage",
+	"super_serialize": false,
+	"supernamespace": "com.ankamagames.jerakine.network",
+	"use_hash_function": false
+}

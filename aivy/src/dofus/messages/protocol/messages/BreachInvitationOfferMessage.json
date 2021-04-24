@@ -1,0 +1,28 @@
+{
+	"fields": [
+		{
+			"bounds": {
+				"low": "0"
+			},
+			"default_value": "0",
+			"name": "timeLeftBeforeCancel",
+			"position": 1,
+			"type": "uint",
+			"write_method": "writeVarInt"
+		},
+		{
+			"name": "host",
+			"position": 0,
+			"self_serialize_method": "serializeAs_CharacterMinimalInformations",
+			"type": "CharacterMinimalInformations",
+			"type_namespace": "com.ankamagames.dofus.network.types.game.character"
+		}
+	],
+	"name": "BreachInvitationOfferMessage",
+	"namespace": "com.ankamagames.dofus.network.messages.game.context.roleplay.breach.meeting",
+	"protocolID": 7127,
+	"super": "NetworkMessage",
+	"super_serialize": false,
+	"supernamespace": "com.ankamagames.jerakine.network",
+	"use_hash_function": false
+}

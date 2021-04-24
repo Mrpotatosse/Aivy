@@ -1,0 +1,23 @@
+{
+	"fields": [
+		{
+			"bounds": {
+				"low": "0",
+				"up": "9007199254740992.000000"
+			},
+			"is_vector": true,
+			"name": "ownersIds",
+			"position": 0,
+			"type": "Number",
+			"write_length_method": "writeShort",
+			"write_method": "writeVarLong"
+		}
+	],
+	"name": "PartyIdol",
+	"namespace": "com.ankamagames.dofus.network.types.game.idol",
+	"protocolID": 5140,
+	"super": "Idol",
+	"super_serialize": true,
+	"supernamespace": "com.ankamagames.dofus.network.types.game.idol",
+	"use_hash_function": false
+}

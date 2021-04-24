@@ -1,0 +1,14 @@
+.App-footer {
+    background-color: #6161617a;
+    height: 5vh;
+}
+
+.App-footer-logo {
+    margin: 5px;
+    height: 4vh;
+    width: 4vh;
+}
+
+.App-footer-logo-img-github {
+    background: url('https://github.com/favicon.ico') center center no-repeat;
+}
