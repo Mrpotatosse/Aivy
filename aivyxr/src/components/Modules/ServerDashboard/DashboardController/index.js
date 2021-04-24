@@ -63,7 +63,7 @@ export default function DashboardController({Client}){
                 <input type="checkbox" onChange={onEnable} checked={isEnabled ?? false}></input>
                 <span className="slider round"></span>
             </label>
-            <span id="enable-txt">{`Server ${isEnabled ? 'On' : 'Off'}`}</span>
+            <span id="enable-txt">Server <span className="bold">{isEnabled ? 'On' : 'Off'}</span></span>
         </div>
         <div className="centered">
             <input className="App-modules-dashboard-controller-input" type="text" onChange={onPort} defaultValue={serverPort} disabled={isEnabled}></input>

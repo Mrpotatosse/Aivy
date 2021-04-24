@@ -77,7 +77,7 @@ export default function HeaderButtonContent({Client, content, onClick, title}){
     );
 
     const pageSelector = maximumPage > 0 ? (
-        <select id="page-selector" className="App-header-btn-content-page-selector" autoComplete="off" name="pages" onChange={event => {
+        <select id="page-selector" className="App-header-btn-content-page-selector bold" autoComplete="off" name="pages" onChange={event => {
             changePage(event.target.selectedIndex);
         }}>
             {[...Array(maximumPage + 1).keys()].map(x => (<option key={x}>{x + 1}</option>))}
@@ -88,7 +88,7 @@ export default function HeaderButtonContent({Client, content, onClick, title}){
         <Card
             height="50vh"
             width="calc(40vh + 5vmin)"
-            title={<div>{`${title} `}{maximumPage === 0 ? '1' : pageSelector}{`/${maximumPage + 1}`}</div>}
+            title={<div>{`${title} `}{maximumPage === 0 ? 1 : pageSelector}{`/${maximumPage + 1}`}</div>}
             titleBackground="rgb(160 158 158)"
             onClick={onClick}
             text={cardContent}

@@ -14,7 +14,7 @@ module.exports = async (socket, data, from_client) => {
         const message_data_parsed = decode(r.message_id, new dofus_reader(r.message_data_buffer));
         
         if(from_client){
-            socket.last_packet_instance_id = r.instance_id;
+            socket.last_packet_instance_id = r.instance_id ?? 0;
             socket.server_messages_count_since_client = 0;
             
             const new_data = new buffer_writer(from_client).parse_message({

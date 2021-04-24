@@ -8,10 +8,11 @@ import Home from './../Home';
 import Cubor from './../Cubor';
 import Editor from './../Editor';
 import Protocol from './../Protocol';
+import ProtocolList from '../ProtocolList';
 import Option from './../Option';
+import Doc from './../Doc';
 
 import Modules from './../Modules';
-import ProtocolList from '../ProtocolList';
 
 export default function Body({ Client }) {
     const ClientRef = useRef(Client);
@@ -67,6 +68,10 @@ export default function Body({ Client }) {
                         }
                     }>
                     </Route>
+                    <Route path="/doc">
+                        <Doc></Doc>
+                    </Route>
+                    {/* Laisser en dernier */}
                     <Route path="/">
                         <Waiting reason="Page not found" failed={true}></Waiting>                     
                     </Route>
