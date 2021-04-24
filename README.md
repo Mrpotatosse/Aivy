@@ -32,16 +32,9 @@ MITM PacketSniffer pour
     - ws (https://github.com/websockets/ws)
     - ace editor (https://github.com/luvuong-le/code-editor-tutorial/tree/configuring-ace/lib/js/ace-editor/src-min)
 
-# Lancement
-    Pour l'instant le lancement se fait via le fichier test (https://github.com/Mrpotatosse/Aivy/blob/main/test/all.js) mais il vous est possible avec quelque connaissance de modifié cela
-     
-    node test/all
-
-    Pour lancer Aivy il vous faudra lancer le serveur http, ws, (et mitm pas obligatoire , vous pouvez créer un script depuis l'UI pour le lancer). Des exemples se trouvent dans le dossier test (http.js, dofus_mitm.js, webserver.js)
-
-    Après il vous suffit d'ouvrir l'UI ( depuis votre navigateur préféré à l'adresse localhost:8080 que vous pouvez définir vous même depuis le fichier http.js ) que je me suis cassé le cul à faire, qui est un peu nul à chié, mais ça fait le taf pour l'instant
-
-    Pour voir les messages qui transite, il faudra ouvrir l'UI, inspectez l'element et aller dans la console. ( Sans oublier d'activer l'affichage des logs dans les options )
+# Lancement 
+   ``yarn`` pour importer tout les modules node ( j'crois mdr )
+   ``npm start`` pour lancer
 
 # Usage
     Analyser les packets reçu ou envoyé par votre client.
