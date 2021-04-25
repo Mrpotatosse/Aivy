@@ -72,7 +72,7 @@ export default function Home({}){
                     <span>Puis appuyez sur </span><span className="bold">Save</span> <span> ou utilisez le raccourci </span><span className="bold">Ctrl</span><span> + </span> <span className="bold">S</span>. <br></br><br></br>
                     <span>2) Démarrez le serveur MITM. ( A chaque démarrage de Aivy )</span><br></br>
                     <span>Cliquez sur </span><span className="bold">Aivy</span><span>. </span><span>Ensuite appuyez sur le boutton portant le nom </span><span className="bold">modules</span>.<br></br>
-                    <span>Séléctionnez </span> <span className="bold">MITM Server Dashboard</span>. <span>Ensuite démarrez le serveur on mettant le switch sur </span> <span className="bold">On</span>.<br></br><br></br>
+                    <span>Séléctionnez </span> <span className="bold">MITM Server Dashboard</span>. <span>Ensuite démarrez le serveur en mettant le switch sur </span> <span className="bold">On</span>.<br></br><br></br>
                     <span>3) Lancez une instance de Dofus.</span><br></br>
                     <span>Cliquez sur </span><span className="bold">Aivy</span>. <span>Ensuite appuyez sur le boutton portant l'icon </span><span className="bold">Dofus</span>.
                 </div>

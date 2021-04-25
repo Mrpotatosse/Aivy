@@ -7,8 +7,8 @@
 		"server"
 	],
 	"Log show type": [
-		":minimum",
+		"minimum",
 		"data",
-		"full"
+		":full"
 	]
 }
