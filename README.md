@@ -1,5 +1,7 @@
 # Aivy
 
+( j'ai la flemme de update pour l'instant mais utilisez cette version https://github.com/Mrpotatosse/test_aivy ) 
+
 <h3 align="center"><strong>Aivy Core</strong></h3>
 
 <p align="center">C'est gratuit ( et ça le restera toujours )</p>
